@@ -28,6 +28,35 @@ COLORS = {
     "cloud": "#d9e2ec",
 }
 
+MODULE_CODES = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"]
+MODULE_LABELS = {
+    "01": "Formal, Information and Computational Sciences",
+    "02": "Physics, Astronomy and Cosmic Sciences",
+    "03": "Chemical Sciences",
+    "04": "Materials Science",
+    "05": "Earth and Environmental Sciences",
+    "06": "Life Sciences",
+    "07": "Medical and Health Sciences",
+    "08": "Agricultural and Food Sciences",
+    "09": "Engineering and Industrial Technology Sciences",
+    "10": "Aerospace and Autonomous Exploration Sciences",
+    "11": "Scientific Evaluation, Knowledge, and Social Systems",
+}
+
+MODULE_LINE_COLORS = {
+    "01": "#264653",
+    "02": "#3a86ff",
+    "03": "#f4a261",
+    "04": "#e76f51",
+    "05": "#6c757d",
+    "06": "#2a9d8f",
+    "07": "#d62828",
+    "08": "#8ac926",
+    "09": "#7b2cbf",
+    "10": "#4361ee",
+    "11": "#bc6c25",
+}
+
 SOURCE_CATEGORY_LABELS = [
     "arXiv-Linked Preprints",
     "Other Preprint Servers",
@@ -270,6 +299,149 @@ def build_source_category_year_rows(conn: sqlite3.Connection) -> tuple[list[int]
     return years, csv_rows
 
 
+def build_multimodule_year_rows(conn: sqlite3.Connection) -> tuple[list[int], list[dict[str, object]]]:
+    rows = fetch_rows(
+        conn,
+        """
+        SELECT
+            CAST(p.year AS INTEGER) AS year,
+            pm.module_code,
+            COUNT(DISTINCT pm.paper_id) AS paper_count
+        FROM papers p
+        JOIN paper_modules pm ON pm.paper_id = p.paper_id
+        WHERE p.active_confirmed_core = 1
+          AND pm.assignment_scope = 'scientific_object_modules'
+          AND pm.module_kind = 'formal_module'
+          AND p.year GLOB '[0-9][0-9][0-9][0-9]'
+        GROUP BY CAST(p.year AS INTEGER), pm.module_code
+        ORDER BY CAST(p.year AS INTEGER), pm.module_code
+        """,
+    )
+    years_present = sorted({int(row["year"]) for row in rows})
+    start_year = min(years_present)
+    end_year = 2026
+    years = list(range(start_year, end_year + 1))
+    count_map = {
+        (int(row["year"]), str(row["module_code"])): int(row["paper_count"])
+        for row in rows
+    }
+    csv_rows: list[dict[str, object]] = []
+    for year in years:
+        csv_row: dict[str, object] = {"year": year}
+        for code in MODULE_CODES:
+            csv_row[code] = count_map.get((year, code), 0)
+        csv_rows.append(csv_row)
+    return years, csv_rows
+
+
+def export_multimodule_year_lines(conn: sqlite3.Connection, output_dir: Path) -> None:
+    years, csv_rows = build_multimodule_year_rows(conn)
+    write_csv(
+        output_dir / "multimodule_year_trend_by_module.csv",
+        ["year", *MODULE_CODES],
+        csv_rows,
+    )
+
+    fig, ax = plt.subplots(figsize=(13.6, 7.4))
+    for code in MODULE_CODES:
+        values = [int(row[code]) for row in csv_rows]
+        x, y, x_dense, y_dense = smooth_series(years, values)
+        ax.plot(
+            x_dense,
+            y_dense,
+            linewidth=2.0,
+            color=MODULE_LINE_COLORS[code],
+            label=MODULE_LABELS[code],
+        )
+        ax.plot(
+            x,
+            y,
+            linestyle="None",
+            marker="o",
+            markersize=3.0,
+            color=MODULE_LINE_COLORS[code],
+        )
+    ax.set_title(
+        "Annual Distribution of Included Agent Publications Across Primary Scientific Domains"
+    )
+    ax.set_xlabel("Publication Year")
+    ax.set_ylabel("Number of Publications (Multi-Domain Counting)")
+    ax.set_xlim(min(years), max(years))
+    ax.set_xticks(years)
+    ax.tick_params(axis="x", rotation=45)
+    ax.grid(axis="y", linestyle="--", alpha=0.8)
+    ax.legend(
+        title="Primary Scientific Domain",
+        ncol=2,
+        frameon=False,
+        loc="upper left",
+        bbox_to_anchor=(0.0, 1.02),
+        fontsize=9,
+        title_fontsize=10,
+    )
+    fig.tight_layout()
+    fig.savefig(output_dir / "multimodule_year_trend_by_module.png", bbox_inches="tight")
+    plt.close(fig)
+
+
+def export_multimodule_module_bar(conn: sqlite3.Connection, output_dir: Path) -> None:
+    rows = fetch_rows(
+        conn,
+        """
+        SELECT
+            pm.module_code,
+            COUNT(DISTINCT pm.paper_id) AS paper_count
+        FROM papers p
+        JOIN paper_modules pm ON pm.paper_id = p.paper_id
+        WHERE p.active_confirmed_core = 1
+          AND pm.assignment_scope = 'scientific_object_modules'
+          AND pm.module_kind = 'formal_module'
+        GROUP BY pm.module_code
+        ORDER BY pm.module_code
+        """,
+    )
+    csv_rows = [
+        {
+            "module_code": str(row["module_code"]),
+            "module_label": MODULE_LABELS[str(row["module_code"])],
+            "paper_count": int(row["paper_count"]),
+        }
+        for row in rows
+    ]
+    write_csv(
+        output_dir / "multimodule_module_counts_bar.csv",
+        ["module_code", "module_label", "paper_count"],
+        csv_rows,
+    )
+
+    labels = [wrap_label(row["module_label"], width=16) for row in csv_rows]
+    values = [row["paper_count"] for row in csv_rows]
+    colors = [MODULE_LINE_COLORS[row["module_code"]] for row in csv_rows]
+
+    fig, ax = plt.subplots(figsize=(14.8, 7.2))
+    bars = ax.bar(labels, values, color=colors, width=0.72)
+    ax.set_title(
+        "Distribution of Included Agent Publications Across Primary Scientific Domains"
+    )
+    ax.set_xlabel("Primary Scientific Domain")
+    ax.set_ylabel("Number of Publications (Multi-Domain Counting)")
+    ax.grid(axis="y", linestyle="--", alpha=0.8)
+    ax.set_axisbelow(True)
+    ax.tick_params(axis="x", rotation=18)
+    for bar, value in zip(bars, values):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            value + 1,
+            str(value),
+            ha="center",
+            va="bottom",
+            fontsize=9,
+        )
+    fig.tight_layout()
+    fig.savefig(output_dir / "multimodule_module_counts_bar.png", bbox_inches="tight")
+    plt.close(fig)
+
+
 def export_source_category_year_lines(conn: sqlite3.Connection, output_dir: Path) -> None:
     years, csv_rows = build_source_category_year_rows(conn)
     write_csv(
@@ -431,6 +603,8 @@ def main() -> None:
     apply_chart_style()
     ensure_output_dir(args.output_dir)
     with sqlite3.connect(args.db) as conn:
+        export_multimodule_year_lines(conn, args.output_dir)
+        export_multimodule_module_bar(conn, args.output_dir)
         export_source_category_year_lines(conn, args.output_dir)
         export_source_category_bar(conn, args.output_dir)
     print(f"Generated review charts in {args.output_dir}")
