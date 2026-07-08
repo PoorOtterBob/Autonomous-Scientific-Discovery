@@ -11,6 +11,3 @@ module	classification_layer	assigned_code	paper_id	title	confidence	pressure_typ
 06	secondary	06.01	ASD-0671	AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration	medium	general_system_cross_domain	06 side is not the only stable object and remains cross-domain
 06	secondary	06.01	ASD-0787	SciToolAgent: a knowledge-graph-driven scientific agent for multitool integration	medium	workflow_orchestration	06 side is mostly tool / workflow support
 06	secondary	06.03	ASD-0844	Science Earth: Towards A Planet-Scale Operating System for AI-Native Scientific Discovery	medium	general_system_cross_domain	06 support is specific but the paper remains a planet-scale scientific-agent operating system
-06	secondary	06.01	ASD-0857	Machine Collective Intelligence for Explainable Scientific Discovery	medium	equation_discovery	06 evidence comes from benchmark domain coverage inside equation discovery
-06	secondary	06.01	ASD-0869	STRIDE: A Self-Reflective Agent Framework for Reliable Automatic Equation Discovery	medium	equation_discovery	06 evidence is benchmark-driven rather than biology-object-driven
-06	secondary	06.01	ASD-0870	SR-Scientist: Scientific Equation Discovery With Agentic AI	medium	equation_discovery	06 evidence is benchmark-driven rather than biology-object-driven
