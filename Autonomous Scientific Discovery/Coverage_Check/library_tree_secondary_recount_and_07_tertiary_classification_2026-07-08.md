@@ -2,31 +2,30 @@
 
 日期：`2026-07-08`
 
-## 1. 本轮范围
+## 1. 范围
 
-本轮只按最早定义的图书馆学分类树执行 derived / research-layer 统计与归位，不修改 owner fact source。
+本文件记录基于原始图书馆学树的研究层统计与归位结果。
 
-本轮明确忽略以下两份研究层映射文件，不把它们当作本轮二级类或三级类依据：
+本轮继续明确忽略以下两份非原始树映射文件，不把它们当作分类依据：
 
 - `Coverage_Check/secondary_class_redefinition_updated_mapping_after_batchI_03_04_06_07_multi_module_2026-07-07.tsv`
 - `Coverage_Check/secondary_class_redefinition_no_bnd_mapping_after_batchM_03_04_06_07_multi_module_2026-07-08.tsv`
 
-本轮使用的依据只有：
+可用依据只包括：
 
 - `review_scope_and_classification_policy.md`
 - `domain_classification_rules.md`
 - `science_domain_taxonomy.md`
-- 当前结构化事实层中的 `scientific_object_modules`、`primary_module_for_filing`、`legacy_secondary_class`、`remarks`
-- 对应 paper notes 的标题与已冻结说明
+- 当前结构化事实中的 `scientific_object_modules`、`primary_module_for_filing`、`legacy_secondary_class`、`remarks`
+- 对应 note 与一手 PDF / HTML 证据
 
-## 2. 03 / 04 / 06 / 07 二级类统计
+## 2. 二级类统计
 
 口径：
 
 - 多模块口径
 - 只允许原始图书馆学二级类代码
-- native 行优先继承同模块 `legacy_secondary_class`
-- 多模块展开后新增的外模块行，再按原始树对象定义重新归位
+- `07` 的最终二级类优先采用三级类回卷后的结果
 
 ### 2.1 `03` 化学科学
 
@@ -50,30 +49,32 @@
 
 ### 2.3 `06` 生命科学
 
+当前最新二级类统计已经纳入 `06 / 07` 二级类 round1 与 round2 closeout 的结果。
+
 | 二级类代码 | 二级类名称 | 数量 |
 |---|---|---:|
-| `06.01` | 生物学基础 | 19 |
+| `06.01` | 生物学基础 | 17 |
 | `06.02` | 生物类群科学 | 3 |
-| `06.03` | 生物技术相关科学 | 56 |
+| `06.03` | 生物技术相关科学 | 58 |
 | 合计 |  | 78 |
 
 ### 2.4 `07` 医学与健康科学
 
-这一步是二级类层面的初步 recount，尚未使用三级类细分回卷。
+当前 `07` 二级类以三级类回卷后的结果为准。
 
 | 二级类代码 | 二级类名称 | 数量 |
 |---|---|---:|
 | `07.01` | 医学基础 | 10 |
-| `07.02` | 临床医学 | 6 |
-| `07.03` | 公共卫生与健康科学 | 12 |
-| `07.04` | 药学与生物医药 | 52 |
+| `07.02` | 临床医学 | 8 |
+| `07.03` | 公共卫生与健康科学 | 21 |
+| `07.04` | 药学与生物医药 | 41 |
 | 合计 |  | 80 |
 
-## 3. `07` 三级类分类
+## 3. `07` 三级类统计
 
-### 3.1 三级类使用规则
+### 3.1 使用规则
 
-本轮 `07` 三级类继续只使用原始图书馆学树中的正式代码：
+`07` 三级类继续只使用原始 taxonomy 树中的正式代码：
 
 - `07.01.04` 病理学
 - `07.01.06` 药理学
@@ -86,15 +87,12 @@
 - `07.04.01` 药物发现
 - `07.04.05` 生物制药
 
-归位优先级：
+### 3.2 最新三级类统计
 
-1. 先看 `07` 模块证据来自什么具体医学对象。
-2. 如果是药物设计、lead 优化、筛选、target / DTI / de novo design，优先落 `07.04.01`。
-3. 如果是抗体、nanobody、CAR-T、生物治疗模态，优先落 `07.04.05`。
-4. 如果是病理、肿瘤、神经影像、疾病队列等疾病对象，优先落对应临床 / 基础医学三级类。
-5. 如果 `07` 侧主要体现为 biomedical workflow、translational bioinformatics、medical-research analysis、evidence screening、knowledge extraction，则优先落 `07.03.08`。
+当前统计已经纳入：
 
-### 3.2 `07` 三级类统计
+- `library_tree_07_tertiary_reaudit_round1_closeout_2026-07-08.md`
+- `library_tree_07_tertiary_reaudit_round2_closeout_2026-07-08.md`
 
 | 三级类代码 | 三级类名称 | 数量 |
 |---|---|---:|
@@ -105,53 +103,39 @@
 | `07.01.09` | 医学免疫学 | 1 |
 | `07.02.05` | 肿瘤学 | 6 |
 | `07.02.06` | 神经病学 | 2 |
-| `07.03.08` | 医学信息学 | 22 |
-| `07.04.01` | 药物发现 | 36 |
+| `07.03.08` | 医学信息学 | 21 |
+| `07.04.01` | 药物发现 | 37 |
 | `07.04.05` | 生物制药 | 4 |
 | 合计 |  | 80 |
 
-### 3.3 从三级类回卷得到的 `07` 二级类数量
+### 3.3 三级类回卷到二级类
 
-如果直接按本轮三级类代码回卷到二级父类，则 `07` 的父类分布会变成：
+由当前三级类直接回卷得到：
 
-| 二级类代码 | 二级类名称 | 数量 |
-|---|---|---:|
-| `07.01` | 医学基础 | 10 |
-| `07.02` | 临床医学 | 8 |
-| `07.03` | 公共卫生与健康科学 | 22 |
-| `07.04` | 药学与生物医药 | 40 |
-| 合计 |  | 80 |
+- `07.01 = 10`
+- `07.02 = 8`
+- `07.03 = 21`
+- `07.04 = 41`
 
-这与上面的二级类初步 recount 不完全一致，说明：
+这组数字是当前更值得优先保留的 `07` 研究层基线。
 
-- 二级类粗分时，若直接从原 `legacy_secondary_class` 与多模块 extra rows 进行对象级回填，容易把一部分 biomedical workflow / knowledge-extraction / translational-analysis 工作先放进 `07.04`
-- 一旦继续细化到三级类，这些条目会更自然地滑入 `07.03.08`
+## 4. 当前残留压力点
 
-因此，如果后续要把 `07` 的原始图书馆学树细化结果继续往前推进，本轮三级类回卷后的 `07.01 / 07.02 / 07.03 / 07.04 = 10 / 8 / 22 / 40` 更值得优先保留为研究层参考值。
+到当前阶段为止：
 
-## 4. 低置信度压力点
+- `07` 三级类 `medium queue` 已清空
+- `06 / 07` 最关键的一组二级类边界样本已大幅压缩
 
-以下条目不是“无依据”，但属于强 general-system / cross-domain pressure 样本，后续如果要把 `07` 三级类写回更正式的派生表，建议优先二次复核：
+当前剩余 residuals 主要位于：
 
-- `ASD-0060`
-- `ASD-0659`
-- `ASD-0660`
-- `ASD-0663`
-- `ASD-0673`
-- `ASD-0676`
-- `ASD-0856`
-- `ASD-0866`
-- `ASD-0871`
+- `06 secondary` 中的 general-system / equation-discovery / workflow pressure 样本
+- `03 / 04` 中的 molecule-vs-material、atomistic-harness、equation-discovery pressure 样本
 
-这些论文的问题不是 `07` 证据不存在，而是它们的医学与健康侧证据通常来自：
+因此，这份文件中的 `07` 三级类结果现在可以作为当前研究层高置信度 baseline 使用；更新后的残留清单以：
 
-- drug-discovery demos
-- rare-disease / GWAS cases
-- translational bioinformatics bundles
-- digital-health / biomedical workflow demos
-- general scientific systems 中的 biomedical benchmark slices
+- `Coverage_Check/library_tree_confidence_medium_queue_03_04_06_07_and_07_tertiary_2026-07-08.tsv`
 
-因此，它们适合保留在研究层三级类映射里，但不应误读为已经成为 owner fact source 中冻结好的正式三级类字段。
+为准。
 
 ## 5. 产出文件
 
