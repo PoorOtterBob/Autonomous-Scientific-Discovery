@@ -1,0 +1,81 @@
+paper_id	title	tertiary_code	tertiary_label_zh
+ASD-0002	HealthFlow: A Self-Evolving AI Agent with Meta Planning for Autonomous Healthcare Research	07.03.08	医学信息学
+ASD-0008	Accelerating Drug Discovery Through Agentic AI: A Multi-Agent Approach to Laboratory Automation in the DMTA Cycle	07.04.01	药物发现
+ASD-0017	Can ai agents design and implement drug discovery pipelines?	07.04.01	药物发现
+ASD-0024	Large language model agent for modular task execution in drug discovery	07.04.01	药物发现
+ASD-0028	Drugagent: Automating ai-aided drug discovery programming through llm multi-agent collaboration	07.04.01	药物发现
+ASD-0030	Rag-enhanced collaborative llm agents for drug discovery	07.04.01	药物发现
+ASD-0041	Liddia: Language-based intelligent drug discovery agent	07.04.01	药物发现
+ASD-0054	The virtual lab: Ai agents design new sars-cov-2 nanobodies with experimental validation	07.04.05	生物制药
+ASD-0060	Piflow: Principle-aware scientific discovery with multi-agent collaboration	07.04.01	药物发现
+ASD-0064	Phenograph: A multi-agent framework for phenotype-driven discovery in spatial transcriptomics data augmented with knowledge graphs	07.02.05	肿瘤学
+ASD-0077	Stella: Self-evolving llm agent for biomedical research	07.03.08	医学信息学
+ASD-0079	DrugAgent: Multi-Agent Large Language Model-Based Reasoning for Drug-Target Interaction Prediction	07.04.01	药物发现
+ASD-0093	Augmenting large language models with chemistry tools	07.04.01	药物发现
+ASD-0096	dziner: Rational inverse design of materials with ai agents	07.04.01	药物发现
+ASD-0113	PharmAgents: Building a virtual pharma with large language model agents	07.04.01	药物发现
+ASD-0115	Towards an AI co-scientist	07.03.08	医学信息学
+ASD-0118	Biomni: A general-purpose biomedical AI agent	07.03.08	医学信息学
+ASD-0137	Accelerating primer design for amplicon sequencing using large language model-powered agents	07.01.08	医学遗传学
+ASD-0141	TransAgent: Dynamizing transcriptional regulation analysis via multi-omics-aware AI agent	07.01.08	医学遗传学
+ASD-0152	An agentic AI framework for ingestion and standardization of single-cell RNA-seq data analysis	07.03.08	医学信息学
+ASD-0254	From intention to implementation: automating biomedical research via llms	07.03.08	医学信息学
+ASD-0276	Automating exploratory multiomics research via language models	07.02.05	肿瘤学
+ASD-0357	Origene: A self-evolving virtual disease biologist automating therapeutic target discovery	07.04.01	药物发现
+ASD-0531	GALILEO: Embodied AI scientist for autonomous therapeutic discovery in dynamic membrane systems	07.04.01	药物发现
+ASD-0536	TCM-Agent: Advancing Network Pharmacology and Herbal Medicine Discovery with LLM-Based Multi-Agent Systems	07.04.01	药物发现
+ASD-0537	Medea: An omics AI agent for therapeutic discovery	07.04.01	药物发现
+ASD-0540	A multi-agent system for automating scientific discovery	07.03.08	医学信息学
+ASD-0542	MADD: Multi-Agent Drug Discovery Orchestra	07.04.01	药物发现
+ASD-0543	Machine Learning Copilot Agent: An LLM-Guided Workflow for Prognostic Gene Discovery	07.01.08	医学遗传学
+ASD-0544	LLM-Agent Powered Automated Literature Review and Hypothesis Generation for Cancer Biomarker Discovery	07.02.05	肿瘤学
+ASD-0545	IMMUNIA: A Multi-LLM Reasoning Agent for Immunoregulatory Surfaceome Discovery	07.01.09	医学免疫学
+ASD-0548	OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery	07.03.08	医学信息学
+ASD-0552	Multi agent large language models for biomedical hypothesis generation in drug combination discovery	07.04.01	药物发现
+ASD-0554	BioAgent: An Auditable Multi-Agent Framework for Reproducible Translational Bioinformatics	07.03.08	医学信息学
+ASD-0556	DrugPilot: LLM-based Parameterized Reasoning Agent for Drug Discovery	07.04.01	药物发现
+ASD-0564	An agentic framework for autonomous scientific discovery in cancer pathology	07.01.04	病理学
+ASD-0579	A Bayesian active learning platform for scalable combination drug screens	07.04.01	药物发现
+ASD-0659	Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange	07.03.08	医学信息学
+ASD-0660	S1-NexusAgent: a Self-Evolving Agent Framework for Multidisciplinary Scientific Research	07.01.08	医学遗传学
+ASD-0663	AutoScientists: Self-Organizing Agent Teams for Long-Running Scientific Experimentation	07.03.08	医学信息学
+ASD-0669	MARBLE: Multi-Agent Reasoning for Bioinformatics Learning and Evolution	07.04.01	药物发现
+ASD-0670	Mozi: Governed Autonomy for Drug Discovery LLM Agents	07.04.01	药物发现
+ASD-0673	Harnessing AtomisticSkills for Agentic Atomistic Research	07.04.01	药物发现
+ASD-0675	MolClaw: An Autonomous Agent with Hierarchical Skills for Drug Molecule Evaluation, Screening, and Optimization	07.04.01	药物发现
+ASD-0676	AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle	07.04.01	药物发现
+ASD-0677	DeepRoot: A KG-Coordinated Multi-Agent System for Therapeutic Reasoning over Historical Medical Texts	07.04.01	药物发现
+ASD-0678	Latent-Y: A Lab-Validated Autonomous Agent for De Novo Drug Design	07.04.01	药物发现
+ASD-0679	Rhizome OS-1: Rhizome's Semi-Autonomous Operating System for Small Molecule Drug Discovery	07.04.01	药物发现
+ASD-0714	K-Dense Analyst: Towards Fully Automated Scientific Analysis	07.03.08	医学信息学
+ASD-0715	BioDisco: Multi-agent hypothesis generation with dual-mode evidence, iterative feedback and temporal evaluation	07.03.08	医学信息学
+ASD-0716	Bio AI Agent: A Multi-Agent Artificial Intelligence System for Autonomous CAR-T Cell Therapy Development with Integrated Target Discovery, Toxicity Prediction, and Rational Molecular Design	07.04.05	生物制药
+ASD-0731	Self-Driving Datasets: From 20 Million Papers to Nuanced Biomedical Knowledge at Scale	07.03.08	医学信息学
+ASD-0742	Talk2Biomodels: AI agent-based open-source LLM initiative for kinetic biological models	07.03.08	医学信息学
+ASD-0743	STAT: A multi-agent framework for integrated and interactive spatial transcriptomics analysis	07.02.05	肿瘤学
+ASD-0744	BioGAIP: A Scalable, User-Friendly and Robust LLM-Powered Multi-Agent System for Automated Bioinformatics Tasks	07.03.08	医学信息学
+ASD-0745	BioLab: End-to-End Autonomous Life Sciences Research with Multi-Agents System Integrating Biological Foundation Models	07.04.05	生物制药
+ASD-0769	DeepER-Med: Advancing Deep Evidence-Based Research in Medicine Through Agentic AI	07.03.08	医学信息学
+ASD-0770	Progressive Multi-Agent Reasoning for Biological Perturbation Prediction	07.01.06	药理学
+ASD-0771	Process-Supervised Multi-Agent Reinforcement Learning for Reliable Clinical Reasoning	07.03.08	医学信息学
+ASD-0773	Skill-Augmented AI Agents for Medical Research Analysis: An Exploratory Multi-Model Human Evaluation in an NSCLC Transcriptomic Biomarker Task	07.02.05	肿瘤学
+ASD-0774	Causal-Enhanced AI Agents for Medical Research Screening	07.03.08	医学信息学
+ASD-0798	Molecular Lead Optimization via Agentic Tool Planning	07.04.01	药物发现
+ASD-0812	BioResearcher: Scenario-Guided Multi-Agent for Translational Medicine	07.03.08	医学信息学
+ASD-0814	Towards a Virtual Neuroscientist: Autonomous Neuroimaging Analysis via Multi-Agent Collaboration	07.02.06	神经病学
+ASD-0815	CoDaS: AI Co-Data-Scientist for Biomarker Discovery via Wearable Sensors	07.03.08	医学信息学
+ASD-0816	TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment	07.01.07	毒理学
+ASD-0817	Probe Before You Edit: Probing-Guided Molecular Optimization for LLM Agents in Structure-Based Drug Design	07.04.01	药物发现
+ASD-0818	MolMem: Memory-Augmented Agentic Reinforcement Learning for Sample-Efficient Molecular Optimization	07.04.01	药物发现
+ASD-0819	SEISMO: Increasing Sample Efficiency in Molecular Optimization with a Trajectory-Aware LLM Agent	07.04.01	药物发现
+ASD-0820	Reinforcement Learning with LLM-Guided Action Spaces for Synthesizable Lead Optimization	07.04.01	药物发现
+ASD-0821	Agentic reinforcement learning empowers next-generation chemical language models for molecular design and synthesis	07.04.01	药物发现
+ASD-0822	Contextual Invertible World Models: A Neuro-Symbolic Agentic Framework for Colorectal Cancer Drug Response	07.02.05	肿瘤学
+ASD-0824	FRAGMENTA: End-to-end Fragmentation-based Generative Model with Agentic Tuning for Drug Lead Optimization	07.04.01	药物发现
+ASD-0825	ReACT-Drug: Reaction-Template Guided Reinforcement Learning for de novo Drug Design	07.04.01	药物发现
+ASD-0826	ToolMol: Evolutionary Agentic Framework for Multi-objective Drug Discovery	07.04.01	药物发现
+ASD-0827	A Multi-modal Agentic Co-pilot for Evidence Grounded Computational Pathology	07.01.04	病理学
+ASD-0828	SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery	07.01.04	病理学
+ASD-0856	AutoDiscovery: Open-ended Scientific Discovery via Bayesian Surprise	07.02.06	神经病学
+ASD-0866	Accelerating Scientific Discovery with Autonomous Goal-evolving Agents	07.04.05	生物制药
+ASD-0871	The Denario project: Deep knowledge AI agents for scientific discovery	07.03.08	医学信息学
