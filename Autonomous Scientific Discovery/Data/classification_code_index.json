@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-09",
   "updated_by": "codex",
   "primary_code_to_label": {
     "01": "Formal, Information and Computational Sciences",
@@ -23,25 +23,25 @@
     "01.04": "Legacy secondary filing term 01.04",
     "02.01": "Legacy secondary filing term 02.01",
     "02.02": "Legacy secondary filing term 02.02",
-    "03.01": "Legacy secondary filing term 03.01",
-    "03.02": "Legacy secondary filing term 03.02",
-    "03.03": "Legacy secondary filing term 03.03",
-    "03.04": "Legacy secondary filing term 03.04",
-    "04.01": "Legacy secondary filing term 04.01",
-    "04.02": "Legacy secondary filing term 04.02",
-    "04.03": "Legacy secondary filing term 04.03",
-    "04.04": "Legacy secondary filing term 04.04",
+    "03.01": "化学总论与化学方法",
+    "03.02": "基础化学",
+    "03.03": "合成、反应与催化",
+    "03.04": "分子设计与化学空间探索",
+    "04.01": "材料基础",
+    "04.02": "结构材料与无机材料",
+    "04.03": "软物质与功能材料",
+    "04.04": "能源、电子与器件材料",
     "05.01": "Legacy secondary filing term 05.01",
     "05.02": "Legacy secondary filing term 05.02",
     "05.03": "Legacy secondary filing term 05.03",
     "05.04": "Legacy secondary filing term 05.04",
-    "06.01": "Legacy secondary filing term 06.01",
-    "06.02": "Legacy secondary filing term 06.02",
-    "06.03": "Legacy secondary filing term 06.03",
-    "07.01": "Legacy secondary filing term 07.01",
-    "07.02": "Legacy secondary filing term 07.02",
-    "07.03": "Legacy secondary filing term 07.03",
-    "07.04": "Legacy secondary filing term 07.04",
+    "06.01": "生物学基础",
+    "06.02": "生物类群科学",
+    "06.03": "生物技术相关科学",
+    "07.01": "医学基础",
+    "07.02": "临床医学",
+    "07.03": "公共卫生与健康科学",
+    "07.04": "药学与生物医药",
     "08.01": "Legacy secondary filing term 08.01",
     "08.05": "Legacy secondary filing term 08.05",
     "09.01": "Legacy secondary filing term 09.01",
@@ -79,25 +79,25 @@
     "Legacy secondary filing term 01.04": "01.04",
     "Legacy secondary filing term 02.01": "02.01",
     "Legacy secondary filing term 02.02": "02.02",
-    "Legacy secondary filing term 03.01": "03.01",
-    "Legacy secondary filing term 03.02": "03.02",
-    "Legacy secondary filing term 03.03": "03.03",
-    "Legacy secondary filing term 03.04": "03.04",
-    "Legacy secondary filing term 04.01": "04.01",
-    "Legacy secondary filing term 04.02": "04.02",
-    "Legacy secondary filing term 04.03": "04.03",
-    "Legacy secondary filing term 04.04": "04.04",
+    "化学总论与化学方法": "03.01",
+    "基础化学": "03.02",
+    "合成、反应与催化": "03.03",
+    "分子设计与化学空间探索": "03.04",
+    "材料基础": "04.01",
+    "结构材料与无机材料": "04.02",
+    "软物质与功能材料": "04.03",
+    "能源、电子与器件材料": "04.04",
     "Legacy secondary filing term 05.01": "05.01",
     "Legacy secondary filing term 05.02": "05.02",
     "Legacy secondary filing term 05.03": "05.03",
     "Legacy secondary filing term 05.04": "05.04",
-    "Legacy secondary filing term 06.01": "06.01",
-    "Legacy secondary filing term 06.02": "06.02",
-    "Legacy secondary filing term 06.03": "06.03",
-    "Legacy secondary filing term 07.01": "07.01",
-    "Legacy secondary filing term 07.02": "07.02",
-    "Legacy secondary filing term 07.03": "07.03",
-    "Legacy secondary filing term 07.04": "07.04",
+    "生物学基础": "06.01",
+    "生物类群科学": "06.02",
+    "生物技术相关科学": "06.03",
+    "医学基础": "07.01",
+    "临床医学": "07.02",
+    "公共卫生与健康科学": "07.03",
+    "药学与生物医药": "07.04",
     "Legacy secondary filing term 08.01": "08.01",
     "Legacy secondary filing term 08.05": "08.05",
     "Legacy secondary filing term 09.01": "09.01",
@@ -420,130 +420,132 @@
     {
       "secondary_code": "03.01",
       "parent_primary_code": "03",
-      "label": "Legacy secondary filing term 03.01",
-      "definition": "Provisional legacy secondary filing term 03.01 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "化学总论与化学方法",
+      "definition": "Library-tree normalized secondary term for 化学总论与化学方法 under primary module 03; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Chemical theory or philosophy.",
+        "Chemometrics, analytical/testing methods, or chemical informatics."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Reaction/synthesis/catalysis-centric tasks belong in 03.03.",
+        "Molecule-design or chemical-space-search tasks belong in 03.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "03.02",
       "parent_primary_code": "03",
-      "label": "Legacy secondary filing term 03.02",
-      "definition": "Provisional legacy secondary filing term 03.02 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "基础化学",
+      "definition": "Library-tree normalized secondary term for 基础化学 under primary module 03; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Core chemistry objects and properties.",
+        "Inorganic, organic, analytical, physical, structural, polymer, coordination, electro-, photo-, surface/interface, or theoretical chemistry."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Route-planning, catalysis, or reaction-design-heavy tasks belong in 03.03.",
+        "Molecule-design or medicinal-chemistry optimization tasks belong in 03.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "03.03",
       "parent_primary_code": "03",
-      "label": "Legacy secondary filing term 03.03",
-      "definition": "Provisional legacy secondary filing term 03.03 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "合成、反应与催化",
+      "definition": "Library-tree normalized secondary term for 合成、反应与催化 under primary module 03; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Synthesis, reaction, catalysis, mechanism, route planning, or green-chemistry tasks."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Method-only chemistry support work belongs in 03.01.",
+        "Molecule-design or chemical-space exploration belongs in 03.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "03.04",
       "parent_primary_code": "03",
-      "label": "Legacy secondary filing term 03.04",
-      "definition": "Provisional legacy secondary filing term 03.04 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "分子设计与化学空间探索",
+      "definition": "Library-tree normalized secondary term for 分子设计与化学空间探索 under primary module 03; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Molecule generation/design, small-molecule property optimization, supramolecular chemistry, chemical biology, medicinal chemistry, energy chemistry, or environmental chemistry."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Reaction, synthesis, or catalysis optimization belongs in 03.03.",
+        "Materials-object optimization belongs in 04.xx rather than 03.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "04.01",
       "parent_primary_code": "04",
-      "label": "Legacy secondary filing term 04.01",
-      "definition": "Provisional legacy secondary filing term 04.01 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "材料基础",
+      "definition": "Library-tree normalized secondary term for 材料基础 under primary module 04; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Material physics, material chemistry, material characterization, or materials informatics/computation."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Family-specific structural/inorganic materials belong in 04.02.",
+        "Energy/electronic/device materials belong in 04.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "04.02",
       "parent_primary_code": "04",
-      "label": "Legacy secondary filing term 04.02",
-      "definition": "Provisional legacy secondary filing term 04.02 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "结构材料与无机材料",
+      "definition": "Library-tree normalized secondary term for 结构材料与无机材料 under primary module 04; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Metals, alloys, inorganic nonmetallic materials, ceramics, crystals, or composites."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Soft-matter and functional-material tasks belong in 04.03.",
+        "Energy/electronic/device materials belong in 04.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "04.03",
       "parent_primary_code": "04",
-      "label": "Legacy secondary filing term 04.03",
-      "definition": "Provisional legacy secondary filing term 04.03 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "软物质与功能材料",
+      "definition": "Library-tree normalized secondary term for 软物质与功能材料 under primary module 04; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Polymers, nanomaterials, biomaterials, smart materials, or porous materials."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Structural/inorganic material families belong in 04.02.",
+        "Energy/electronic/device materials belong in 04.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "04.04",
       "parent_primary_code": "04",
-      "label": "Legacy secondary filing term 04.04",
-      "definition": "Provisional legacy secondary filing term 04.04 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "能源、电子与器件材料",
+      "definition": "Library-tree normalized secondary term for 能源、电子与器件材料 under primary module 04; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Energy materials, battery materials, catalytic materials, semiconductors, optoelectronic materials, or magnetic materials."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "General materials characterization/informatics belongs in 04.01.",
+        "Soft-matter or generic functional-material tasks belong in 04.03 unless the direct object is device/energy/electronic material."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "05.01",
@@ -612,114 +614,117 @@
     {
       "secondary_code": "06.01",
       "parent_primary_code": "06",
-      "label": "Legacy secondary filing term 06.01",
-      "definition": "Provisional legacy secondary filing term 06.01 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "生物学基础",
+      "definition": "Library-tree normalized secondary term for 生物学基础 under primary module 06; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Basic biology objects and mechanisms.",
+        "Cell, molecular, biochemical, genetic, developmental, evolutionary, ecological, systems, synthetic, bioinformatics, or computational biology."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Organism/taxon-specific tasks belong in 06.02.",
+        "Omics/structure/protein/scRNA/biomanufacturing-heavy tasks belong in 06.03."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "06.02",
       "parent_primary_code": "06",
-      "label": "Legacy secondary filing term 06.02",
-      "definition": "Provisional legacy secondary filing term 06.02 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "生物类群科学",
+      "definition": "Library-tree normalized secondary term for 生物类群科学 under primary module 06; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Specific organismal or taxonomic groups such as microbes, viruses, plants, animals, insects, marine organisms, neurobiology, or immunology."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "General molecular/cellular/system-level biology belongs in 06.01.",
+        "Omics/structure/protein/scRNA/biomanufacturing-heavy tasks belong in 06.03."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "06.03",
       "parent_primary_code": "06",
-      "label": "Legacy secondary filing term 06.03",
-      "definition": "Provisional legacy secondary filing term 06.03 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "生物技术相关科学",
+      "definition": "Library-tree normalized secondary term for 生物技术相关科学 under primary module 06; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Omics-heavy, structure-heavy, protein-focused, single-cell, or biomanufacturing tasks."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Pure disease, clinical, therapeutic, or public-health tasks belong in 07.",
+        "Basic biology without a clear omics/structure/platform-heavy object belongs in 06.01."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "07.01",
       "parent_primary_code": "07",
-      "label": "Legacy secondary filing term 07.01",
-      "definition": "Provisional legacy secondary filing term 07.01 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "医学基础",
+      "definition": "Library-tree normalized secondary term for 医学基础 under primary module 07; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Basic medicine objects and mechanisms such as pathology, physiology, pharmacology, toxicology, medical genetics, immunology, or medical microbiology."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Clinical specialty tasks belong in 07.02.",
+        "Public health/medical informatics tasks belong in 07.03.",
+        "Drug discovery or biopharma translation belongs in 07.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "07.02",
       "parent_primary_code": "07",
-      "label": "Legacy secondary filing term 07.02",
-      "definition": "Provisional legacy secondary filing term 07.02 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "临床医学",
+      "definition": "Library-tree normalized secondary term for 临床医学 under primary module 07; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Clinical specialties, diseases, diagnosis, treatment, patient stratification, or specialty-specific decision support."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Basic pathology/genetics/immunology/pharmacology/toxicology tasks belong in 07.01.",
+        "Public health or medical-informatics tasks belong in 07.03.",
+        "Drug-discovery/biopharma tasks belong in 07.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "07.03",
       "parent_primary_code": "07",
-      "label": "Legacy secondary filing term 07.03",
-      "definition": "Provisional legacy secondary filing term 07.03 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "公共卫生与健康科学",
+      "definition": "Library-tree normalized secondary term for 公共卫生与健康科学 under primary module 07; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Public health, epidemiology, biostatistics, health services, environmental/occupational health, global health, health management, or medical informatics."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Clinical specialty disease-management tasks belong in 07.02.",
+        "Drug-discovery/biopharma tasks belong in 07.04."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "07.04",
       "parent_primary_code": "07",
-      "label": "Legacy secondary filing term 07.04",
-      "definition": "Provisional legacy secondary filing term 07.04 inherited from the current master list; retained for first-pass discipline filing and review, not yet a fully normalized canonical secondary taxonomy term.",
+      "label": "药学与生物医药",
+      "definition": "Library-tree normalized secondary term for 药学与生物医药 under primary module 07; use when the paper's direct scientific object falls at this module-internal subject band.",
       "include": [
-        "Records currently carrying this legacy secondary class in the authoritative master list."
+        "Drug discovery, pharmaceutics, pharmaceutical analysis, clinical pharmacy, biopharma, or medical-device-oriented biomedical translation."
       ],
       "exclude": [
-        "Records that only match the primary module but do not currently carry this exact legacy secondary class.",
-        "Any future normalized split or merge that replaces this provisional legacy filing term."
+        "Basic medicine mechanism work belongs in 07.01.",
+        "Public health or medical-informatics work belongs in 07.03 unless the direct object is therapeutic development or biomedical product translation."
       ],
-      "status": "needs_review",
-      "source": "legacy_secondary_class_seed_2026-07-05",
-      "review_status": "unreviewed"
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "08.01",
@@ -961,5 +966,1431 @@
       "source": "legacy_secondary_class_seed_2026-07-05",
       "review_status": "unreviewed"
     }
-  ]
+  ],
+  "tertiary_terms": [
+    {
+      "tertiary_code": "06.01.01",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "普通生物学",
+      "definition": "Normalized tertiary term for 普通生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 普通生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.02",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "细胞生物学",
+      "definition": "Normalized tertiary term for 细胞生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 细胞生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.03",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "分子生物学",
+      "definition": "Normalized tertiary term for 分子生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 分子生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.04",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "生物化学",
+      "definition": "Normalized tertiary term for 生物化学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物化学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.05",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "生物物理学",
+      "definition": "Normalized tertiary term for 生物物理学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物物理学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.06",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "遗传学",
+      "definition": "Normalized tertiary term for 遗传学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 遗传学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.07",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "发育生物学",
+      "definition": "Normalized tertiary term for 发育生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 发育生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.08",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "进化生物学",
+      "definition": "Normalized tertiary term for 进化生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 进化生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.09",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "生态学",
+      "definition": "Normalized tertiary term for 生态学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生态学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.10",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "系统生物学",
+      "definition": "Normalized tertiary term for 系统生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 系统生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.11",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "合成生物学",
+      "definition": "Normalized tertiary term for 合成生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 合成生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.12",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "生物信息学",
+      "definition": "Normalized tertiary term for 生物信息学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物信息学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.01.13",
+      "parent_secondary_code": "06.01",
+      "parent_primary_code": "06",
+      "label": "计算生物学",
+      "definition": "Normalized tertiary term for 计算生物学 under 生物学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 计算生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.01",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "微生物学",
+      "definition": "Normalized tertiary term for 微生物学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 微生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.02",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "病毒学",
+      "definition": "Normalized tertiary term for 病毒学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 病毒学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.03",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "植物学",
+      "definition": "Normalized tertiary term for 植物学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 植物学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.04",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "动物学",
+      "definition": "Normalized tertiary term for 动物学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 动物学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.05",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "昆虫学",
+      "definition": "Normalized tertiary term for 昆虫学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 昆虫学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.06",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "海洋生物学",
+      "definition": "Normalized tertiary term for 海洋生物学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 海洋生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.07",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "神经生物学",
+      "definition": "Normalized tertiary term for 神经生物学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 神经生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.02.08",
+      "parent_secondary_code": "06.02",
+      "parent_primary_code": "06",
+      "label": "免疫学",
+      "definition": "Normalized tertiary term for 免疫学 under 生物类群科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 免疫学.",
+        "Module-internal evidence that is more specific than the parent band 生物类群科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物类群科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.01",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "基因组学",
+      "definition": "Normalized tertiary term for 基因组学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 基因组学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.02",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "蛋白质组学",
+      "definition": "Normalized tertiary term for 蛋白质组学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 蛋白质组学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.03",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "代谢组学",
+      "definition": "Normalized tertiary term for 代谢组学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 代谢组学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.04",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "单细胞生物学",
+      "definition": "Normalized tertiary term for 单细胞生物学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 单细胞生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.05",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "结构生物学",
+      "definition": "Normalized tertiary term for 结构生物学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 结构生物学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.06",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "蛋白质科学",
+      "definition": "Normalized tertiary term for 蛋白质科学 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 蛋白质科学.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "06.03.07",
+      "parent_secondary_code": "06.03",
+      "parent_primary_code": "06",
+      "label": "生物制造",
+      "definition": "Normalized tertiary term for 生物制造 under 生物技术相关科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物制造.",
+        "Module-internal evidence that is more specific than the parent band 生物技术相关科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 生物技术相关科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.01",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "解剖学",
+      "definition": "Normalized tertiary term for 解剖学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 解剖学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.02",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "组织学与胚胎学",
+      "definition": "Normalized tertiary term for 组织学与胚胎学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 组织学与胚胎学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.03",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "生理学",
+      "definition": "Normalized tertiary term for 生理学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生理学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.04",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "病理学",
+      "definition": "Normalized tertiary term for 病理学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 病理学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.05",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "病理生理学",
+      "definition": "Normalized tertiary term for 病理生理学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 病理生理学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.06",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "药理学",
+      "definition": "Normalized tertiary term for 药理学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 药理学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.07",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "毒理学",
+      "definition": "Normalized tertiary term for 毒理学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 毒理学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.08",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "医学遗传学",
+      "definition": "Normalized tertiary term for 医学遗传学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 医学遗传学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.09",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "医学免疫学",
+      "definition": "Normalized tertiary term for 医学免疫学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 医学免疫学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.01.10",
+      "parent_secondary_code": "07.01",
+      "parent_primary_code": "07",
+      "label": "医学微生物学",
+      "definition": "Normalized tertiary term for 医学微生物学 under 医学基础; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 医学微生物学.",
+        "Module-internal evidence that is more specific than the parent band 医学基础."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 医学基础 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.01",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "内科学",
+      "definition": "Normalized tertiary term for 内科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 内科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.02",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "外科学",
+      "definition": "Normalized tertiary term for 外科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 外科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.03",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "儿科学",
+      "definition": "Normalized tertiary term for 儿科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 儿科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.04",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "妇产科学",
+      "definition": "Normalized tertiary term for 妇产科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 妇产科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.05",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "肿瘤学",
+      "definition": "Normalized tertiary term for 肿瘤学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 肿瘤学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.06",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "神经病学",
+      "definition": "Normalized tertiary term for 神经病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 神经病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.07",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "精神病学",
+      "definition": "Normalized tertiary term for 精神病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 精神病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.08",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "感染病学",
+      "definition": "Normalized tertiary term for 感染病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 感染病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.09",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "心血管病学",
+      "definition": "Normalized tertiary term for 心血管病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 心血管病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.10",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "呼吸病学",
+      "definition": "Normalized tertiary term for 呼吸病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 呼吸病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.11",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "消化病学",
+      "definition": "Normalized tertiary term for 消化病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 消化病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.12",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "内分泌与代谢病学",
+      "definition": "Normalized tertiary term for 内分泌与代谢病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 内分泌与代谢病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.13",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "肾脏病学",
+      "definition": "Normalized tertiary term for 肾脏病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 肾脏病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.14",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "皮肤病与性病学",
+      "definition": "Normalized tertiary term for 皮肤病与性病学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 皮肤病与性病学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.15",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "眼科学",
+      "definition": "Normalized tertiary term for 眼科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 眼科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.16",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "耳鼻咽喉科学",
+      "definition": "Normalized tertiary term for 耳鼻咽喉科学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 耳鼻咽喉科学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.17",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "口腔医学",
+      "definition": "Normalized tertiary term for 口腔医学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 口腔医学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.18",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "康复医学",
+      "definition": "Normalized tertiary term for 康复医学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 康复医学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.02.19",
+      "parent_secondary_code": "07.02",
+      "parent_primary_code": "07",
+      "label": "急诊医学与重症医学",
+      "definition": "Normalized tertiary term for 急诊医学与重症医学 under 临床医学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 急诊医学与重症医学.",
+        "Module-internal evidence that is more specific than the parent band 临床医学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 临床医学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.01",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "流行病学",
+      "definition": "Normalized tertiary term for 流行病学 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 流行病学.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.02",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "生物统计学",
+      "definition": "Normalized tertiary term for 生物统计学 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物统计学.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.03",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "卫生政策与卫生服务研究",
+      "definition": "Normalized tertiary term for 卫生政策与卫生服务研究 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 卫生政策与卫生服务研究.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.04",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "营养科学",
+      "definition": "Normalized tertiary term for 营养科学 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 营养科学.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.05",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "职业卫生与环境卫生",
+      "definition": "Normalized tertiary term for 职业卫生与环境卫生 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 职业卫生与环境卫生.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.06",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "全球健康",
+      "definition": "Normalized tertiary term for 全球健康 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 全球健康.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.07",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "健康管理",
+      "definition": "Normalized tertiary term for 健康管理 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 健康管理.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.03.08",
+      "parent_secondary_code": "07.03",
+      "parent_primary_code": "07",
+      "label": "医学信息学",
+      "definition": "Normalized tertiary term for 医学信息学 under 公共卫生与健康科学; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 医学信息学.",
+        "Module-internal evidence that is more specific than the parent band 公共卫生与健康科学."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 公共卫生与健康科学 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.01",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "药物发现",
+      "definition": "Normalized tertiary term for 药物发现 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 药物发现.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.02",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "药剂学",
+      "definition": "Normalized tertiary term for 药剂学 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 药剂学.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.03",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "药物分析",
+      "definition": "Normalized tertiary term for 药物分析 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 药物分析.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.04",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "临床药学",
+      "definition": "Normalized tertiary term for 临床药学 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 临床药学.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.05",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "生物制药",
+      "definition": "Normalized tertiary term for 生物制药 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 生物制药.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "07.04.06",
+      "parent_secondary_code": "07.04",
+      "parent_primary_code": "07",
+      "label": "医疗器械科学",
+      "definition": "Normalized tertiary term for 医疗器械科学 under 药学与生物医药; assign only when first-hand evidence supports this object/task layer rather than only the broader parent secondary band.",
+      "include": [
+        "Direct experiments, validations, benchmark tasks, case studies, or reported results centered on 医疗器械科学.",
+        "Module-internal evidence that is more specific than the parent band 药学与生物医药."
+      ],
+      "exclude": [
+        "Records that can only be justified at the broader 药学与生物医药 level.",
+        "Cases whose direct object fits a different sibling tertiary term better."
+      ],
+      "status": "active",
+      "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
+      "review_status": "reviewed"
+    }
+  ],
+  "tertiary_code_to_label": {
+    "06.01.01": "普通生物学",
+    "06.01.02": "细胞生物学",
+    "06.01.03": "分子生物学",
+    "06.01.04": "生物化学",
+    "06.01.05": "生物物理学",
+    "06.01.06": "遗传学",
+    "06.01.07": "发育生物学",
+    "06.01.08": "进化生物学",
+    "06.01.09": "生态学",
+    "06.01.10": "系统生物学",
+    "06.01.11": "合成生物学",
+    "06.01.12": "生物信息学",
+    "06.01.13": "计算生物学",
+    "06.02.01": "微生物学",
+    "06.02.02": "病毒学",
+    "06.02.03": "植物学",
+    "06.02.04": "动物学",
+    "06.02.05": "昆虫学",
+    "06.02.06": "海洋生物学",
+    "06.02.07": "神经生物学",
+    "06.02.08": "免疫学",
+    "06.03.01": "基因组学",
+    "06.03.02": "蛋白质组学",
+    "06.03.03": "代谢组学",
+    "06.03.04": "单细胞生物学",
+    "06.03.05": "结构生物学",
+    "06.03.06": "蛋白质科学",
+    "06.03.07": "生物制造",
+    "07.01.01": "解剖学",
+    "07.01.02": "组织学与胚胎学",
+    "07.01.03": "生理学",
+    "07.01.04": "病理学",
+    "07.01.05": "病理生理学",
+    "07.01.06": "药理学",
+    "07.01.07": "毒理学",
+    "07.01.08": "医学遗传学",
+    "07.01.09": "医学免疫学",
+    "07.01.10": "医学微生物学",
+    "07.02.01": "内科学",
+    "07.02.02": "外科学",
+    "07.02.03": "儿科学",
+    "07.02.04": "妇产科学",
+    "07.02.05": "肿瘤学",
+    "07.02.06": "神经病学",
+    "07.02.07": "精神病学",
+    "07.02.08": "感染病学",
+    "07.02.09": "心血管病学",
+    "07.02.10": "呼吸病学",
+    "07.02.11": "消化病学",
+    "07.02.12": "内分泌与代谢病学",
+    "07.02.13": "肾脏病学",
+    "07.02.14": "皮肤病与性病学",
+    "07.02.15": "眼科学",
+    "07.02.16": "耳鼻咽喉科学",
+    "07.02.17": "口腔医学",
+    "07.02.18": "康复医学",
+    "07.02.19": "急诊医学与重症医学",
+    "07.03.01": "流行病学",
+    "07.03.02": "生物统计学",
+    "07.03.03": "卫生政策与卫生服务研究",
+    "07.03.04": "营养科学",
+    "07.03.05": "职业卫生与环境卫生",
+    "07.03.06": "全球健康",
+    "07.03.07": "健康管理",
+    "07.03.08": "医学信息学",
+    "07.04.01": "药物发现",
+    "07.04.02": "药剂学",
+    "07.04.03": "药物分析",
+    "07.04.04": "临床药学",
+    "07.04.05": "生物制药",
+    "07.04.06": "医疗器械科学"
+  },
+  "label_to_tertiary_code": {
+    "普通生物学": "06.01.01",
+    "细胞生物学": "06.01.02",
+    "分子生物学": "06.01.03",
+    "生物化学": "06.01.04",
+    "生物物理学": "06.01.05",
+    "遗传学": "06.01.06",
+    "发育生物学": "06.01.07",
+    "进化生物学": "06.01.08",
+    "生态学": "06.01.09",
+    "系统生物学": "06.01.10",
+    "合成生物学": "06.01.11",
+    "生物信息学": "06.01.12",
+    "计算生物学": "06.01.13",
+    "微生物学": "06.02.01",
+    "病毒学": "06.02.02",
+    "植物学": "06.02.03",
+    "动物学": "06.02.04",
+    "昆虫学": "06.02.05",
+    "海洋生物学": "06.02.06",
+    "神经生物学": "06.02.07",
+    "免疫学": "06.02.08",
+    "基因组学": "06.03.01",
+    "蛋白质组学": "06.03.02",
+    "代谢组学": "06.03.03",
+    "单细胞生物学": "06.03.04",
+    "结构生物学": "06.03.05",
+    "蛋白质科学": "06.03.06",
+    "生物制造": "06.03.07",
+    "解剖学": "07.01.01",
+    "组织学与胚胎学": "07.01.02",
+    "生理学": "07.01.03",
+    "病理学": "07.01.04",
+    "病理生理学": "07.01.05",
+    "药理学": "07.01.06",
+    "毒理学": "07.01.07",
+    "医学遗传学": "07.01.08",
+    "医学免疫学": "07.01.09",
+    "医学微生物学": "07.01.10",
+    "内科学": "07.02.01",
+    "外科学": "07.02.02",
+    "儿科学": "07.02.03",
+    "妇产科学": "07.02.04",
+    "肿瘤学": "07.02.05",
+    "神经病学": "07.02.06",
+    "精神病学": "07.02.07",
+    "感染病学": "07.02.08",
+    "心血管病学": "07.02.09",
+    "呼吸病学": "07.02.10",
+    "消化病学": "07.02.11",
+    "内分泌与代谢病学": "07.02.12",
+    "肾脏病学": "07.02.13",
+    "皮肤病与性病学": "07.02.14",
+    "眼科学": "07.02.15",
+    "耳鼻咽喉科学": "07.02.16",
+    "口腔医学": "07.02.17",
+    "康复医学": "07.02.18",
+    "急诊医学与重症医学": "07.02.19",
+    "流行病学": "07.03.01",
+    "生物统计学": "07.03.02",
+    "卫生政策与卫生服务研究": "07.03.03",
+    "营养科学": "07.03.04",
+    "职业卫生与环境卫生": "07.03.05",
+    "全球健康": "07.03.06",
+    "健康管理": "07.03.07",
+    "医学信息学": "07.03.08",
+    "药物发现": "07.04.01",
+    "药剂学": "07.04.02",
+    "药物分析": "07.04.03",
+    "临床药学": "07.04.04",
+    "生物制药": "07.04.05",
+    "医疗器械科学": "07.04.06"
+  }
 }

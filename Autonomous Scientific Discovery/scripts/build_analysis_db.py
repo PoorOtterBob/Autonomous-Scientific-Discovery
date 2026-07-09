@@ -18,6 +18,7 @@ PDF_MANIFEST_JSON = DATA_DIR / 'pdf_manifest.json'
 MISSING_PDF_JSON = DATA_DIR / 'missing_pdf_manifest.json'
 NOTE_MANIFEST_JSON = DATA_DIR / 'note_manifest.json'
 DISCIPLINE_CODE_ASSIGNMENTS_JSONL = DATA_DIR / 'discipline_code_assignments.jsonl'
+PAPER_MODULE_TAXONOMY_ASSIGNMENTS_JSONL = DATA_DIR / 'paper_module_taxonomy_assignments.jsonl'
 DISCIPLINE_LOCAL_CODE_REGISTRY_JSONL = DATA_DIR / 'discipline_local_code_registry.jsonl'
 ASSET_MANIFEST_JSONL = REGISTRY_DIR / 'asset_manifest.jsonl'
 PDF_ARCHIVE_REGISTRY_JSONL = REGISTRY_DIR / 'pdf_archive_registry.jsonl'
@@ -32,6 +33,7 @@ OWNER_GUARDED_PATHS = {
     CLASSIFICATION_CODE_INDEX_JSON.resolve(),
     CHANGE_LOG_JSONL.resolve(),
     DISCIPLINE_CODE_ASSIGNMENTS_JSONL.resolve(),
+    PAPER_MODULE_TAXONOMY_ASSIGNMENTS_JSONL.resolve(),
 }
 FORMAL_MODULES = {f'{idx:02d}' for idx in range(1, 12)}
 MODULE_ROW_FIELDNAMES = [
@@ -58,7 +60,7 @@ DISCIPLINE_LOCAL_CODE_REGISTRY_FIELDS = [
     'assignment_status', 'assigned_at', 'assigned_by', 'retired_at', 'redirected_to_code',
     'assignment_reason', 'pending_reason', 'primary_module_for_filing',
     'primary_module_confidence', 'primary_module_assignment_rule', 'primary_module_override_reason',
-    'primary_taxonomy_code_2lvl', 'legacy_secondary_class', 'secondary_class_source', 'secondary_class_confidence', 'secondary_class_review_status', 'scientific_object_modules',
+    'primary_taxonomy_code_2lvl', 'primary_taxonomy_code_3lvl', 'legacy_secondary_class', 'legacy_tertiary_class', 'secondary_class_source', 'secondary_class_confidence', 'secondary_class_review_status', 'scientific_object_modules',
     'general_method_bucket', 'title', 'note_path', 'pdf_path', 'active_confirmed_core',
     'is_derived_snapshot', 'generated_at', 'generated_by', 'source_commit', 'worktree_dirty',
 ]
@@ -493,7 +495,9 @@ def validate_discipline_local_code_registry_outputs(
                 row['primary_module_assignment_rule'],
                 row['primary_module_override_reason'],
                 blank_to_none(row['primary_taxonomy_code_2lvl']),
+                blank_to_none(row['primary_taxonomy_code_3lvl']),
                 row['legacy_secondary_class'],
+                blank_to_none(row['legacy_tertiary_class']),
                 row['secondary_class_source'],
                 row['secondary_class_confidence'],
                 row['secondary_class_review_status'],
@@ -535,7 +539,9 @@ def validate_discipline_local_code_registry_outputs(
                 primary_module_assignment_rule,
                 primary_module_override_reason,
                 primary_taxonomy_code_2lvl,
+                primary_taxonomy_code_3lvl,
                 legacy_secondary_class,
+                legacy_tertiary_class,
                 secondary_class_source,
                 secondary_class_confidence,
                 secondary_class_review_status,
@@ -571,6 +577,13 @@ def validate_discipline_local_code_registry_outputs(
                         OR primary_module_for_filing <> substr(discipline_local_code, 1, 2)
                         OR primary_module_for_filing <> substr(primary_taxonomy_code_2lvl, 1, 2)
                         OR legacy_secondary_class <> primary_taxonomy_code_2lvl
+                        OR (
+                            primary_taxonomy_code_3lvl IS NOT NULL
+                            AND (
+                                primary_taxonomy_code_3lvl NOT LIKE primary_taxonomy_code_2lvl || '.%'
+                                OR legacy_tertiary_class <> primary_taxonomy_code_3lvl
+                            )
+                        )
                     )
                 )
                 OR (
@@ -579,6 +592,8 @@ def validate_discipline_local_code_registry_outputs(
                         discipline_local_code IS NOT NULL
                         OR discipline_local_rank IS NOT NULL
                         OR discipline_display_order NOT LIKE '%PENDING-ASD-%'
+                        OR primary_taxonomy_code_3lvl IS NOT NULL
+                        OR legacy_tertiary_class IS NOT NULL
                         OR (
                             pending_reason = 'missing_primary_module_for_filing'
                             AND primary_module_for_filing IS NOT NULL
@@ -595,6 +610,8 @@ def validate_discipline_local_code_registry_outputs(
                         discipline_local_code IS NOT NULL
                         OR discipline_local_rank IS NOT NULL
                         OR discipline_display_order NOT LIKE 'GM-PENDING-ASD-%'
+                        OR primary_taxonomy_code_3lvl IS NOT NULL
+                        OR legacy_tertiary_class IS NOT NULL
                         OR primary_module_for_filing IS NOT NULL
                         OR general_method_bucket <> '01.04_general_asd_methods_without_concrete_object_experiments'
                         OR scientific_object_modules_json <> '[]'
@@ -877,12 +894,15 @@ def validate_discipline_sqlite_constraints() -> None:
         "assignment_status IN ('retired_code', 'redirected_code') OR retired_at IS NULL",
         "assignment_status NOT IN ('retired_code', 'redirected_code') OR retired_at IS NOT NULL",
         "source_legacy_secondary_class = primary_taxonomy_code_2lvl",
+        "source_legacy_tertiary_class = primary_taxonomy_code_3lvl",
         "source_primary_module_for_filing = substr(discipline_local_code, 1, 2)",
         "source_primary_module_for_filing = substr(primary_taxonomy_code_2lvl, 1, 2)",
         "pending_reason = 'missing_primary_module_for_filing'",
         "assignment_status <> 'non_discipline_general_method' OR source_primary_module_for_filing IS NULL",
         "substr(discipline_local_code, 1, 2) = substr(primary_taxonomy_code_2lvl, 1, 2)",
         "substr(discipline_local_code, 4, 2) = substr(primary_taxonomy_code_2lvl, 4, 2)",
+        "primary_taxonomy_code_3lvl IS NULL",
+        "primary_taxonomy_code_3lvl LIKE primary_taxonomy_code_2lvl || '.%'",
     ):
         assert_build_condition(
             fragment in normalized_assignment_sql,
@@ -913,6 +933,7 @@ def validate_discipline_sqlite_constraints() -> None:
         "primary_module_for_filing = substr(discipline_local_code, 1, 2)",
         "primary_module_for_filing = substr(primary_taxonomy_code_2lvl, 1, 2)",
         "legacy_secondary_class = primary_taxonomy_code_2lvl",
+        "legacy_tertiary_class = primary_taxonomy_code_3lvl",
         "pending_reason = 'missing_primary_module_for_filing'",
         "general_method_bucket = '01.04_general_asd_methods_without_concrete_object_experiments'",
         "scientific_object_modules_json = '[]'",
@@ -1257,16 +1278,18 @@ def validate_reference_owner_foreign_keys() -> None:
         'classification_terms SQLite table is missing expected foreign key to taxonomy_index(code) for parent_primary_code',
     )
     assert_build_condition(
-        "term_level IN ('primary', 'secondary')" in classification_terms_sql
+        "term_level IN ('primary', 'secondary', 'tertiary')" in classification_terms_sql
         and "term_level = 'primary'" in classification_terms_sql
-        and "term_level = 'secondary'" in classification_terms_sql,
+        and "term_level = 'secondary'" in classification_terms_sql
+        and "term_level = 'tertiary'" in classification_terms_sql,
         'classification_terms SQLite table is missing expected term-level CHECK constraints',
     )
     for fragment in (
         "status IN ('active', 'deprecated', 'needs_review')",
         "review_status IS NULL OR review_status IN ('unreviewed', 'reviewed', 'needs_split', 'needs_merge')",
         "term_level = 'primary' AND review_status IS NULL",
-        "term_level = 'secondary' AND review_status IS NOT NULL",
+        "term_level IN ('secondary', 'tertiary') AND review_status IS NOT NULL",
+        "parent_secondary_code IS NULL",
     ):
         assert_build_condition(
             fragment in classification_terms_sql,
@@ -1484,6 +1507,7 @@ def validate_owner_loaded_and_inventory_tables(
                 row['taxonomy_code'],
                 row['term_level'],
                 row['parent_primary_code'],
+                row['parent_secondary_code'],
                 row['label'],
                 row['definition'],
                 row['include_json'],
@@ -1503,6 +1527,7 @@ def validate_owner_loaded_and_inventory_tables(
                 row['paper_id'],
                 row['discipline_local_code'],
                 row['primary_taxonomy_code_2lvl'],
+                row.get('primary_taxonomy_code_3lvl'),
                 row['assignment_status'],
                 row['assigned_at'],
                 row['assigned_by'],
@@ -1512,6 +1537,7 @@ def validate_owner_loaded_and_inventory_tables(
                 row['pending_reason'],
                 row['source_primary_module_for_filing'],
                 row['source_legacy_secondary_class'],
+                row.get('source_legacy_tertiary_class'),
                 row['schema_version'],
             )
             for row in discipline_code_assignments
@@ -1590,6 +1616,7 @@ def validate_owner_loaded_and_inventory_tables(
                 taxonomy_code,
                 term_level,
                 parent_primary_code,
+                parent_secondary_code,
                 label,
                 definition,
                 include_json,
@@ -1608,6 +1635,7 @@ def validate_owner_loaded_and_inventory_tables(
                 paper_id,
                 discipline_local_code,
                 primary_taxonomy_code_2lvl,
+                primary_taxonomy_code_3lvl,
                 assignment_status,
                 assigned_at,
                 assigned_by,
@@ -1617,6 +1645,7 @@ def validate_owner_loaded_and_inventory_tables(
                 pending_reason,
                 source_primary_module_for_filing,
                 source_legacy_secondary_class,
+                source_legacy_tertiary_class,
                 schema_version
             FROM discipline_code_assignments
             ORDER BY assignment_id
@@ -1721,18 +1750,33 @@ def validate_owner_loaded_and_inventory_tables(
                         OR substr(discipline_local_code, 4, 2) <> substr(primary_taxonomy_code_2lvl, 4, 2)
                         OR source_primary_module_for_filing <> substr(discipline_local_code, 1, 2)
                         OR source_primary_module_for_filing <> substr(primary_taxonomy_code_2lvl, 1, 2)
+                        OR (
+                            primary_taxonomy_code_3lvl IS NOT NULL
+                            AND (
+                                primary_taxonomy_code_3lvl NOT LIKE primary_taxonomy_code_2lvl || '.%'
+                                OR source_legacy_tertiary_class IS NULL
+                                OR source_legacy_tertiary_class <> primary_taxonomy_code_3lvl
+                            )
+                        )
                     )
                 )
                 OR (
                     assignment_status = 'pending_secondary'
                     AND (
+                        primary_taxonomy_code_3lvl IS NOT NULL
+                        OR source_legacy_tertiary_class IS NOT NULL
+                        OR
                         (pending_reason = 'missing_primary_module_for_filing' AND source_primary_module_for_filing IS NOT NULL)
                         OR (pending_reason <> 'missing_primary_module_for_filing' AND (source_primary_module_for_filing IS NULL OR source_primary_module_for_filing = ''))
                     )
                 )
                 OR (
                     assignment_status = 'non_discipline_general_method'
-                    AND source_primary_module_for_filing IS NOT NULL
+                    AND (
+                        source_primary_module_for_filing IS NOT NULL
+                        OR primary_taxonomy_code_3lvl IS NOT NULL
+                        OR source_legacy_tertiary_class IS NOT NULL
+                    )
                 )
             '''
         ).fetchone()[0]
@@ -2192,6 +2236,7 @@ def build_classification_term_rows(classification_code_index: dict[str, object])
             'taxonomy_code': term['primary_code'],
             'term_level': 'primary',
             'parent_primary_code': None,
+            'parent_secondary_code': None,
             'label': term['label'],
             'definition': term['definition'],
             'include_json': json.dumps(term.get('include', []), ensure_ascii=False),
@@ -2205,6 +2250,21 @@ def build_classification_term_rows(classification_code_index: dict[str, object])
             'taxonomy_code': term['secondary_code'],
             'term_level': 'secondary',
             'parent_primary_code': term['parent_primary_code'],
+            'parent_secondary_code': None,
+            'label': term['label'],
+            'definition': term['definition'],
+            'include_json': json.dumps(term.get('include', []), ensure_ascii=False),
+            'exclude_json': json.dumps(term.get('exclude', []), ensure_ascii=False),
+            'status': term['status'],
+            'source': term['source'],
+            'review_status': term.get('review_status'),
+        })
+    for term in classification_code_index.get('tertiary_terms', []):
+        rows.append({
+            'taxonomy_code': term['tertiary_code'],
+            'term_level': 'tertiary',
+            'parent_primary_code': term['parent_primary_code'],
+            'parent_secondary_code': term['parent_secondary_code'],
             'label': term['label'],
             'definition': term['definition'],
             'include_json': json.dumps(term.get('include', []), ensure_ascii=False),
@@ -2224,6 +2284,7 @@ def build_sqlite(
     note_manifest: list[dict[str, object]],
     module_rows: list[dict[str, object]],
     discipline_code_assignments: list[dict[str, object]],
+    paper_module_taxonomy_assignments: list[dict[str, object]],
     discipline_local_code_registry: list[dict[str, object]],
     asset_manifest: list[dict[str, object]],
     pdf_archive_registry: list[dict[str, object]],
@@ -2238,8 +2299,9 @@ def build_sqlite(
         CREATE TABLE taxonomy_index (code TEXT PRIMARY KEY, label TEXT NOT NULL, kind TEXT NOT NULL);
         CREATE TABLE classification_terms (
             taxonomy_code TEXT NOT NULL,
-            term_level TEXT NOT NULL CHECK (term_level IN ('primary', 'secondary')),
+            term_level TEXT NOT NULL CHECK (term_level IN ('primary', 'secondary', 'tertiary')),
             parent_primary_code TEXT REFERENCES taxonomy_index(code),
+            parent_secondary_code TEXT,
             label TEXT NOT NULL,
             definition TEXT NOT NULL,
             include_json TEXT NOT NULL,
@@ -2248,12 +2310,20 @@ def build_sqlite(
             source TEXT NOT NULL,
             review_status TEXT CHECK (review_status IS NULL OR review_status IN ('unreviewed', 'reviewed', 'needs_split', 'needs_merge')),
             CHECK (
-                (term_level = 'primary' AND parent_primary_code IS NULL)
-                OR (term_level = 'secondary' AND parent_primary_code IS NOT NULL)
+                (term_level = 'primary' AND parent_primary_code IS NULL AND parent_secondary_code IS NULL)
+                OR (term_level = 'secondary' AND parent_primary_code IS NOT NULL AND parent_secondary_code IS NULL)
+                OR (term_level = 'tertiary' AND parent_primary_code IS NOT NULL AND parent_secondary_code IS NOT NULL)
             ),
             CHECK (
                 (term_level = 'primary' AND review_status IS NULL)
-                OR (term_level = 'secondary' AND review_status IS NOT NULL)
+                OR (term_level IN ('secondary', 'tertiary') AND review_status IS NOT NULL)
+            ),
+            CHECK (
+                parent_secondary_code IS NULL
+                OR (
+                    parent_secondary_code GLOB '[0-9][0-9].[0-9][0-9]'
+                    AND substr(parent_secondary_code, 1, 2) = parent_primary_code
+                )
             ),
             PRIMARY KEY (taxonomy_code, term_level)
         );
@@ -2348,6 +2418,7 @@ def build_sqlite(
             paper_id TEXT NOT NULL REFERENCES papers(paper_id),
             discipline_local_code TEXT,
             primary_taxonomy_code_2lvl TEXT,
+            primary_taxonomy_code_3lvl TEXT,
             assignment_status TEXT NOT NULL CHECK (
                 assignment_status IN (
                     'active_code',
@@ -2365,6 +2436,7 @@ def build_sqlite(
             pending_reason TEXT,
             source_primary_module_for_filing TEXT REFERENCES taxonomy_index(code),
             source_legacy_secondary_class TEXT,
+            source_legacy_tertiary_class TEXT,
             schema_version INTEGER NOT NULL CHECK (schema_version = 1),
             CHECK (
                 (
@@ -2376,6 +2448,7 @@ def build_sqlite(
                     assignment_status IN ('pending_secondary', 'non_discipline_general_method')
                     AND discipline_local_code IS NULL
                     AND primary_taxonomy_code_2lvl IS NULL
+                    AND primary_taxonomy_code_3lvl IS NULL
                 )
             ),
             CHECK (
@@ -2413,6 +2486,14 @@ def build_sqlite(
                     AND source_primary_module_for_filing <> ''
                     AND source_legacy_secondary_class IS NOT NULL
                     AND source_legacy_secondary_class = primary_taxonomy_code_2lvl
+                    AND (
+                        primary_taxonomy_code_3lvl IS NULL
+                        OR (
+                            source_legacy_tertiary_class IS NOT NULL
+                            AND source_legacy_tertiary_class = primary_taxonomy_code_3lvl
+                            AND primary_taxonomy_code_3lvl LIKE primary_taxonomy_code_2lvl || '.%'
+                        )
+                    )
                     AND
                     substr(discipline_local_code, 1, 2) = substr(primary_taxonomy_code_2lvl, 1, 2)
                     AND substr(discipline_local_code, 4, 2) = substr(primary_taxonomy_code_2lvl, 4, 2)
@@ -2430,6 +2511,14 @@ def build_sqlite(
             CHECK (
                 assignment_status <> 'non_discipline_general_method'
                 OR source_primary_module_for_filing IS NULL
+            ),
+            CHECK (
+                primary_taxonomy_code_3lvl IS NULL
+                OR primary_taxonomy_code_3lvl GLOB '[0-9][0-9].[0-9][0-9].[0-9][0-9]'
+            ),
+            CHECK (
+                source_legacy_tertiary_class IS NULL
+                OR source_legacy_tertiary_class = primary_taxonomy_code_3lvl
             )
         );
         CREATE UNIQUE INDEX discipline_code_assignments_active_code_unique
@@ -2465,7 +2554,9 @@ def build_sqlite(
             primary_module_assignment_rule TEXT CHECK (primary_module_assignment_rule IS NULL OR primary_module_assignment_rule IN ('', 'main_scientific_object', 'main_validation_object', 'direct_contribution_target', 'substantive_application_object', 'manual_override')),
             primary_module_override_reason TEXT,
             primary_taxonomy_code_2lvl TEXT,
+            primary_taxonomy_code_3lvl TEXT,
             legacy_secondary_class TEXT,
+            legacy_tertiary_class TEXT,
             secondary_class_source TEXT CHECK (secondary_class_source IS NULL OR secondary_class_source IN ('legacy', 'normalized', 'manual_override')),
             secondary_class_confidence TEXT CHECK (secondary_class_confidence IS NULL OR secondary_class_confidence IN ('high', 'medium', 'low')),
             secondary_class_review_status TEXT CHECK (secondary_class_review_status IS NULL OR secondary_class_review_status IN ('unreviewed', 'reviewed', 'needs_split', 'needs_merge')),
@@ -2496,12 +2587,21 @@ def build_sqlite(
                     AND primary_module_for_filing = substr(discipline_local_code, 1, 2)
                     AND primary_module_for_filing = substr(primary_taxonomy_code_2lvl, 1, 2)
                     AND legacy_secondary_class = primary_taxonomy_code_2lvl
+                    AND (
+                        primary_taxonomy_code_3lvl IS NULL
+                        OR (
+                            primary_taxonomy_code_3lvl LIKE primary_taxonomy_code_2lvl || '.%'
+                            AND legacy_tertiary_class = primary_taxonomy_code_3lvl
+                        )
+                    )
                 )
                 OR (
                     assignment_status IN ('pending_secondary', 'non_discipline_general_method')
                     AND discipline_local_code IS NULL
                     AND discipline_local_rank IS NULL
                     AND primary_taxonomy_code_2lvl IS NULL
+                    AND primary_taxonomy_code_3lvl IS NULL
+                    AND legacy_tertiary_class IS NULL
                 )
             ),
             CHECK (
@@ -3045,11 +3145,12 @@ def build_sqlite(
         ])
         classification_term_rows = build_classification_term_rows(classification_code_index)
         change_log_rows = load_jsonl(CHANGE_LOG_JSONL) if CHANGE_LOG_JSONL.exists() else []
-        conn.executemany('INSERT INTO classification_terms VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
+        conn.executemany('INSERT INTO classification_terms VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
             (
                 row['taxonomy_code'],
                 row['term_level'],
                 row['parent_primary_code'],
+                row['parent_secondary_code'],
                 row['label'],
                 row['definition'],
                 row['include_json'],
@@ -3132,12 +3233,13 @@ def build_sqlite(
             )
             for row in general_method_bucket_rows
         ])
-        conn.executemany('INSERT INTO discipline_code_assignments VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
+        conn.executemany('INSERT INTO discipline_code_assignments VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
             (
                 row['assignment_id'],
                 row['paper_id'],
                 row['discipline_local_code'],
                 row['primary_taxonomy_code_2lvl'],
+                row.get('primary_taxonomy_code_3lvl'),
                 row['assignment_status'],
                 row['assigned_at'],
                 row['assigned_by'],
@@ -3147,11 +3249,12 @@ def build_sqlite(
                 row['pending_reason'],
                 row['source_primary_module_for_filing'],
                 row['source_legacy_secondary_class'],
+                row.get('source_legacy_tertiary_class'),
                 row['schema_version'],
             )
             for row in discipline_code_assignments
         ])
-        conn.executemany('INSERT INTO discipline_local_code_registry VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
+        conn.executemany('INSERT INTO discipline_local_code_registry VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
             (
                 row['paper_id'],
                 row['assignment_id'],
@@ -3170,7 +3273,9 @@ def build_sqlite(
                 row['primary_module_assignment_rule'],
                 row['primary_module_override_reason'],
                 blank_to_none(row['primary_taxonomy_code_2lvl']),
+                blank_to_none(row.get('primary_taxonomy_code_3lvl')),
                 row['legacy_secondary_class'],
+                blank_to_none(row.get('legacy_tertiary_class')),
                 row['secondary_class_source'],
                 row['secondary_class_confidence'],
                 row['secondary_class_review_status'],
@@ -3273,6 +3378,7 @@ def main() -> None:
     missing_pdf_manifest = load_json(MISSING_PDF_JSON)
     note_manifest = load_json(NOTE_MANIFEST_JSON)
     discipline_code_assignments = load_jsonl(DISCIPLINE_CODE_ASSIGNMENTS_JSONL)
+    paper_module_taxonomy_assignments = load_jsonl(PAPER_MODULE_TAXONOMY_ASSIGNMENTS_JSONL)
     discipline_local_code_registry = load_jsonl(DISCIPLINE_LOCAL_CODE_REGISTRY_JSONL)
     asset_manifest = load_jsonl(ASSET_MANIFEST_JSONL)
     pdf_archive_registry = load_jsonl(PDF_ARCHIVE_REGISTRY_JSONL)
@@ -3295,6 +3401,7 @@ def main() -> None:
         note_manifest,
         module_rows,
         discipline_code_assignments,
+        paper_module_taxonomy_assignments,
         discipline_local_code_registry,
         asset_manifest,
         pdf_archive_registry,

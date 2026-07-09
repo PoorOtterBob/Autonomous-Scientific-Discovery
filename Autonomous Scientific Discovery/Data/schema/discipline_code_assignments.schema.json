@@ -10,6 +10,7 @@
     "paper_id",
     "discipline_local_code",
     "primary_taxonomy_code_2lvl",
+    "primary_taxonomy_code_3lvl",
     "assignment_status",
     "assigned_at",
     "assigned_by",
@@ -19,6 +20,7 @@
     "pending_reason",
     "source_primary_module_for_filing",
     "source_legacy_secondary_class",
+    "source_legacy_tertiary_class",
     "schema_version"
   ],
   "properties": {
@@ -37,6 +39,10 @@
     "primary_taxonomy_code_2lvl": {
       "type": ["string", "null"],
       "pattern": "^[0-9]{2}\\.[0-9]{2}$"
+    },
+    "primary_taxonomy_code_3lvl": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{2}\\.[0-9]{2}\\.[0-9]{2}$"
     },
     "assignment_status": {
       "type": "string",
@@ -78,6 +84,9 @@
     "source_legacy_secondary_class": {
       "type": ["string", "null"]
     },
+    "source_legacy_tertiary_class": {
+      "type": ["string", "null"]
+    },
     "schema_version": {
       "type": "integer",
       "const": 1
@@ -96,6 +105,9 @@
         "properties": {
           "discipline_local_code": {
             "type": "string"
+          },
+          "source_legacy_secondary_class": {
+            "type": "string"
           }
         }
       }
@@ -111,6 +123,12 @@
       "then": {
         "properties": {
           "discipline_local_code": {
+            "type": "null"
+          },
+          "primary_taxonomy_code_3lvl": {
+            "type": "null"
+          },
+          "source_legacy_tertiary_class": {
             "type": "null"
           }
         }
@@ -144,6 +162,25 @@
         "properties": {
           "redirected_to_code": {
             "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "primary_taxonomy_code_3lvl": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "primary_taxonomy_code_2lvl": {
+            "type": "string"
+          },
+          "source_legacy_tertiary_class": {
+            "type": "string"
           }
         }
       }

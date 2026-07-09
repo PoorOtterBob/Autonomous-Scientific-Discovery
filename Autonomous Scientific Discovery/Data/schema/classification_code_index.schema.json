@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.local/asd/classification_code_index.schema.json",
   "title": "ASD Classification Code Index",
-  "description": "Taxonomy vocabulary owner for primary and secondary ASD classification terms.",
+  "description": "Taxonomy vocabulary owner for primary, secondary, and selected tertiary ASD classification terms.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -11,10 +11,13 @@
     "updated_by",
     "primary_code_to_label",
     "secondary_code_to_label",
+    "tertiary_code_to_label",
     "label_to_primary_code",
     "label_to_secondary_code",
+    "label_to_tertiary_code",
     "primary_terms",
-    "secondary_terms"
+    "secondary_terms",
+    "tertiary_terms"
   ],
   "properties": {
     "schema_version": {
@@ -41,6 +44,12 @@
         "type": "string"
       }
     },
+    "tertiary_code_to_label": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
     "label_to_primary_code": {
       "type": "object",
       "additionalProperties": {
@@ -48,6 +57,12 @@
       }
     },
     "label_to_secondary_code": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "label_to_tertiary_code": {
       "type": "object",
       "additionalProperties": {
         "type": "string"
@@ -63,6 +78,12 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/secondary_term"
+      }
+    },
+    "tertiary_terms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/tertiary_term"
       }
     }
   },
@@ -130,6 +151,64 @@
       ],
       "properties": {
         "secondary_code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}$"
+        },
+        "parent_primary_code": {
+          "type": "string",
+          "pattern": "^(0[1-9]|1[0-1])$"
+        },
+        "label": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "include": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclude": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "$ref": "#/$defs/term_status"
+        },
+        "source": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": ["unreviewed", "reviewed", "needs_split", "needs_merge"]
+        }
+      }
+    },
+    "tertiary_term": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tertiary_code",
+        "parent_secondary_code",
+        "parent_primary_code",
+        "label",
+        "definition",
+        "include",
+        "exclude",
+        "status",
+        "source",
+        "review_status"
+      ],
+      "properties": {
+        "tertiary_code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}\\.[0-9]{2}\\.[0-9]{2}$"
+        },
+        "parent_secondary_code": {
           "type": "string",
           "pattern": "^[0-9]{2}\\.[0-9]{2}$"
         },

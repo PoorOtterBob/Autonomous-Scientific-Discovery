@@ -11,7 +11,8 @@
 | Paper and classification facts | `Paper_Lists/agent_master_paper_list.md` | Paper identity, metadata, inclusion status, legacy class fields, canonical classification overlay, filing module |
 | Source / PDF / progress facts | `Coverage_Check/multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md` | PDF/source/evidence workflow state, source-limited state, progress closeout |
 | Discipline code assignment facts | `Data/discipline_code_assignments.jsonl` | Stable discipline-local code assignments and assignment lifecycle state |
-| Taxonomy vocabulary facts | `Data/classification_code_index.json` | Primary and secondary taxonomy term labels, definitions, include/exclude boundaries, term status |
+| Module-internal taxonomy mapping facts | `Data/paper_module_taxonomy_assignments.jsonl` | Per-paper, per-module secondary/tertiary taxonomy assignments under the multi-module rule |
+| Taxonomy vocabulary facts | `Data/classification_code_index.json` | Primary, secondary, and formalized tertiary taxonomy term labels, definitions, include/exclude boundaries, term status |
 
 ## 2. Core Field Owners
 
@@ -34,8 +35,9 @@
 | `discipline_local_code` | `discipline_code_assignments.jsonl` | registry, CSV, SQLite | Stable shelf/display code; not permanent paper key |
 | `assignment_status` | `discipline_code_assignments.jsonl` | registry, check report, SQLite | Controlled values defined in `discipline_code_assignment_policy.md` |
 | `assigned_at`, `assigned_by`, `retired_at`, `redirected_to_code`, `assignment_reason`, `pending_reason` | `discipline_code_assignments.jsonl` | registry, SQLite | Assignment lifecycle metadata |
+| `module_assignment_id`, `module_context`, module-side `secondary_taxonomy_code`, module-side `tertiary_taxonomy_code`, module-side mapping status | `paper_module_taxonomy_assignments.jsonl` | future registry / SQLite / writeback reports | Multi-module taxonomy owner; separate from single filing-side discipline-local code ledger |
 | `discipline_local_rank` | derived from `discipline_local_code` | registry, CSV, SQLite | `parse_NNN(discipline_local_code)` only; never hand-maintained |
-| taxonomy term label, definition, include/exclude boundary, status, source | `classification_code_index.json` | registry, check report, SQLite `classification_terms` | Taxonomy vocabulary facts, not derived from papers |
+| taxonomy term label, definition, include/exclude boundary, status, source | `classification_code_index.json` | registry, check report, SQLite `classification_terms` | Taxonomy vocabulary facts, not derived from papers; currently includes primary, secondary, and selected tertiary vocabulary |
 | `asset_sha256`, `asset_size_bytes`, `asset_type`, `is_main_text`, `is_supplementary` | generated asset/PDF registry from files + progress | manifests, SQLite | Hash/size come from local files; semantic type comes from progress/export rules |
 
 ## 3. Master-Derived Canonical Lane
@@ -60,6 +62,6 @@ Until master rows receive explicit canonical columns, export code must preserve 
 ## 4. Derived Layer Guardrails
 
 - `Data/registry/*.jsonl`, `papers.jsonl`, CSV exports, manifests, and SQLite tables are derived unless explicitly listed above as owner files.
-- `discipline_code_assignments.jsonl` and `classification_code_index.json` are exceptions inside `Data/`: they own management-code and taxonomy-vocabulary facts.
+- `discipline_code_assignments.jsonl`, `paper_module_taxonomy_assignments.jsonl`, and `classification_code_index.json` are exceptions inside `Data/`: they own management-code or taxonomy-vocabulary facts.
 - Do not fix derived drift by hand-editing derived outputs.
 - If a field conflict is found, repair the owner file, then rerun `export -> check -> build`.

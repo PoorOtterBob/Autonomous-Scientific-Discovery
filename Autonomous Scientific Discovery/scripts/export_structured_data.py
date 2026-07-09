@@ -699,8 +699,13 @@ def load_classification_code_index() -> Dict[str, object]:
     required_keys = (
         "primary_code_to_label",
         "secondary_code_to_label",
+        "tertiary_code_to_label",
+        "label_to_primary_code",
+        "label_to_secondary_code",
+        "label_to_tertiary_code",
         "primary_terms",
         "secondary_terms",
+        "tertiary_terms",
     )
     missing = [key for key in required_keys if key not in payload]
     if missing:
@@ -1029,7 +1034,9 @@ def build_discipline_local_code_registry(
                 "primary_module_assignment_rule": paper["primary_module_assignment_rule"],
                 "primary_module_override_reason": paper["primary_module_override_reason"],
                 "primary_taxonomy_code_2lvl": assignment["primary_taxonomy_code_2lvl"],
+                "primary_taxonomy_code_3lvl": assignment.get("primary_taxonomy_code_3lvl"),
                 "legacy_secondary_class": paper["legacy_secondary_class"],
+                "legacy_tertiary_class": paper["legacy_tertiary_class"],
                 "secondary_class_source": paper["secondary_class_source"],
                 "secondary_class_confidence": paper["secondary_class_confidence"],
                 "secondary_class_review_status": paper["secondary_class_review_status"],

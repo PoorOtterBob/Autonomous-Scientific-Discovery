@@ -15,6 +15,9 @@ DATA_DIR = ROOT / "Data"
 REGISTRY_DIR = DATA_DIR / "registry"
 CLASSIFICATION_CODE_INDEX_PATH = DATA_DIR / "classification_code_index.json"
 DISCIPLINE_CODE_ASSIGNMENTS_PATH = DATA_DIR / "discipline_code_assignments.jsonl"
+PAPER_MODULE_TAXONOMY_ASSIGNMENTS_PATH = (
+    DATA_DIR / "paper_module_taxonomy_assignments.jsonl"
+)
 DISCIPLINE_LOCAL_CODE_REGISTRY_PATH = DATA_DIR / "discipline_local_code_registry.jsonl"
 DISCIPLINE_CODE_INITIAL_ASSIGNMENT_PREVIEW_PATH = (
     DATA_DIR / "discipline_code_initial_assignment_preview.csv"
@@ -27,6 +30,9 @@ CLASSIFICATION_CODE_INDEX_SCHEMA_PATH = (
 )
 DISCIPLINE_CODE_ASSIGNMENTS_SCHEMA_PATH = (
     SCHEMA_DIR / "discipline_code_assignments.schema.json"
+)
+PAPER_MODULE_TAXONOMY_ASSIGNMENTS_SCHEMA_PATH = (
+    SCHEMA_DIR / "paper_module_taxonomy_assignments.schema.json"
 )
 MASTER_PATH = ROOT / "Paper_Lists" / "agent_master_paper_list.md"
 PROGRESS_PATH = (
@@ -300,10 +306,13 @@ def validate_classification_code_index_owner() -> None:
     required_keys = (
         "primary_code_to_label",
         "secondary_code_to_label",
+        "tertiary_code_to_label",
         "label_to_primary_code",
         "label_to_secondary_code",
+        "label_to_tertiary_code",
         "primary_terms",
         "secondary_terms",
+        "tertiary_terms",
     )
     for key in required_keys:
         assert_true(
@@ -314,12 +323,16 @@ def validate_classification_code_index_owner() -> None:
     primary_code_to_label = payload["primary_code_to_label"]
     label_to_primary_code = payload["label_to_primary_code"]
     secondary_code_to_label = payload["secondary_code_to_label"]
+    tertiary_code_to_label = payload["tertiary_code_to_label"]
     label_to_secondary_code = payload["label_to_secondary_code"]
+    label_to_tertiary_code = payload["label_to_tertiary_code"]
     primary_terms = payload["primary_terms"]
     secondary_terms = payload["secondary_terms"]
+    tertiary_terms = payload["tertiary_terms"]
 
     assert_true(isinstance(primary_terms, list), "classification_code_index.json primary_terms must be a list")
     assert_true(isinstance(secondary_terms, list), "classification_code_index.json secondary_terms must be a list")
+    assert_true(isinstance(tertiary_terms, list), "classification_code_index.json tertiary_terms must be a list")
 
     seen_primary_codes = set()
     for term in primary_terms:
@@ -376,6 +389,56 @@ def validate_classification_code_index_owner() -> None:
         "classification_code_index.json label_to_secondary_code coverage does not match secondary_terms",
     )
 
+    seen_tertiary_codes = set()
+    for term in tertiary_terms:
+        assert_true(isinstance(term, dict), "classification_code_index.json tertiary_terms rows must be objects")
+        code = term.get("tertiary_code")
+        label = term.get("label")
+        parent_secondary_code = term.get("parent_secondary_code")
+        parent_primary_code = term.get("parent_primary_code")
+        assert_true(isinstance(code, str) and code, "tertiary_terms row missing tertiary_code")
+        assert_true(
+            code not in seen_tertiary_codes,
+            f"classification_code_index.json duplicate tertiary_code {code!r}",
+        )
+        seen_tertiary_codes.add(code)
+        assert_true(
+            isinstance(parent_secondary_code, str) and PRIMARY_TAXONOMY_2LVL_PATTERN.fullmatch(parent_secondary_code),
+            "classification_code_index.json tertiary_code "
+            f"{code!r} has invalid parent_secondary_code {parent_secondary_code!r}",
+        )
+        assert_true(
+            isinstance(parent_primary_code, str) and parent_primary_code in FORMAL_MODULES,
+            f"classification_code_index.json tertiary_code {code!r} has invalid parent_primary_code {parent_primary_code!r}",
+        )
+        assert_true(
+            code.startswith(parent_secondary_code + "."),
+            "classification_code_index.json tertiary_code "
+            f"{code!r} does not match parent_secondary_code {parent_secondary_code!r}",
+        )
+        assert_true(
+            parent_secondary_code.startswith(parent_primary_code + "."),
+            "classification_code_index.json tertiary_code "
+            f"{code!r} parent_secondary_code {parent_secondary_code!r} does not match parent_primary_code {parent_primary_code!r}",
+        )
+        assert_true(
+            tertiary_code_to_label.get(code) == label,
+            f"classification_code_index.json tertiary_code_to_label mismatch for {code!r}",
+        )
+        assert_true(
+            label_to_tertiary_code.get(label) == code,
+            f"classification_code_index.json label_to_tertiary_code mismatch for {label!r}",
+        )
+
+    assert_true(
+        set(tertiary_code_to_label.keys()) == seen_tertiary_codes,
+        "classification_code_index.json tertiary_code_to_label coverage does not match tertiary_terms",
+    )
+    assert_true(
+        set(label_to_tertiary_code.values()) == seen_tertiary_codes,
+        "classification_code_index.json label_to_tertiary_code coverage does not match tertiary_terms",
+    )
+
     master_rows = parse_markdown_table_strict(
         MASTER_PATH, header=MASTER_HEADER, data_prefix="| ASD-"
     )
@@ -392,6 +455,19 @@ def validate_classification_code_index_owner() -> None:
         not missing_master_secondary_codes,
         "classification_code_index.json is missing secondary_terms required by master legacy Secondary class coverage: "
         + ", ".join(missing_master_secondary_codes),
+    )
+    master_tertiary_codes = {
+        str(row.get("Tertiary class") or "").strip()
+        for row in master_rows
+        if str(row.get("Tertiary class") or "").strip()
+        and re.fullmatch(r"[0-9]{2}\.[0-9]{2}\.[0-9]{2}", str(row.get("Tertiary class") or "").strip())
+        and str(row.get("Tertiary class") or "").strip().startswith(("06.", "07."))
+    }
+    missing_master_tertiary_codes = sorted(master_tertiary_codes - seen_tertiary_codes)
+    assert_true(
+        not missing_master_tertiary_codes,
+        "classification_code_index.json is missing tertiary_terms required by master legacy Tertiary class coverage: "
+        + ", ".join(missing_master_tertiary_codes),
     )
 
 
@@ -420,8 +496,11 @@ def validate_discipline_code_assignments_owner(papers: List[Dict[str, object]]) 
         assignment_status = row.get("assignment_status")
         discipline_local_code = row.get("discipline_local_code")
         primary_taxonomy_code_2lvl = row.get("primary_taxonomy_code_2lvl")
+        primary_taxonomy_code_3lvl = row.get("primary_taxonomy_code_3lvl")
         redirected_to_code = row.get("redirected_to_code")
         pending_reason = row.get("pending_reason")
+        source_legacy_secondary_class = row.get("source_legacy_secondary_class")
+        source_legacy_tertiary_class = row.get("source_legacy_tertiary_class")
 
         assert_true(
             isinstance(assignment_id, str) and re.fullmatch(r"DCA-[0-9]{6}", assignment_id),
@@ -461,6 +540,12 @@ def validate_discipline_code_assignments_owner(papers: List[Dict[str, object]]) 
                 f"discipline_code_assignments {assignment_id} must carry a valid primary_taxonomy_code_2lvl",
             )
             assert_true(
+                isinstance(source_legacy_secondary_class, str)
+                and source_legacy_secondary_class == primary_taxonomy_code_2lvl,
+                "discipline_code_assignments "
+                f"{assignment_id} must mirror source_legacy_secondary_class to primary_taxonomy_code_2lvl",
+            )
+            assert_true(
                 discipline_local_code not in all_used_codes,
                 "discipline_code_assignments reused historical discipline_local_code: "
                 f"{discipline_local_code} ({all_used_codes.get(discipline_local_code)} vs {assignment_id})",
@@ -485,6 +570,40 @@ def validate_discipline_code_assignments_owner(papers: List[Dict[str, object]]) 
             assert_true(
                 primary_taxonomy_code_2lvl is None,
                 f"discipline_code_assignments {assignment_id} pending/general-method row must not carry primary_taxonomy_code_2lvl",
+            )
+            assert_true(
+                primary_taxonomy_code_3lvl is None,
+                f"discipline_code_assignments {assignment_id} pending/general-method row must not carry primary_taxonomy_code_3lvl",
+            )
+            assert_true(
+                source_legacy_tertiary_class is None,
+                "discipline_code_assignments "
+                f"{assignment_id} pending/general-method row must not carry source_legacy_tertiary_class",
+            )
+
+        if primary_taxonomy_code_3lvl is not None:
+            assert_true(
+                isinstance(primary_taxonomy_code_3lvl, str)
+                and re.fullmatch(r"[0-9]{2}\.[0-9]{2}\.[0-9]{2}", primary_taxonomy_code_3lvl),
+                f"discipline_code_assignments {assignment_id} has invalid primary_taxonomy_code_3lvl: {primary_taxonomy_code_3lvl!r}",
+            )
+            assert_true(
+                isinstance(primary_taxonomy_code_2lvl, str)
+                and primary_taxonomy_code_3lvl.startswith(primary_taxonomy_code_2lvl + "."),
+                "discipline_code_assignments "
+                f"{assignment_id} primary_taxonomy_code_3lvl {primary_taxonomy_code_3lvl!r} does not match primary_taxonomy_code_2lvl {primary_taxonomy_code_2lvl!r}",
+            )
+            assert_true(
+                isinstance(source_legacy_tertiary_class, str)
+                and source_legacy_tertiary_class == primary_taxonomy_code_3lvl,
+                "discipline_code_assignments "
+                f"{assignment_id} source_legacy_tertiary_class must mirror primary_taxonomy_code_3lvl",
+            )
+        else:
+            assert_true(
+                source_legacy_tertiary_class is None,
+                "discipline_code_assignments "
+                f"{assignment_id} rows without primary_taxonomy_code_3lvl must not carry source_legacy_tertiary_class",
             )
 
         if assignment_status == "pending_secondary":
@@ -527,6 +646,21 @@ def validate_discipline_code_assignments_owner(papers: List[Dict[str, object]]) 
             )
             current_snapshot_by_paper[paper_id] = assignment_id
 
+        paper_row = paper_rows_by_id[paper_id]
+        legacy_tertiary_class = str(paper_row.get("legacy_tertiary_class") or "").strip()
+        if primary_taxonomy_code_3lvl is not None:
+            assert_true(
+                legacy_tertiary_class == primary_taxonomy_code_3lvl,
+                "discipline_code_assignments "
+                f"{assignment_id} primary_taxonomy_code_3lvl disagrees with master legacy_tertiary_class for {paper_id}: {primary_taxonomy_code_3lvl!r} != {legacy_tertiary_class!r}",
+            )
+        elif legacy_tertiary_class:
+            assert_true(
+                paper_row.get("legacy_main_class") not in {"06", "07"},
+                "discipline_code_assignments "
+                f"{assignment_id} is missing primary_taxonomy_code_3lvl even though master legacy_tertiary_class is populated for {paper_id}",
+            )
+
     for row in rows:
         if row["assignment_status"] == "redirected_code":
             assert_true(
@@ -543,6 +677,129 @@ def validate_discipline_code_assignments_owner(papers: List[Dict[str, object]]) 
     assert_true(
         current_snapshot_paper_ids == expected_active_confirmed_core_ids,
         "discipline_code_assignments current snapshot coverage must exactly match active_confirmed_core papers",
+    )
+
+
+def validate_paper_module_taxonomy_assignments_owner(
+    papers: List[Dict[str, object]],
+) -> None:
+    if not PAPER_MODULE_TAXONOMY_ASSIGNMENTS_PATH.exists():
+        return
+
+    rows = load_jsonl(PAPER_MODULE_TAXONOMY_ASSIGNMENTS_PATH)
+    assert_true(rows, "paper_module_taxonomy_assignments.jsonl must not be empty")
+    validate_jsonl_rows_against_schema_file(
+        rows=rows,
+        schema_path=PAPER_MODULE_TAXONOMY_ASSIGNMENTS_SCHEMA_PATH,
+        subject_label="paper_module_taxonomy_assignments.jsonl",
+    )
+
+    papers_by_id = {str(row["paper_id"]): row for row in papers}
+    expected_pairs = {
+        (str(row["paper_id"]), module)
+        for row in papers
+        if bool(row["active_confirmed_core"])
+        for module in row["scientific_object_modules"]
+        if module in {"03", "04", "06", "07"}
+    }
+
+    seen_ids = set()
+    seen_pairs = set()
+    for index, row in enumerate(rows, start=1):
+        assignment_id = row.get("module_assignment_id")
+        paper_id = str(row.get("paper_id") or "")
+        module_context = str(row.get("module_context") or "")
+        assignment_status = row.get("assignment_status")
+        secondary_code = row.get("secondary_taxonomy_code")
+        tertiary_code = row.get("tertiary_taxonomy_code")
+        pending_reason = row.get("pending_reason")
+
+        assert_true(
+            isinstance(assignment_id, str) and re.fullmatch(r"PMTA-[0-9]{6}", assignment_id),
+            f"paper_module_taxonomy_assignments row {index} has invalid module_assignment_id: {assignment_id!r}",
+        )
+        assert_true(
+            assignment_id not in seen_ids,
+            f"paper_module_taxonomy_assignments duplicate module_assignment_id: {assignment_id!r}",
+        )
+        seen_ids.add(assignment_id)
+        assert_true(
+            paper_id in papers_by_id,
+            f"paper_module_taxonomy_assignments references unknown paper_id: {paper_id!r}",
+        )
+        assert_true(
+            module_context in {"03", "04", "06", "07"},
+            f"paper_module_taxonomy_assignments {assignment_id} has invalid module_context: {module_context!r}",
+        )
+        assert_true(
+            (paper_id, module_context) not in seen_pairs,
+            "paper_module_taxonomy_assignments duplicate paper/module row: "
+            f"{paper_id} / {module_context}",
+        )
+        seen_pairs.add((paper_id, module_context))
+
+        paper_row = papers_by_id[paper_id]
+        assert_true(
+            bool(paper_row["active_confirmed_core"]),
+            f"paper_module_taxonomy_assignments should only cover active_confirmed_core papers: {paper_id}",
+        )
+        assert_true(
+            module_context in paper_row["scientific_object_modules"],
+            "paper_module_taxonomy_assignments module_context is outside scientific_object_modules: "
+            f"{paper_id} / {module_context}",
+        )
+
+        if assignment_status == "active_mapping":
+            assert_true(
+                isinstance(secondary_code, str)
+                and PRIMARY_TAXONOMY_2LVL_PATTERN.fullmatch(secondary_code)
+                and secondary_code.startswith(module_context + "."),
+                "paper_module_taxonomy_assignments "
+                f"{assignment_id} must carry a valid module-matching secondary_taxonomy_code",
+            )
+            assert_true(
+                pending_reason is None,
+                f"paper_module_taxonomy_assignments {assignment_id} active_mapping rows must not carry pending_reason",
+            )
+            if module_context in {"06", "07"}:
+                assert_true(
+                    isinstance(tertiary_code, str)
+                    and re.fullmatch(r"[0-9]{2}\.[0-9]{2}\.[0-9]{2}", tertiary_code)
+                    and tertiary_code.startswith(secondary_code + "."),
+                    "paper_module_taxonomy_assignments "
+                    f"{assignment_id} active {module_context} rows must carry a matching tertiary_taxonomy_code",
+                )
+            else:
+                assert_true(
+                    tertiary_code is None,
+                    f"paper_module_taxonomy_assignments {assignment_id} {module_context} rows must not carry tertiary_taxonomy_code",
+                )
+        else:
+            assert_true(
+                assignment_status == "pending_mapping",
+                f"paper_module_taxonomy_assignments {assignment_id} has invalid assignment_status: {assignment_status!r}",
+            )
+            assert_true(
+                secondary_code is None and tertiary_code is None,
+                "paper_module_taxonomy_assignments "
+                f"{assignment_id} pending_mapping rows must keep taxonomy codes null",
+            )
+            assert_true(
+                isinstance(pending_reason, str) and pending_reason.strip(),
+                f"paper_module_taxonomy_assignments {assignment_id} pending_mapping rows must carry pending_reason",
+            )
+
+        source_primary_module_for_filing = row.get("source_primary_module_for_filing")
+        if source_primary_module_for_filing is not None:
+            assert_true(
+                source_primary_module_for_filing == paper_row["primary_module_for_filing"],
+                "paper_module_taxonomy_assignments "
+                f"{assignment_id} source_primary_module_for_filing mismatch for {paper_id}",
+            )
+
+    assert_true(
+        seen_pairs == expected_pairs,
+        "paper_module_taxonomy_assignments coverage must exactly match active_confirmed_core paper/module pairs for 03/04/06/07",
     )
 
 
@@ -673,6 +930,10 @@ def validate_discipline_local_code_registry(
             f"discipline_local_code_registry primary_taxonomy_code_2lvl mismatch for {assignment_id}",
         )
         assert_true(
+            row.get("primary_taxonomy_code_3lvl") == ledger_row.get("primary_taxonomy_code_3lvl"),
+            f"discipline_local_code_registry primary_taxonomy_code_3lvl mismatch for {assignment_id}",
+        )
+        assert_true(
             row["assigned_at"] == ledger_row["assigned_at"],
             f"discipline_local_code_registry assigned_at mismatch for {assignment_id}",
         )
@@ -715,6 +976,10 @@ def validate_discipline_local_code_registry(
         assert_true(
             row["legacy_secondary_class"] == paper_row["legacy_secondary_class"],
             f"discipline_local_code_registry legacy_secondary_class mismatch for {assignment_id}",
+        )
+        assert_true(
+            row.get("legacy_tertiary_class") == paper_row["legacy_tertiary_class"],
+            f"discipline_local_code_registry legacy_tertiary_class mismatch for {assignment_id}",
         )
         assert_true(
             row["secondary_class_source"] == paper_row["secondary_class_source"],
@@ -2994,6 +3259,7 @@ def main() -> None:
             else []
         )
         validate_discipline_code_assignments_owner(papers)
+        validate_paper_module_taxonomy_assignments_owner(papers)
         validate_discipline_local_code_registry(papers)
         validate_discipline_initial_assignment_preview(
             papers, classification_code_index

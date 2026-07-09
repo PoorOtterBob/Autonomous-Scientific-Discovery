@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 
@@ -11,24 +12,51 @@ OWNER_FACT_SOURCE_PATHS = (
     ROOT / "Paper_Lists" / "agent_master_paper_list.md",
     ROOT / "Coverage_Check" / "multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md",
     ROOT / "Data" / "discipline_code_assignments.jsonl",
+    ROOT / "Data" / "paper_module_taxonomy_assignments.jsonl",
     ROOT / "Data" / "classification_code_index.json",
 )
 CHANGE_LOG_PATH = ROOT / "Data" / "change_log.jsonl"
 
 
+@lru_cache(maxsize=1)
+def get_git_repo_root() -> Path:
+    output = subprocess.check_output(
+        ["git", "rev-parse", "--show-toplevel"],
+        cwd=ROOT,
+        text=True,
+        encoding="utf-8",
+    )
+    return Path(output.strip()).resolve()
+
+
 def get_git_status_paths(paths: tuple[Path, ...] | list[Path]) -> set[Path]:
     if not paths:
         return set()
-    command = ["git", "status", "--porcelain", "--", *[str(path) for path in paths]]
-    output = subprocess.check_output(command, cwd=ROOT, text=True, encoding="utf-8")
+    repo_root = get_git_repo_root()
+    repo_relative_paths = [
+        str(path.resolve().relative_to(repo_root)).replace("\\", "/")
+        for path in paths
+    ]
+    command = [
+        "git",
+        "-c",
+        "core.quotepath=false",
+        "status",
+        "--porcelain",
+        "--",
+        *repo_relative_paths,
+    ]
+    output = subprocess.check_output(command, cwd=repo_root, text=True, encoding="utf-8")
     changed_paths: set[Path] = set()
     for line in output.splitlines():
         if not line.strip():
             continue
         raw_path = line[3:].strip()
+        if raw_path.startswith('"') and raw_path.endswith('"'):
+            raw_path = raw_path[1:-1]
         if " -> " in raw_path:
             raw_path = raw_path.split(" -> ", 1)[1]
-        changed_paths.add((ROOT / raw_path).resolve())
+        changed_paths.add((repo_root / raw_path).resolve())
     return changed_paths
 
 

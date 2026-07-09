@@ -23,11 +23,14 @@ desktop.ini
 !/Autonomous Scientific Discovery/Data/schema/
 !/Autonomous Scientific Discovery/Data/schema/classification_code_index.schema.json
 !/Autonomous Scientific Discovery/Data/schema/discipline_code_assignments.schema.json
+!/Autonomous Scientific Discovery/Data/schema/paper_module_taxonomy_assignments.schema.json
 !/Autonomous Scientific Discovery/Data/classification_code_index.json
 !/Autonomous Scientific Discovery/Data/discipline_code_assignments.jsonl
+!/Autonomous Scientific Discovery/Data/paper_module_taxonomy_assignments.jsonl
 !/Autonomous Scientific Discovery/Data/papers.jsonl
 !/Autonomous Scientific Discovery/Data/papers.sqlite
 !/Autonomous Scientific Discovery/Data/discipline_local_code_registry.jsonl
+!/Autonomous Scientific Discovery/Data/change_log.jsonl
 !/Autonomous Scientific Discovery/Data/pdf_manifest.json
 !/Autonomous Scientific Discovery/Data/missing_pdf_manifest.json
 !/Autonomous Scientific Discovery/Data/note_manifest.json
