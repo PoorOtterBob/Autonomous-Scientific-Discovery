@@ -248,5 +248,15 @@
     "evidence_status": "first_hand_abstract_and_official_pages",
     "source_limited": "yes",
     "access_note": "Source trail: EO-1 ASE application-paper cluster from Nature/Science mission-science lineage 2026-06-18; this ASE application performs onboard flood detection, monitoring, and responsive observation for Earth-system science, so it is best classified in `05` despite being mission-borne. NoteLanded2026-06-20: formal ASD note added; batch14 review keeps `05 / 05.04` because the final scientific object remains flood monitoring and Earth-observation science rather than spacecraft autonomy as an end in itself. Batch29Partial1Reaudit2026-06-24: closed; first-hand ScienceDirect article page only; no legal PDF directly accessible supports scientific_object_modules=05; primary_module_for_filing=05; general_method_bucket=none; source_limited=yes."
+  },
+  {
+    "paper_id": "ASD-0872",
+    "title": "PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery",
+    "doi": "10.64898/2026.02.26.707870",
+    "url": "https://doi.org/10.64898/2026.02.26.707870",
+    "pdf_status": "publisher_access_limited",
+    "evidence_status": "first_hand_preview_repo_and_preprint_doi",
+    "source_limited": "yes",
+    "access_note": "Source trail: direct user-specified intake 2026-07-09; Crossref DOI abstract `10.64898/2026.02.26.707870`, official PantheonOS website, official GitHub README, and bioRxiv landing/PDF route reviewed. Current evidence supports `scientific_object_modules=06;07`, `object_coverage_mode=multi_module`, `primary_module_for_filing=06`, `general_method_bucket=none`; evidence=single-cell biology, genomics discovery, early mouse embryo 3D spatial data, gene panel selection, and virtual-cell model selection support `06`, while human fetal heart multi-omics, heart-disease molecular-program discovery, and cardiac regulatory / perturbation prediction support `07`. bioRxiv PDF route is currently Cloudflare-gated in this environment, so keep `source_limited=yes` and no local PDF archived."
   }
 ]
