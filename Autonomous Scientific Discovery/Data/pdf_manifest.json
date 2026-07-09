@@ -5657,5 +5657,19 @@
     "pdf_status": "archived_pdf",
     "evidence_status": "first_hand_full_text",
     "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0872",
+    "title": "PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Xu_2026_PantheonOS.pdf",
+    "sha256": "c69cdf8fa779848bb6b5761437569132ed9256c1b883c5f7435635537b7e8055",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
   }
 ]

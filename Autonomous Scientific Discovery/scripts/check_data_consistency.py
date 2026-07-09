@@ -35,8 +35,8 @@ PROGRESS_PATH = (
     / "multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md"
 )
 EXPECTED_ACTIVE_CONFIRMED = 448
-EXPECTED_ACTIVE_LOCAL_PDF = 422
-EXPECTED_ACTIVE_NO_LOCAL_PDF = 26
+EXPECTED_ACTIVE_LOCAL_PDF = 423
+EXPECTED_ACTIVE_NO_LOCAL_PDF = 25
 EXPECTED_NO_LOCAL_IDS = {
     "ASD-0005",
     "ASD-0097",
@@ -63,7 +63,6 @@ EXPECTED_NO_LOCAL_IDS = {
     "ASD-0859",
     "ASD-0860",
     "ASD-0861",
-    "ASD-0872",
 }
 FORMAL_MODULES = {f"{idx:02d}" for idx in range(1, 12)}
 GENERAL_BUCKET_CANONICAL = (
@@ -3028,7 +3027,7 @@ def main() -> None:
             )
             assert_true(
                 active_no_local_ids == EXPECTED_NO_LOCAL_IDS,
-                "Active no-local-PDF ID set does not match authoritative 26-paper baseline",
+                "Active no-local-PDF ID set does not match authoritative 25-paper baseline",
             )
 
         taxonomy_codes = set(taxonomy_index["code_to_label"].keys())
