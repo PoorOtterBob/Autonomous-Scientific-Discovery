@@ -991,6 +991,19 @@
     "active_confirmed_core": true
   },
   {
+    "paper_id": "ASD-0097",
+    "title": "Cellvoyager: Ai compbio agent generates new insights by autonomously analyzing biological data",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Alber_2026_CellVoyager.pdf",
+    "sha256": "4db6c3e0daba2b21588d31ed912abd962af1040fa988c4f0e2b8c095fa4ce853",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_preprint_full_text",
+    "active_confirmed_core": true
+  },
+  {
     "paper_id": "ASD-0100",
     "title": "Scireplicate-bench: Benchmarking llms in agent-driven algorithmic reproduction from research papers",
     "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Xiang_2025_SciReplicate_Bench.pdf",

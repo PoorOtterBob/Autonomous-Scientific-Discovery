@@ -10,16 +10,6 @@
     "access_note": "Source trail: Shanghai AI Lab seed survey[ref 237]; Batch00Reaudit2026-06-21: publisher landing page and official ACS supporting-information page checked; current evidence supports `scientific_object_modules=03;04`, `object_coverage_mode=multi_module`, `primary_module_for_filing=03`, `general_method_bucket=none`; functional-material discovery/optimization supports `04`, photocatalytic organic reactions support `03`; main PDF endpoint remained access-gated in this environment, so keep `source_limited` / full-text follow-up open."
   },
   {
-    "paper_id": "ASD-0097",
-    "title": "Cellvoyager: Ai compbio agent generates new insights by autonomously analyzing biological data",
-    "doi": "10.1038/s41592-026-03029-6",
-    "url": "https://doi.org/10.1038/s41592-026-03029-6",
-    "pdf_status": "publisher_access_limited",
-    "evidence_status": "first_hand_preview_repo_and_preprint_doi",
-    "source_limited": "yes",
-    "access_note": "Source trail: Shanghai AI Lab seed survey[ref 5]; metadata upgraded 2026-06-17: confirmed journal upgrade from bioRxiv to Nature Methods 23(4):749-759; preprint lineage DOI https://doi.org/10.1101/2025.06.03.657517. CarryForward06Closeout2026-06-22: checked Nature Methods DOI landing / preview and data-availability evidence, official GitHub README, official demo landing, and the bioRxiv DOI / PDF route, which remained `403` in the current environment. Phase6FollowupR5Harmonization2026-07-02: authoritative state is now `scientific_object_modules=06`, `object_coverage_mode=single_module`, `primary_module_for_filing=06`, `general_method_bucket=none`; the current accessible first-hand evidence keeps `06` as the stable single-cell / computational-biology core, while old `07` human-biomedical case-study wording is retained only as a future source-limited lead pending stronger full-text evidence; no local PDF archived."
-  },
-  {
     "paper_id": "ASD-0112",
     "title": "CSSTep: Step-by-step exploration of the chemical space of drug molecules via multi-agent and multi-stage reinforcement learning",
     "doi": "10.1016/j.ces.2025.122048",
