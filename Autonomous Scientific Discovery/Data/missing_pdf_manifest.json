@@ -54,8 +54,8 @@
     "title": "TCM-Agent: Advancing Network Pharmacology and Herbal Medicine Discovery with LLM-Based Multi-Agent Systems",
     "doi": "10.1016/j.jpha.2026.101581",
     "url": "https://doi.org/10.1016/j.jpha.2026.101581",
-    "pdf_status": "publisher_page_checked_visible_full_text_pdf_routes",
-    "evidence_status": "first_hand_abstract_and_official_pages",
+    "pdf_status": "pmc_gold_oa_pdf_route_access_challenged",
+    "evidence_status": "pmc_full_text_page_verified_pdf_download_pending",
     "source_limited": "no",
     "access_note": "Source trail: Crossref thematic expansion 2026-06-17; title explicitly indicates multi-agent discovery workflow for pharmacology and herbal medicine. NoteLanded2026-06-19: official abstract keeps stable `07.04`, while the main residual risk is core-strength rather than class assignment. Batch16Partial4Reaudit2026-06-23: official JPA publisher abstract and ScienceDirect landing snippet rechecked; keep `scientific_object_modules=07`, `object_coverage_mode=single_module`, `primary_module_for_filing=07`, and `general_method_bucket=none`; this earlier pass stayed `source_limited=yes` because full text / local PDF were not retrieved then. Phase6FollowupR19Real2026-07-05: official JPA article page, ScienceDirect route, and visible publisher HTML/PDF entry points were rechecked; the stable `07` landing is preserved and the old source-limited ceiling is cleared truthfully without claiming a local archived PDF or a completed full-text read."
   },
