@@ -5684,5 +5684,235 @@
     "pdf_status": "archived_pdf",
     "evidence_status": "first_hand_full_text",
     "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0878",
+    "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Xu_2026_SWEBenchScience.pdf",
+    "sha256": "83c0ef0e7b60c7f3f08dff57fe3eae51d799c954e85aa40307e4b39a6028fc9a",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0883",
+    "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Liu_2026_GBClaw_Grain_Boundary_Discovery.pdf",
+    "sha256": "bddde85b1e324cda9f3bd4e4a580db21f16ed72bb36e645fb0e1e915b47843e1",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0885",
+    "title": "An Open-Source Hardware and Software Toolkit to Enable Agentic RHEED-Guided Thin-Film Synthesis",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Haque_2026_Agentic_RHEED_Thin_Film_Toolkit.pdf",
+    "sha256": "ebaff3fef0a39f77ef160a840045ffae5f522e1c5dfe91a135cd37da7fc4d643",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0893",
+    "title": "Agentomics: an agentic system that autonomously develops novel state-of-the-art solutions for biomedical machine learning tasks",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Martinek_2026_Agentomics.pdf",
+    "sha256": "640b94b2a5eec06a2ddce335a3ab6068a5263014c168e333dafa53ead07e5161",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "03",
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0894",
+    "title": "AutoScreen: AI Co-Scientist System for Target Discovery in Functional Genomics",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Qu_2026_AutoScreen.pdf",
+    "sha256": "c9795ab0e09c0dd0647048e0dca12a4180b35307492509621fab0f49bc50c6fd",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0895",
+    "title": "Omics data discovery agents: Agent-supported retrieval, reanalysis, and synthesis of published omics data",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Hutton_2026_Omics_data_discovery_agents.pdf",
+    "sha256": "576dd26814bd4eedc19083a4df25010b97aff74d0656d35011d2d3a371fb6edc",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0896",
+    "title": "BioPathfinder: Evidence-guided multi-agent platform enables hypothesis discovery for CAR-T engineering",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Wang_2026_BioPathfinder.pdf",
+    "sha256": "0a6b85edac7a05c40bbdd4ebc6d0b20395e563f1414d7e150d9b903f93a620bc",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0897",
+    "title": "Distributed AI agents enable comprehensive discovery of biological insights at scale",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Sun_2026_Distributed_AI_agents_enable_comprehensive_discovery_of_biological_insights_at_scale.pdf",
+    "sha256": "a9de2240363e17c2a5fb1cddcfb36961b3ec6961d9bc4a57f82a55d68f0e378f",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0898",
+    "title": "scACORN: Context-engineered agent orchestration of specialized small language models for single-cell transcriptomic interpretation",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Rasti-Meymandi_2026_scACORN.pdf",
+    "sha256": "db606f289449f0f648f77266c0826e21970347da13c507798a53cd33126daeae",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0900",
+    "title": "Multi-agentic system for primer design in qPCR and LAMP diagnostics tests",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Lau_2026_Multi_agentic_system_for_primer_design_in_qPCR_and_LAMP_diagnostics_tests.pdf",
+    "sha256": "aa6b5bf8c52b61eb74e3f4dd69ec80060f6099ad3756b30d677ab9c54f9f140f",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0909",
+    "title": "CABAL: Multi-Agent Simulacra for Tracing the Effects of Collusive Bidding in Peer Review",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Zhou_2026_CABAL.pdf",
+    "sha256": "ecad892215396d742fa07d261895b240c2954c76e1dee8096064d7499fcbd566",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0911",
+    "title": "Agentic Economies for Autonomous Scientific Discovery",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Tomasev_2026_Agentic_Economies.pdf",
+    "sha256": "15bdfae661db0269aac9dc0f461e09c66175ffbb6e271309cbaf0f6fddcb0a15",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-0912",
+    "title": "AgentIdeaBench: Benchmarking Scientific Ideation in the Agent Era",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Mo_2026_AgentIdeaBench.pdf",
+    "sha256": "d76d8b7748237d0e1b460e44a7c4e042be9a3fd00ca70925492a175babedd6e9",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0913",
+    "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Kim_2026_AutoSciBench.pdf",
+    "sha256": "2280674e00a2cc06cf39dcff304d5f57a850afb557b0abafda178d9dd3092d13",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "04",
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0914",
+    "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Wen_2026_Autonomous_Science_Bench.pdf",
+    "sha256": "72b7bd2f937dda7b94dffaad9343b1c5fa86dd8345cc84c96a569f9b9e16788a",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04",
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0920",
+    "title": "Behavior is Not Enough: A Mechanism-Based Evaluation of Social Norm Emergence in LLM Societies",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Muralidharan_2026_Behavior_Not_Enough.pdf",
+    "sha256": "46924c7ebb42e213c20894be857cc4f56d9387c25db8a6f76c5a7b55052f2ef4",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0921",
+    "title": "Benchmarking Psychological Dynamics in Generative Agents",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Vaid_2026_Psychological_Dynamics.pdf",
+    "sha256": "996cc58b4709ab13765a975b870c5dd0ed9b27e841cf445bcd610632d24ad7d9",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": false
   }
 ]

@@ -1566,7 +1566,7 @@ def validate_owner_loaded_and_inventory_tables(
             (
                 row['paper_id'],
                 row['title'],
-                row['doi'],
+                blank_to_none(row['doi']),
                 row['url'],
                 row['pdf_status'],
                 row['evidence_status'],
@@ -3350,7 +3350,8 @@ def build_sqlite(
             for row in pdf_manifest
         ])
         conn.executemany('INSERT INTO missing_pdf_inventory VALUES(?, ?, ?, ?, ?, ?, ?, ?)', [
-            (row['paper_id'], row['title'], row['doi'], row['url'], row['pdf_status'], row['evidence_status'], row['source_limited'], row['access_note'])
+            # arXiv-only papers legitimately have no DOI; store an absent identifier as NULL.
+            (row['paper_id'], row['title'], blank_to_none(row['doi']), row['url'], row['pdf_status'], row['evidence_status'], row['source_limited'], row['access_note'])
             for row in missing_pdf_manifest
         ])
         conn.executemany('INSERT INTO note_inventory VALUES(?, ?, ?, ?, ?, ?)', [

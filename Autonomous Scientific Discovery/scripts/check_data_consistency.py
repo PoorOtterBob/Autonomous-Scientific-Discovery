@@ -40,9 +40,10 @@ PROGRESS_PATH = (
     / "Coverage_Check"
     / "multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md"
 )
-EXPECTED_ACTIVE_CONFIRMED = 448
-EXPECTED_ACTIVE_LOCAL_PDF = 424
-EXPECTED_ACTIVE_NO_LOCAL_PDF = 24
+# Authoritative snapshot after the October 50-paper note/classification review.
+EXPECTED_ACTIVE_CONFIRMED = 489
+EXPECTED_ACTIVE_LOCAL_PDF = 439
+EXPECTED_ACTIVE_NO_LOCAL_PDF = 50
 EXPECTED_NO_LOCAL_IDS = {
     "ASD-0005",
     "ASD-0112",
@@ -68,6 +69,32 @@ EXPECTED_NO_LOCAL_IDS = {
     "ASD-0859",
     "ASD-0860",
     "ASD-0861",
+    "ASD-0873",
+    "ASD-0874",
+    "ASD-0875",
+    "ASD-0876",
+    "ASD-0877",
+    "ASD-0879",
+    "ASD-0880",
+    "ASD-0882",
+    "ASD-0884",
+    "ASD-0886",
+    "ASD-0887",
+    "ASD-0888",
+    "ASD-0889",
+    "ASD-0892",
+    "ASD-0899",
+    "ASD-0903",
+    "ASD-0905",
+    "ASD-0906",
+    "ASD-0907",
+    "ASD-0908",
+    "ASD-0910",
+    "ASD-0916",
+    "ASD-0917",
+    "ASD-0918",
+    "ASD-0919",
+    "ASD-0922",
 }
 FORMAL_MODULES = {f"{idx:02d}" for idx in range(1, 12)}
 GENERAL_BUCKET_CANONICAL = (
@@ -3292,7 +3319,7 @@ def main() -> None:
             )
             assert_true(
                 active_no_local_ids == EXPECTED_NO_LOCAL_IDS,
-                "Active no-local-PDF ID set does not match authoritative 25-paper baseline",
+                "Active no-local-PDF ID set does not match authoritative review snapshot",
             )
 
         taxonomy_codes = set(taxonomy_index["code_to_label"].keys())

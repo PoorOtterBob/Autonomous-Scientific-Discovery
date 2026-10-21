@@ -238,5 +238,265 @@
     "evidence_status": "first_hand_abstract_and_official_pages",
     "source_limited": "yes",
     "access_note": "Source trail: EO-1 ASE application-paper cluster from Nature/Science mission-science lineage 2026-06-18; this ASE application performs onboard flood detection, monitoring, and responsive observation for Earth-system science, so it is best classified in `05` despite being mission-borne. NoteLanded2026-06-20: formal ASD note added; batch14 review keeps `05 / 05.04` because the final scientific object remains flood monitoring and Earth-observation science rather than spacecraft autonomy as an end in itself. Batch29Partial1Reaudit2026-06-24: closed; first-hand ScienceDirect article page only; no legal PDF directly accessible supports scientific_object_modules=05; primary_module_for_filing=05; general_method_bucket=none; source_limited=yes."
+  },
+  {
+    "paper_id": "ASD-0873",
+    "title": "Large Knowledge Model: A Knowledge Foundation for Agentic Science at Scale",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.27297",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=11.07;03.01;07.03.08; fulltext_followup_required=false; 主模块建议11.07：论文直接构造并检索科学主张、证据及推理链。ChemBench的化学知识任务支持03.01，PubMedQA的医学问答支持07.03.08；不能从PubMedQA推出06。01.04不适用，因为存在科学知识对象级实验。 scientific_object_modules=11;03;07; object_coverage_mode=multi_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2609.27297; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0874",
+    "title": "Auditing Discovery Claims: A Two-Sided Criterion for Agentic Science, with the Negative Side Decidable",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.00981",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=06.01.03; fulltext_followup_required=false; 具体对象为RNA序列及二级结构，建议06.01.03分子生物学。RNA对象上有设计和验证任务，不能归01.04。 scientific_object_modules=06; object_coverage_mode=single_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.00981; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0875",
+    "title": "Science sandboxes measure the scientific capability of AI agents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.30165",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=06.01.13; fulltext_followup_required=false; MPRAbox调控DNA序列任务支持06.01.06遗传学；CodonBox涉及编码序列和蛋白fitness，支持06.03.06蛋白质科学。对象级任务排除01.04；研究对象不是科学共同体，非11.07。 主控模块内落点采用06.01.13计算生物学，以承载调控基因组与蛋白适应度两个实验对象簇；对象细节保留在证据日志。 scientific_object_modules=06; object_coverage_mode=single_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.30165; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0876",
+    "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.08093",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=01.03; fulltext_followup_required=false; 建议01.03，研究对象是结构因果模型、识别与计算推断。合成故事虽基于真实领域分布，但不是实测农业或其它自然对象；不应按故事包装扩多个领域。01.04不适用，因为有具体形式模型任务；与11.07无关。 scientific_object_modules=01; object_coverage_mode=single_module; primary_module_for_filing=01; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.08093; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0877",
+    "title": "The Silent Failures in Agentic Data Science",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.14115",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=01.03; fulltext_followup_required=false; 建议01.03，关注数据科学分析程序、建模与验证工作流。Kaggle来源本身不足以支持自然科学模块；不是无具体对象的01.04，也不研究科学共同体或知识生产制度。 scientific_object_modules=01; object_coverage_mode=single_module; primary_module_for_filing=01; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2610.14115; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0879",
+    "title": "CrossAudit: A Git-Native, Cross-Vendor Audit Loop for Agentic Science",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.28631",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=11.07; fulltext_followup_required=false; 倾向11.07：审计对象为科研流水线、科学主张和科研质量治理过程。若全文证实协议完全通用且未实际核验科研主张，可改为01.04。计算化学只是部署场景，没有分子/反应实验，不能据此分03。 主控与独立审稿复核§3.1、§3.4、§4.2：多Agent生成、异厂商审计、修订及升级流程满足科研角色；以科学记录和主张审计为实际验证对象，采用11.07。perovskite additive仅部署语境，无添加剂对象结果，暂不加03/04。 scientific_object_modules=11; object_coverage_mode=single_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.28631; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0880",
+    "title": "Can Autonomous LLM Agents Execute Multireference Quantum Chemistry Calculations?",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.13357",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=03.02; fulltext_followup_required=false; 对象是分子电子结构与跃迁能，归化学03.02；不因作者机构或计算方法归材料04/计算科学。 scientific_object_modules=03; object_coverage_mode=single_module; primary_module_for_filing=03; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2609.13357; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0882",
+    "title": "Hypothesis-Driven Autonomous Materials Synthesis with Multimodal LLM Agents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.18598",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=04.04; fulltext_followup_required=false; LiCoO2薄膜及其生长/结晶性能为材料对象，归04.04；虽含沉积过程，但未见独立反应化学实验支持03。 scientific_object_modules=04; object_coverage_mode=single_module; primary_module_for_filing=04; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2609.18598; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0884",
+    "title": "AutoXRD: Autonomous LLM Agents and Comprehensive Evaluation for Powder Diffraction Analysis",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.00070",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=04.01; fulltext_followup_required=false; 粉末衍射用于材料结构表征，归04.01；具体晶相案例可按证据细化至04.02，不因XRD属分析化学就归03。 scientific_object_modules=04; object_coverage_mode=single_module; primary_module_for_filing=04; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2609.00070; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0886",
+    "title": "Autonomous discovery of new structure-plausibility laws for explainable and rapid crystal diagnosis and screening",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.01209",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=04.02; fulltext_followup_required=false; 核心对象为无机晶体结构和晶体化学，归04.02；化学键规律是解释机制，不是独立分子反应任务。 scientific_object_modules=04; object_coverage_mode=single_module; primary_module_for_filing=04; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2609.01209; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0887",
+    "title": "Evaluating a 4B open-weights local LLM for agentic DFT workflows: a literature reproducibility audit",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.29665",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=04.02; fulltext_followup_required=false; 对象是二维五角晶体和材料结构/晶格常数，归04.02；DFT与文本抽取是研究方法，不另归01或03。 scientific_object_modules=04; object_coverage_mode=single_module; primary_module_for_filing=04; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2608.29665; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0888",
+    "title": "SQD-Agent: LLM-driven agentic framework for Quantum Chemistry workflows",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.39302",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=03.02; fulltext_followup_required=false; 研究对象为N2/CH2O分子电子结构，归03.02；量子计算设备和采样算法是执行工具，不据此归02或01。 scientific_object_modules=03; object_coverage_mode=single_module; primary_module_for_filing=03; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2609.39302v2; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0889",
+    "title": "RaspAssistant as an Agentic Framework for Automating Adsorption Simulation Research in Porous Materials",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.27572",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=04.03; fulltext_followup_required=false; MOF/沸石是多孔功能材料，直接研究孔结构和吸附/分离功能，归04.03；吸附质是探针，未以反应或合成为研究对象，不加03。 scientific_object_modules=04; object_coverage_mode=single_module; primary_module_for_filing=04; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/html/2610.27572; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0892",
+    "title": "The Virtual Biotech: A multi-agent AI framework for therapeutic discovery and development",
+    "doi": "10.1126/science.aeg6779",
+    "url": "https://doi.org/10.1126/science.aeg6779",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=06.03.01;07.04.01; fulltext_followup_required=false; 按实际科学对象采用06+07多模块：细胞类型特异性基因、遗传支持和单细胞转录组靶点特征属于06；B7-H3肺癌治疗靶点、OSMRβ溃疡性结肠炎及药物临床试验进展/安全性构成独立的07疾病与药物开发对象，主归档07。它不是仅讨论通用Agent框架的01.04；临床试验与疾病对象不能因出现基因数据而压缩到06。 scientific_object_modules=06;07; object_coverage_mode=multi_module; primary_module_for_filing=07; general_method_bucket=none; first_hand_sources_checked=https://pmc.ncbi.nlm.nih.gov/articles/PMC12970349/?report=xml; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0899",
+    "title": "Mind the alignment gap: a spatial transcriptomics benchmark for scientific coding agents",
+    "doi": "10.64898/2026.07.05.736638",
+    "url": "https://doi.org/10.64898/2026.07.05.736638",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=06.03.04; fulltext_followup_required=false; 研究任务以空间转录组数据、组织切片坐标配准和组学分析工具为直接科学对象，采用06.03.04单细胞/空间组学相关研究及06.01.12生物信息学代码。它不是只提出通用Agent benchmark的01.04论文，也没有独立的病人诊断/治疗任务支持07。 scientific_object_modules=06; object_coverage_mode=single_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://www.biorxiv.org/content/10.64898/2026.07.05.736638v1.full; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0903",
+    "title": "CLVisc Agent for autonomous relativistic hydrodynamics studies",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.27822",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=02.02.13; fulltext_followup_required=false; 邻近 01（科学计算）及 09（模拟软件），但计算程序是研究手段；实际结果针对夸克胶子等离子体、重离子碰撞及核结构，归 02.02.13。 scientific_object_modules=02; object_coverage_mode=single_module; primary_module_for_filing=02; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.27822; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0905",
+    "title": "ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.03105",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=01.02.17;02.02.06; fulltext_followup_required=false; 01.02.17 因研究科学计算程序及其验证；02.02.06 因实际任务是量子力学/量子算法工作流并检查物理保真。模块并列有对象依据，不因代码工具将其全部归 01。 scientific_object_modules=01;02; object_coverage_mode=multi_module; primary_module_for_filing=01; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.03105; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0906",
+    "title": "Advancing mathematics research with AI-driven formal proof search",
+    "doi": "10.1126/science.aej2213",
+    "url": "https://doi.org/10.1126/science.aej2213",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=01.01.12; fulltext_followup_required=false; 归01.01.12数学/形式数学（沿用原记录的组合数学细分标注）；核心对象是Lean形式证明和开放数学命题。量子光学只在摘要中作为部署/应用领域提及，正文未见可定位的物理对象任务、实验或结果，故不增加02。Lean是证明验证工具，不改变数学对象归属。 scientific_object_modules=01; object_coverage_mode=single_module; primary_module_for_filing=01; general_method_bucket=none; first_hand_sources_checked=https://ar5iv.labs.arxiv.org/html/2605.22763; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0907",
+    "title": "SciExam for ENSO: Can AI Agents Build Climate Models?",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.10513",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=05.02.02; fulltext_followup_required=false; 05地球环境的气候系统对象明确。容易与01计算/AI能力评测混淆，但代码和Agent是研究工具，最终对象及验证均为ENSO气候模型，故应落05；未发现独立算法能力实验需另加01。类别风险低，核心强度仍由主控决定。 scientific_object_modules=05; object_coverage_mode=single_module; primary_module_for_filing=05; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2610.10513; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0908",
+    "title": "Bringing Agentic Search to Earth Observation Data Discovery",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.02387",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=05.04.04; fulltext_followup_required=false; 应归05，因为benchmark对象和返回资源是NASA Earth Observation地球科学数据与工具。可能被误放01信息检索；但IR算法只是方法，任务对象及科研使用场景是地球观测数据发现。若主控将科研数据发现视为通用检索能力而非具体科学任务，需复核Agent边界，分类风险低、角色范围风险中。 scientific_object_modules=05; object_coverage_mode=single_module; primary_module_for_filing=05; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.02387; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0910",
+    "title": "InternReviewer & InternAdvocate: Objective Reward and Evaluation for Agentic Reinforcement Learning in Peer Review and Rebuttal",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.28612",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=11.07; fulltext_followup_required=false; 研究对象直接是同行评议与学术答辩，归11.07；虽然使用通用文献检索工具，但科研制度角色明确，不归01.04。 scientific_object_modules=11; object_coverage_mode=single_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.28612; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0916",
+    "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.23525",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=05.03.07; fulltext_followup_required=false; 归05地球环境科学，细分代码取05.03.07（环境风险与环境健康）：具体对象是地球系统、气候/天气/水文灾害过程及地学证据。虽然涉及基础设施、风险决策和跨部门影响，但工程系统并非本benchmark核心研究对象，故不因此加09/11。邻近边界风险低。 scientific_object_modules=05; object_coverage_mode=single_module; primary_module_for_filing=05; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.23525; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0917",
+    "title": "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.00436",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=03.02;05.01.02; fulltext_followup_required=false; 依用户特别指定采用03/05双模块。03对象是水溶液化学的物种/反应计算，对应03.02基础化学；05对象是地球化学场景及其介质过程，主文件归05。邻近09的科学计算软件只是工具，不是工程系统对象，因此不归09。分类边界中等，建议主控核对21场景逐项主题。 scientific_object_modules=03;05; object_coverage_mode=multi_module; primary_module_for_filing=05; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.00436; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0918",
+    "title": "DeepInstructor: An Agentic AI Instructor for Experience-Driven Idea Evaluation",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.22104",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=11.07; fulltext_followup_required=false; 归11.07科学知识生产/同行评审研究对象。容易误归01（Agent/检索系统方法）或某个被评估想法所属自然科学模块；但实验测量的是科学界的构想评审过程，没有某一自然科学对象的独立实验，故01不作为正式对象模块，也不按 idea domain 添加自然科学类。核心强度风险中等：Agent评估而非完整发现流程，但明确承担科研评价工作。 scientific_object_modules=11; object_coverage_mode=single_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2609.22104; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0919",
+    "title": "Scaling Scientific Discovery Environments for Turn-Level Agentic RL",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2607.28990",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=05.02.07;06.03.06;07.03.01;11.01; fulltext_followup_required=false; 主控追加核对Appendix A Tables 5–6及14–15：FRED经济数据→11.01，UniProt/STRING蛋白对象→06.03.06，USGS water data→05.02.07，CDC FluView与PLACES→07.03.01。不是01.04；不因采用RL和Python就追加01。Table 5另列127个工程域环境，但具体工程对象尚未核清，暂不追加09。 scientific_object_modules=05;06;07;11; object_coverage_mode=multi_module; primary_module_for_filing=07; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2607.28990; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0922",
+    "title": "QuantumNovelty: A Skill-Orchestrating Language Agent for Referee-Style Review and Patentability Screening of Quantum Papers and Patents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.16900",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=02.02.06;11.07.08;11.07.09; fulltext_followup_required=false; 02 由量子算法/稿件具体案例支撑；11.07 由科学审稿、主张和证据核验工作流支撑。暂标 02.02.06、11.07.08/09；主展示取 11。专利部分不单独扩至工程/法律模块。 scientific_object_modules=02;11; object_coverage_mode=multi_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.16900; source_checked_at=2026-10-22;"
   }
 ]
