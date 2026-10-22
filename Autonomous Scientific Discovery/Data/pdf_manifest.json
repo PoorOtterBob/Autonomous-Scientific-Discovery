@@ -5941,5 +5941,2168 @@
     "pdf_status": "archived_pdf",
     "evidence_status": "first_hand_full_text",
     "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-0923",
+    "title": "Training AI Scientists to Replicate Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Falck_2026_Training_AI_Scientists_to_Replicate_Research_ASD0923.pdf",
+    "sha256": "778db11b6fb25c3d6087451516ee9bc349288f3ea2b9a95ac0e76b0916f75308",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0924",
+    "title": "SGHA: Evidence-Grounded Research Problem Discovery with Local Language Models",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Gharat_2026_SGHA_Evidence_Grounded_Research_Problem_Discovery_with_Local_Language_ASD0924.pdf",
+    "sha256": "8ac7cfa64162284fb1fca419652f4e78f79e6aab7db98f8a3ad256e08f64700f",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0925",
+    "title": "Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Yu_2026_Beyond_Execution_Auditing_Experimental_Fidelity_in_LLM_Driven_Scientific_ASD0925.pdf",
+    "sha256": "7fa2c4da60ba8a672658feb2e77ea15519826137b3b32c090a1293a2c04a70b9",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "02",
+      "06",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0926",
+    "title": "AutoData: Agentic Search for Pre-training Data Selection",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Meng_2026_AutoData_Agentic_Search_for_Pre_training_Data_Selection_ASD0926.pdf",
+    "sha256": "58e233f904f8f17d343324b46f948a8e992b10a24f75e2594dd8b9e65b610f28",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0927",
+    "title": "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Nam_2026_ScientistTwo_Pioneering_the_Human_Knowledge_Frontier_with_Autonomous_AI_ASD0927.pdf",
+    "sha256": "98fb7802ec28beea159895a3de219307e019867b16296dfe4a79e68daaef9a17",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0928",
+    "title": "EviGraph: Evidence-Guided Autonomous Research Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Ren_2026_EviGraph_Evidence_Guided_Autonomous_Research_Agents_ASD0928.pdf",
+    "sha256": "1e750ededb8382e8b8f862a681a33018fe8dec80c3fd083dc321fe4e0643f5d5",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0929",
+    "title": "Learning What to Investigate Next: Meta-Reasoning for Long-Horizon Research Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Samanta_2026_Learning_What_to_Investigate_Next_Meta_Reasoning_for_Long_ASD0929.pdf",
+    "sha256": "a0253a71fe7773b2bd2dea760aa3944d903dd6a879fefeeef3076e45fb0a216d",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0930",
+    "title": "ExpEvolve: Structuring and Reusing Experience for Open-Ended Discovery",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Chen_2026_ExpEvolve_Structuring_and_Reusing_Experience_for_Open_Ended_Discovery_ASD0930.pdf",
+    "sha256": "7a0fdb0f6d986ee81c2eedc50129f501443fcd93375da7c0dcfffba05dafc5bf",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0931",
+    "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Kirgis_2026_Can_AI_agents_conduct_open_ended_AI_research_Early_ASD0931.pdf",
+    "sha256": "1498e9169c3c2031ce9e283d73061d3e63ba2e810b02b357a51477c5260bb508",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0932",
+    "title": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Lange_2026_The_Agentic_Scientist_Orchestrating_Coding_Agents_for_Automated_Scientific_ASD0932.pdf",
+    "sha256": "cb170b5435743032755f89b97136464a024df2c0fb4f46286a69945208585fd5",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0933",
+    "title": "JANUS: Enhancing Long-Horizon Autonomous Research with Co-Evolving World Models",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Liu_2026_JANUS_Enhancing_Long_Horizon_Autonomous_Research_with_Co_Evolving_ASD0933.pdf",
+    "sha256": "8f17290ecbff1cffa5832ee8d68c18bdb63b35e9b49f08333fb307a02159dbc8",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0934",
+    "title": "YouRA: A Persistent-State Architecture for Evidence-Traceable Autonomous Research Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Woo_2026_YouRA_A_Persistent_State_Architecture_for_Evidence_Traceable_Autonomous_ASD0934.pdf",
+    "sha256": "aab1ea1d9b6bfe634273c5a4341debfe6bbc3f26043e6ea9a58fc1e5a149df03",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0935",
+    "title": "DataSense-Bench: The First Step Toward an AI Scientist",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Zhang_2026_DataSense_Bench_The_First_Step_Toward_an_AI_Scientist_ASD0935.pdf",
+    "sha256": "8023530641947ecaf4855981b1dfed34f7e53fc95b1fa792dc4ed9ea7a74d66e",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0936",
+    "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Wang_2026_PaperGym_Rubric_Centered_Evolution_for_Research_Plan_Generation_ASD0936.pdf",
+    "sha256": "938fc3ea5bb892b9b8fd5b51687151f53ac59bd8e5e59e9699b76b5bec93a42b",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0937",
+    "title": "AppliedScientist: Automated Scientific Revision Through Iterative AI Reviewing",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Vats_2026_AppliedScientist_Automated_Scientific_Revision_Through_Iterative_AI_Reviewing_ASD0937.pdf",
+    "sha256": "f88f3ff4c3cce1ebab4b4e772da70aa9ea77ab2d1ebf913d6a80d6f4fb32dc8a",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0938",
+    "title": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Wang_2026_Learning_to_Evaluate_Before_Improving_Automatic_Rubric_Induction_for_ASD0938.pdf",
+    "sha256": "5b395ea3888d07cd59f725138451ed5d7c6ee42cc9912f14bf48aa0c82629dfc",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0939",
+    "title": "HypoForge: A Self-Improving Multi-Agent Framework for Automated Hypothesis Generation and Testing via Scientific Skill Learning",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Qian_2026_HypoForge_A_Self_Improving_Multi_Agent_Framework_for_Automated_ASD0939.pdf",
+    "sha256": "bb0f249fd26cfb50de08c409272099098d241dd579883c470ec350d44e2cd397",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0940",
+    "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Li_2026_OmniScientist_An_Omni_Modal_Omni_Discipline_AI_Scientist_ASD0940.pdf",
+    "sha256": "028cdc0c2163563cdee101a7c5754343f0c4b00ffab85da675dcc3b080842554",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0941",
+    "title": "Can AI Agents Make Open-Ended Scientific Discovery? Evidence from Station",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Du_2026_Can_AI_Agents_Make_Open_Ended_Scientific_Discovery_Evidence_ASD0941.pdf",
+    "sha256": "2bcf8a9a6a10e06b92e6705b01c376170370884068a16f6fa98b557056bc890a",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0943",
+    "title": "Epi: Towards a Persistent, Self-Improving Agent for Autonomous Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Huang_2026_Epi_Towards_a_Persistent_Self_Improving_Agent_for_Autonomous_ASD0943.pdf",
+    "sha256": "0ddaa6e7f1f2729204f3ee6a5ad291b44593191a3219771ce63cf2a4b865480b",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "09",
+      "10"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0945",
+    "title": "MMPostTrainBench: Benchmarking Autonomous Research for Multimodal Post-Training",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Yuxin_2026_MMPostTrainBench_Benchmarking_Autonomous_Research_for_Multimodal_Post_Training_ASD0945.pdf",
+    "sha256": "f97d89532eb290a2a27be18470cb2bced238fe1324e30e2bf086a90642e812d7",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0946",
+    "title": "PrimeScientist: Strategic Allocation of Research Effort in Autonomous Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Xinle_2026_PrimeScientist_Strategic_Allocation_of_Research_Effort_in_Autonomous_Research_ASD0946.pdf",
+    "sha256": "cfd4173bcadaa1a8fc9d5958d6571b2aabe57587fbf05df7547729f2d10f48ea",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0947",
+    "title": "Experimental Experience Modeling for Autonomous Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Wenda_2026_Experimental_Experience_Modeling_for_Autonomous_Research_ASD0947.pdf",
+    "sha256": "be3180eb7ca70e76d91d0c3467028002f07603357867c867d1a6fc0cd01c1e93",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0948",
+    "title": "Collaborative Principle Evolution via Evidence Transfer for Scientific Discovery",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Yingming_2026_Collaborative_Principle_Evolution_via_Evidence_Transfer_for_Scientific_Discovery_ASD0948.pdf",
+    "sha256": "e1e3bacce5b4ff48539fbc30cec41a9dc53c50f3101b0d206f3c1ba6bd52212d",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04",
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0949",
+    "title": "TruthInsightBench: An Evidence-Grounded Benchmark for Automated Evaluation of Open-Ended Scientific Discovery Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Yang_2026_TruthInsightBench_An_Evidence_Grounded_Benchmark_for_Automated_Evaluation_of_ASD0949.pdf",
+    "sha256": "c3df4fd501de18086141713603d2744af39a70582f9cde1fd0d1ecccd4766d96",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0950",
+    "title": "Dr. Claw: An AI Scientist Workspace for Vibe Research",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Dingjie_2026_Dr_Claw_An_AI_Scientist_Workspace_for_Vibe_Research_ASD0950.pdf",
+    "sha256": "3ca735ce30a2f6805e9ef560de424e28f330b8098cb08c4ef32aaeed084d3c08",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0951",
+    "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Huang_2026_Reward_Hacking_Challenges_Oversight_of_Autonomous_Research_Agents_ASD0951.pdf",
+    "sha256": "424650d40c5d3db92aebbb21700957a4b9a670abec383eeb12c83b5aad3f95f0",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0952",
+    "title": "AutoResearch: Insight In, Hallucination Out",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Xiang_2026_AutoResearch_Insight_In_Hallucination_Out_ASD0952.pdf",
+    "sha256": "ab4777a51a53a019bb82ed06e49415e584c3324b08451c7ca8882597de58321c",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0953",
+    "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Mingming_2026_ScienceFlow_A_long_horizon_agent_for_ML_research_scientific_ASD0953.pdf",
+    "sha256": "ed438e3ae2867c8f6e60223d9e136461c309f6beb141962acfd4a12caa42ea98",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0954",
+    "title": "Project2Task: Graph-Guided Project-Level Planning for Autonomous Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Huirui_2026_Project2Task_Graph_Guided_Project_Level_Planning_for_Autonomous_Research_ASD0954.pdf",
+    "sha256": "fc7b596ad0163c9345ca279056cabae33a0d429003579a55bfb8e19dfca8bd50",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0955",
+    "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Marjan_2026_AutoWorldModel_Bench_A_State_Centric_Benchmark_for_Automated_World_ASD0955.pdf",
+    "sha256": "9e64490740b88459e68fcdfe336fe7002c8ff990c0e25a7f14fac7c73855ae6a",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0956",
+    "title": "Beneath the Diff: Diagnosing and Mitigating Algorithmic Mode Collapse in Code-Level Autonomous Research Loops",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Bowei_2026_Beneath_the_Diff_Diagnosing_and_Mitigating_Algorithmic_Mode_Collapse_ASD0956.pdf",
+    "sha256": "17c9c3c8dc6958656028b67652ed27c67791de5e87fcc7437efe157b12d2cd45",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0957",
+    "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Yiwei_2026_Beyond_Final_Scores_A_Systematic_Evaluation_of_Agents_for_ASD0957.pdf",
+    "sha256": "4aab37089179edb013b835e29e0896412ab766383626e88f5f877fb258d46542",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0958",
+    "title": "Beyond Solution-Centric Search: Adaptive Inquiry and Knowledge Revision for Autonomous ML Engineering",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Shaokang_2026_Beyond_Solution_Centric_Search_Adaptive_Inquiry_and_Knowledge_Revision_ASD0958.pdf",
+    "sha256": "09e8bfd8d3452c48164317456a38dbaa4a0c85c4f1642917285b39b0ea1d6c1d",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0959",
+    "title": "Long-Horizon Autonomous Architecture Research with a Language-Model Agent: A Behavioural Case Study",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Aon_2026_Long_Horizon_Autonomous_Architecture_Research_with_a_Language_Model_ASD0959.pdf",
+    "sha256": "6ac9d5a26a9eabe9e19b7d7daf2ec8e61b3e6db47cdb8ad385d2de14b202b5ea",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0960",
+    "title": "CausalSmith: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Jiyuan_2026_CausalSmith_A_Formally_Grounded_Self_Improving_Agentic_Framework_for_ASD0960.pdf",
+    "sha256": "d497ff2a5ee07f369e6cf26ab93bc252adfa0fd9c5d6780074d7124872f59eb5",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0961",
+    "title": "XScientist: A Git-Like Research Protocol for Long-Running Autonomous Scientific Discovery",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Jixiang_2026_XScientist_A_Git_Like_Research_Protocol_for_Long_Running_ASD0961.pdf",
+    "sha256": "04fef44ab14990700683fef08fecb983b5fd7036ece69aec04012d54eeb2c70e",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0962",
+    "title": "Triage-PiEvo: Evidence Admission for Principle-Evolving Scientific Agents",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Li_2026_Triage_PiEvo_Evidence_Admission_for_Principle_Evolving_Scientific_Agents_ASD0962.pdf",
+    "sha256": "db16e315c8706b907c0276ba492a2d58a0f6469b0652d6bbb49e7eda9e618fc7",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0963",
+    "title": "EvoSim: Learning to Model, Modeling to Learn",
+    "pdf_path": "Reference_PDF/04_Materials_Science/YunWei_2026_EvoSim_Learning_to_Model_Modeling_to_Learn_ASD0963.pdf",
+    "sha256": "31a6096bd268838452d8a06acfff865a2eb9562253ba6877ce13b4c41feb87b9",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "03",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0964",
+    "title": "Are We Measuring Scientific Intelligence? Rethinking the Evaluation of AI Scientists",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Kate_2026_Are_We_Measuring_Scientific_Intelligence_Rethinking_the_Evaluation_of_ASD0964.pdf",
+    "sha256": "9f5f4629ceb92fc50a8e7626577b9316ca84dd3d47ba8c71c5065c7e2b2b6dd0",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0965",
+    "title": "Can AI Scientists Change Their Minds? Prior-Evidence Conflict in Synthetic Universes",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Kargi_2026_Can_AI_Scientists_Change_Their_Minds_Prior_Evidence_Conflict_ASD0965.pdf",
+    "sha256": "a96a81ed78b1f04d4d96d3c14757a1e0935ddde3cf866f4ac8a89865394b7491",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0966",
+    "title": "AI for Science with GPT-6 Astra: Thermal Design and Electrothermal Analysis of 2D CFET",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Kim_2026_AI_for_Science_with_GPT_6_Astra_Thermal_Design_ASD0966.pdf",
+    "sha256": "c6d818eb21fbe06c8fd5a7f8154a1d4a51a4934988b5914a2efb6072a3b3fb01",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0967",
+    "title": "An immune world model for multiscale forecasting and therapeutic hypothesis generation",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Taoyong_2026_An_immune_world_model_for_multiscale_forecasting_and_therapeutic_ASD0967.pdf",
+    "sha256": "78f8323f1123e74bccdc127ad59fe978d99436c2bed18424549321d7f3eb85cb",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0968",
+    "title": "Online Surrogate Repair: Decoupling High-Fidelity Feedback from Search Length in Closed-Loop Discovery",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Xiaotang_2026_Online_Surrogate_Repair_Decoupling_High_Fidelity_Feedback_from_Search_ASD0968.pdf",
+    "sha256": "b886fc67e685634f9eddc0dda8d3391e12ca2025633f08a6302fb0fa7e86d1ba",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0969",
+    "title": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Mengru_2026_Mechanist_AI_as_a_Scientific_Instrument_for_Discovering_the_ASD0969.pdf",
+    "sha256": "e1526bbd90b856f10579cbd8457331068b443a9c5b55df5c489a30c9f057d620",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0971",
+    "title": "Sci$Π$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Sun_2026_Sci_vot_Benchmarking_Principal_Investigator_Judgment_at_Pivotal_Moments_ASD0971.pdf",
+    "sha256": "074f78616f2d6f3c3d74cd03cbe3c66fc8be015d8525673d59eee0043de41ce7",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0972",
+    "title": "EvoCast: Reliable Autonomous Research Agents for Iterative Forecasting Architecture Evolution",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Kaipeng_2026_EvoCast_Reliable_Autonomous_Research_Agents_for_Iterative_Forecasting_Architecture_ASD0972.pdf",
+    "sha256": "8f8c1c0122ae866bbd87d26fa0ac8395632331505c84d07221db2be7a9467e99",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0973",
+    "title": "Large-Scale Autonomous Discovery of Kissing Number Constructions",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Shuxing_2026_Large_Scale_Autonomous_Discovery_of_Kissing_Number_Constructions_ASD0973.pdf",
+    "sha256": "bcb3a6941b472b6e0b1172dec3de6142e10ea5fedceedce66bfe9fd550303439",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0975",
+    "title": "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Davide_2026_A_Case_Study_on_Emergent_Cheating_and_Whistleblowing_in_ASD0975.pdf",
+    "sha256": "79675effc26f8a7f68e9222e9f266fe3637407f2ed2ca15408a387b054e9c135",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0976",
+    "title": "Andy: A Mathematical Agent for Rigorous Proof and Autonomous Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Zian_2026_Andy_A_Mathematical_Agent_for_Rigorous_Proof_and_Autonomous_ASD0976.pdf",
+    "sha256": "b7afdf5cd227db9d779d1dab4ed224facf716b7b35a237e68e886e8eec9f88df",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0977",
+    "title": "AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Weicheng_2026_AgonAlpha_Autonomous_Alpha_Discovery_via_Prompt_Economy_and_Scalable_ASD0977.pdf",
+    "sha256": "9cd78b8bd9602171a134f5e027eda407adbcdae593766bda2ac38c54e93b2fb7",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0978",
+    "title": "OpenDiscoveryTrace: Process Traces for Evaluating AI Scientist Workflows",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Bansal_2026_OpenDiscoveryTrace_Process_Traces_for_Evaluating_AI_Scientist_Workflows_ASD0978.pdf",
+    "sha256": "0f6cb7411fc7955577cd57c3130e99ce56dd3ccab9c9530921f9f197f0db4fd2",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04",
+      "06",
+      "07",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0979",
+    "title": "Autonomous in-silico inorganic materials discovery via multi-agent physics-aware scientific reasoning",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Ghafarollahi_2026_Autonomous_in_silico_inorganic_materials_discovery_via_multi_agent_ASD0979.pdf",
+    "sha256": "77afca5a264ff34df44185a997d038937128b40b9dfa958826c7fd5240b666f9",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0980",
+    "title": "Experiment automation agents: automating materials characterization with vision language model agents",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Du_2026_Experiment_automation_agents_automating_materials_characterization_with_vision_language_ASD0980.pdf",
+    "sha256": "fae5bff05b60b48b0d0952f59bf60eee87d7df5e342d4c847d1cf9df55d3b9d4",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0981",
+    "title": "A collaborative agent with two lightweight synergistic models for autonomous crystal materials research",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Shi_2026_A_collaborative_agent_with_two_lightweight_synergistic_models_for_ASD0981.pdf",
+    "sha256": "b17a1de19275570329eeb0cbe1a3108216812b597c05540e125c6f241c1e25ca",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0982",
+    "title": "Large-language-model-driven adaptive search space definition for autonomous closed-loop materials exploration",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Iwasaki_2026_Large_language_model_driven_adaptive_search_space_definition_for_ASD0982.pdf",
+    "sha256": "5ee94a4b4223fbe2a6c52e93d862eee119e8e6cad6ff6077dae3fa44e55ad114",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0983",
+    "title": "Autonomous adaptive spectral analysis with an LLM agent for self-driving laboratories",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Wakabayashi_2026_Autonomous_adaptive_spectral_analysis_with_an_LLM_agent_for_ASD0983.pdf",
+    "sha256": "b2c1b0171f69f9440664b2f87c2af8a46797558242ad550f3e9109265c9c33ae",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0984",
+    "title": "A self-learning scientific agent for X-ray diffraction",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Cao_2026_A_self_learning_scientific_agent_for_X_ray_diffraction_ASD0984.pdf",
+    "sha256": "be3ddd187f81265d829c719bee6362fd2832bdb128dc12466e4c99a376cc9aac",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0985",
+    "title": "Agent-E2MD: Autonomous Translation of Interatomic Potential Equations into Physically Validated Pair Styles for Molecular Dynamics in LAMMPS",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Varughese_2026_Agent_E2MD_Autonomous_Translation_of_Interatomic_Potential_Equations_into_ASD0985.pdf",
+    "sha256": "29d59cc5ebce888ca9248ce276b263f5896f56b5a05ad6ea718d714734776fdd",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0986",
+    "title": "Hierarchical automation of scanning probe microscopy through agentic orchestration and algorithmic control",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Slautin_2026_Hierarchical_automation_of_scanning_probe_microscopy_through_agentic_orchestration_ASD0986.pdf",
+    "sha256": "0c09401910e27499f0b101fb14d7a14b7b664dfb50efc4498c9936a0249371b3",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0988",
+    "title": "PACE-SIMS: Checkpoint-Gated Autonomous SIMS Characterization with AI-Agent Quality Control",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Ievlev_2026_PACE_SIMS_Checkpoint_Gated_Autonomous_SIMS_Characterization_with_AI_ASD0988.pdf",
+    "sha256": "468bf91d1f38554813bd8ac351f9242054068178c3a4f8d754f200adbcb449bc",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0989",
+    "title": "Agent-MD: Selective LLM Intervention with Event-Driven Escalation for Stateful GCMC--MD Campaigns",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Wang_2026_Agent_MD_Selective_LLM_Intervention_with_Event_Driven_Escalation_ASD0989.pdf",
+    "sha256": "018fcd0d7e6ab10e1ba2abaccec09cadc31125f9bfde4f2430e711cabd9f7e48",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0990",
+    "title": "An LLM agent for end-to-end computational materials discovery",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Yuntong_2026_An_LLM_agent_for_end_to_end_computational_materials_ASD0990.pdf",
+    "sha256": "9253e6f8d0d31d41d7ac39bb8d63ab1334e67d8d5589b6fc4d388e4370362717",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0991",
+    "title": "ALKEMIE Agent: an autonomous platform for computational materials design",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Huang_2026_ALKEMIE_Agent_an_autonomous_platform_for_computational_materials_design_ASD0991.pdf",
+    "sha256": "f1a85857d499a837ad7182652ab2f54a0ecdeffd1dd8061b57c3c03739511100",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0992",
+    "title": "ElectrolyteMD-Bench: How Well Do AI Agents Conduct Molecular Dynamics Studies across Electrolyte Solvation Regimes?",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Wu_2026_ElectrolyteMD_Bench_How_Well_Do_AI_Agents_Conduct_Molecular_ASD0992.pdf",
+    "sha256": "2bf908cad6700a23f993030b4b65c656e39a9caf27c3f68c5bb922cc2881e5ac",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0993",
+    "title": "Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Yang_2026_Vibe_FDTR_An_agent_oriented_framework_for_reproducible_frequency_ASD0993.pdf",
+    "sha256": "928e0e31114955ac06a67dd50e9d73318a6eb59ebf83f95d81f96314766f3d18",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0994",
+    "title": "AEcroscopyWave: Towards Self-Driving Characterization Platforms for Agentic AI",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Liu_2026_AEcroscopyWave_Towards_Self_Driving_Characterization_Platforms_for_Agentic_AI_ASD0994.pdf",
+    "sha256": "2bc930d4659f52593d6c75d3e07aab572c865c42acef24991393a95d5ac88ed7",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0995",
+    "title": "Quality-controlled active learning via Gaussian processes for robust structure–property learning in autonomous microscopy",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Chowdhury_2026_Quality_controlled_active_learning_via_Gaussian_processes_for_robust_ASD0995.pdf",
+    "sha256": "83884e5ebf7db0310759f6379f7e4b4f6c6ff88a8df426717acb19c0d7011e16",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0996",
+    "title": "ChemGraph-XANES: an agentic framework for XANES simulation and curation",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Grizzi_2026_ChemGraph_XANES_an_agentic_framework_for_XANES_simulation_and_ASD0996.pdf",
+    "sha256": "2daa71a919d2026016a6c6b2382e055e6e49ff97a2295fdcc4502a0b6ae43387",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0999",
+    "title": "Interpretable self-driving sputtering epitaxy reveals human-usable growth rules for β-Ga2O3 films",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Wakabayashi_2026_Interpretable_self_driving_sputtering_epitaxy_reveals_human_usable_growth_ASD0999.pdf",
+    "sha256": "ad6010001f43a4502d1d578913b254ebbdc69581740c83ca5415463e16131a1a",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1001",
+    "title": "CompMat-Bench: Benchmarking AI Agents for Computational Materials Science",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Zhang_2026_CompMat_Bench_Benchmarking_AI_Agents_for_Computational_Materials_Science_ASD1001.pdf",
+    "sha256": "cb1d02e0ad2b3e1dc34d8772d01da951069660dffb6f32727cb02a3f6985d3e3",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1002",
+    "title": "ERAF4XRD: A multimodal agentic framework for constructing validated experimental X-ray diffraction databases from scientific literature",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Mostafa_2026_ERAF4XRD_A_multimodal_agentic_framework_for_constructing_validated_experimental_ASD1002.pdf",
+    "sha256": "d9a3b2c657a39d13db815512f45af7208261561563422d4fd784d69d615f59dc",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1003",
+    "title": "Human-agent discovery of reconfigurable in-plane ferroelectric superdomain control",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Liu_2026_Human_agent_discovery_of_reconfigurable_in_plane_ferroelectric_superdomain_ASD1003.pdf",
+    "sha256": "6b9be7b10501af6800ea9f4f6821621dbe5d1e3598e5e75cd8b6f87b85fafea9",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1004",
+    "title": "Crystal-structure design by agentic AI in a language of motifs",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Le_2026_Crystal_structure_design_by_agentic_AI_in_a_language_ASD1004.pdf",
+    "sha256": "76f33cb7c6ce7f32f37f7e01581a8c61d2f1d9d563dca3f1509177502be86a21",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1005",
+    "title": "LATHE: LAnguage-driven Toolkit for Hypothesis-based crystal Editing",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Zheng_2026_LATHE_LAnguage_driven_Toolkit_for_Hypothesis_based_crystal_Editing_ASD1005.pdf",
+    "sha256": "08376a58f997920b2ce212e19c661c0950c5d54163fd34f8dd1ce4e65dd207c5",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1006",
+    "title": "Enabling large language model agents for high-fidelity many-body perturbation theory calculations",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Zhang_2026_Enabling_large_language_model_agents_for_high_fidelity_many_ASD1006.pdf",
+    "sha256": "5ac4a2e5a60f922167dcc80ddb4875e429aa42565abe243d4a8a54c6453319e3",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1008",
+    "title": "Scaling LLM Agents for Materials Design through Hierarchical Collective Reasoning",
+    "pdf_path": "Reference_PDF/04_Materials_Science/Choi_2026_Scaling_LLM_Agents_for_Materials_Design_through_Hierarchical_Collective_ASD1008.pdf",
+    "sha256": "4f8e922fd8e4ce549cd7e368e1173f2883ccb2e560983767c939ec71de3daade",
+    "primary_module_for_filing": "04",
+    "scientific_object_modules": [
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1009",
+    "title": "Agentic self-driving microscopy benchmarks support qualification but do not necessarily generalize to unseen tasks",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Johnson_2026_Agentic_self_driving_microscopy_benchmarks_support_qualification_but_do_ASD1009.pdf",
+    "sha256": "949f2e5e5e7d736b4549f245b496bb4b13bf4a3ec5b0aa609588c015ec2e91df",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1011",
+    "title": "Stress-testing large language model agents in a robotic chemistry laboratory",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Guo_2026_Stress_testing_large_language_model_agents_in_a_robotic_ASD1011.pdf",
+    "sha256": "75d30c97d37dbd7bba39e5dceef58e05d4c9126ed8cb8c632f73109e2675a350",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1013",
+    "title": "From quantitative features to imaging signs: agentic AI-driven autonomous discovery in glioblastoma",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Li_2026_From_quantitative_features_to_imaging_signs_agentic_AI_driven_ASD1013.pdf",
+    "sha256": "098c5232081b3b792e89c1f2285a16e528a742141499519458670fddb2b3fa61",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1017",
+    "title": "DynaMate: An Autonomous Agent for Protein-Ligand Molecular Dynamics Simulations",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Masschelein_2026_DynaMate_An_Autonomous_Agent_for_Protein_Ligand_Molecular_Dynamics_ASD1017.pdf",
+    "sha256": "d078cc275139e72b3d4c600bcf2db34c55523f2c86bd127996d52df6b0304e6f",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1018",
+    "title": "GENIE: a multi-agent system for closed-loop autonomous microscopy",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Vasquez_2026_GENIE_a_multi_agent_system_for_closed_loop_autonomous_ASD1018.pdf",
+    "sha256": "acb2ea92e5ab017dde5987c574032a2dcf0638f406719e6b72eaddf6527beefd",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1019",
+    "title": "A Conversational Multi-Agent AI System for Integrated Multi-Omics Analysis and Biomedical Discovery",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Rajdeo_2026_A_Conversational_Multi_Agent_AI_System_for_Integrated_Multi_ASD1019.pdf",
+    "sha256": "39c72b74bcb6195c7c5b24e18f115b6dd1e4c0950d0e9a13eec5b6f0c6315f1e",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1020",
+    "title": "PromptBio: An Agentic Platform for End-to-End Computational Biomedical Research",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Zhang_2026_PromptBio_An_Agentic_Platform_for_End_to_End_Computational_ASD1020.pdf",
+    "sha256": "db4499849513e87d0452a69c0c2db0f6fa9e1e5e85a18826bc5f38d064dba9da",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1021",
+    "title": "TRACEDD: A Tool-grounded Reasoning and Agentic Coordination for Explainable Drug Design",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Vangala_2026_TRACEDD_A_Tool_grounded_Reasoning_and_Agentic_Coordination_for_ASD1021.pdf",
+    "sha256": "65a5c0792f98c61ae14b983dc3c31dbe91c31d513bf8002a27f492d7e72a190b",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1022",
+    "title": "Agentic campaign control for high-throughput de novo binder design",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Jeon_2026_Agentic_campaign_control_for_high_throughput_de_novo_binder_ASD1022.pdf",
+    "sha256": "028c46d84b8153ce8ff314ed7cb95be02b20eeeb9ade04a5bdff2a13433bf6ac",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1023",
+    "title": "Reliable and Efficient Agentic Protein Design with Toolset Harnessing",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Butcher_2026_Reliable_and_Efficient_Agentic_Protein_Design_with_Toolset_Harnessing_ASD1023.pdf",
+    "sha256": "cab6b6580c9beeda9de8c93883659c55557a0b11b33800ce088417248037a2d5",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1024",
+    "title": "Detailed curation of biological samples and experimental designs for genomics using LLM-supported agentic workflows",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Pavlidis_2026_Detailed_curation_of_biological_samples_and_experimental_designs_for_ASD1024.pdf",
+    "sha256": "289c39bd7d9864b0aeec1334014098358a9d48cf1afb641066262b14b1161a3e",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1025",
+    "title": "From Prompt to Pipeline: A Comparative Evaluation of Large Language Model Coding Agents for Reproducible Bioinformatics Pipeline Construction",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Munn_2026_From_Prompt_to_Pipeline_A_Comparative_Evaluation_of_Large_ASD1025.pdf",
+    "sha256": "c995ba2b66c9fdc8a144840b0c842c5b9b40a1d05ef186522989cbe2d3234b1a",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1026",
+    "title": "ACCREDIT: A Quality-Aware Agentic Engine for Cell-resolved Cross-modal Image Registration with Dynamic Iterative Tuning",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Zhou_2026_ACCREDIT_A_Quality_Aware_Agentic_Engine_for_Cell_resolved_ASD1026.pdf",
+    "sha256": "504b90dd98749c944c4d9cb988b7029ba595154306877e5a077bcfe900e0bc99",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1027",
+    "title": "Human-Guided Agentic AI for End-to-End EHR Research: Sequential Antibody-Drug Conjugate Pathways in Breast Cancer",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/LoaizaBonilla_2026_Human_Guided_Agentic_AI_for_End_to_End_EHR_ASD1027.pdf",
+    "sha256": "a37f0d3e5d559f1a700a115a0919c2a2bad329b23963d7b38f9c1ba8845b41de",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1028",
+    "title": "From seven combination hypotheses to one testable interaction: a gated agentic AI–QSP workflow applied to healthy-ageing interventions",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Goryanin_2026_From_seven_combination_hypotheses_to_one_testable_interaction_a_ASD1028.pdf",
+    "sha256": "37ae1f3c6ab598372770b06cece3fb7e9d05a4ad81925858b29e1094849f714f",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1029",
+    "title": "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Chen_2026_inClinico_Agent_for_clinical_trial_endpoint_prediction_and_prospective_ASD1029.pdf",
+    "sha256": "5d61c41ccfee49d45b8cbe8f7d054a89df6b6162d6b2e190c566d1a89f060585",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1030",
+    "title": "MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Zhang_2026_MedKGent_a_large_language_model_agent_framework_for_constructing_ASD1030.pdf",
+    "sha256": "1ae708bdb17a84cb6edcf5c90ed70cf7f009efbfacb8c7368be8c2209c38937e",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1036",
+    "title": "Verification Debt in Automated Biological Research Workflows: A Proof-of-Concept",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Gopalan_2026_Verification_Debt_in_Automated_Biological_Research_Workflows_A_Proof_ASD1036.pdf",
+    "sha256": "901eace65808c38ffd3cfe0872d735eac9fc6ff4fa6cb5dd3356b2f624c40bb0",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1037",
+    "title": "hvantk: an agentic multi-omics framework for variant annotation and analysis",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Audain_2026_hvantk_an_agentic_multi_omics_framework_for_variant_annotation_ASD1037.pdf",
+    "sha256": "ce4f86b3cdddd1ac77d7aad9facb4bd3a532045c6ab34821166960db8359d6bb",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1038",
+    "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Shenqi_2026_Auto_MD_bench_Evaluating_Autoresearch_Agents_for_Real_World_ASD1038.pdf",
+    "sha256": "1d327466c724d2959eb4613b4de6de65885f13176d7d0eca675573e526fef232",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1039",
+    "title": "DrugTargetWorld: A Synthetic Biobank for Training and Benchmarking AI Scientists",
+    "pdf_path": "Reference_PDF/06_Life_Sciences/Samuel_2026_DrugTargetWorld_A_Synthetic_Biobank_for_Training_and_Benchmarking_AI_ASD1039.pdf",
+    "sha256": "7d288141e86e11ccd0dedb0cfd23e31fef8b1268f321a750a152bba341dd870d",
+    "primary_module_for_filing": "06",
+    "scientific_object_modules": [
+      "06",
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1040",
+    "title": "Can Coding Agents Build Robust Baselines? A Skill-Based Approach for Automating the Medical Imaging Model-Development Pipeline",
+    "pdf_path": "Reference_PDF/07_Medical_and_Health_Sciences/Eugenia_2026_Can_Coding_Agents_Build_Robust_Baselines_A_Skill_Based_ASD1040.pdf",
+    "sha256": "bf3a05641aa97c9f3bf75149aadfb57b3defad7371fc2356e530298199a2d443",
+    "primary_module_for_filing": "07",
+    "scientific_object_modules": [
+      "07"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1044",
+    "title": "VortexChat: An agentic framework for autonomous multi-objective integrated photonic design",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Chong_2026_VortexChat_An_agentic_framework_for_autonomous_multi_objective_integrated_ASD1044.pdf",
+    "sha256": "6464f99c5d18d8d5ab83e5c197c60eae216030262012ab5ecfc4b5d856c8edb8",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1046",
+    "title": "AI Agents as a Research Team: A Human-Supervised Case Study in Stellar Spectroscopy",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Gebran_2026_AI_Agents_as_a_Research_Team_A_Human_Supervised_ASD1046.pdf",
+    "sha256": "ffbb87a5513d445057d56c6c382a5ba55b868e4e620a34abf0f16bdc47ffc995",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1048",
+    "title": "Photonics-GCCE: group collaborative-competitive evolution multi-agent framework for universal and autonomous optical design",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Xu_2026_Photonics_GCCE_group_collaborative_competitive_evolution_multi_agent_framework_ASD1048.pdf",
+    "sha256": "f7c4ce7b06f0b6e9505bfbdfb4fcd559189b0d130c4f7fb20d608351daaf5cf5",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1051",
+    "title": "Agentic AI for Density-Functional Development: Revisiting r2SCAN",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Adhikari_2026_Agentic_AI_for_Density_Functional_Development_Revisiting_r2SCAN_ASD1051.pdf",
+    "sha256": "cd20e00ee47824485daffdc8fc6891fd3ba65f6d9f0d7b2833b89b44266b1ff2",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1052",
+    "title": "SolutionsX: supergravity theories/solutions as code, with an agentic workflow for machine-verifiable physics",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Dimitrov_2026_SolutionsX_supergravity_theories_solutions_as_code_with_an_agentic_ASD1052.pdf",
+    "sha256": "851017b4b569c3c4a713fe5a7b521940cd7ac88faf5104bbf3a8c8ab4469a9d6",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1053",
+    "title": "Agentic TCAD Calibration Workflow for Oxide Semiconductor Transistors",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Jeong_2026_Agentic_TCAD_Calibration_Workflow_for_Oxide_Semiconductor_Transistors_ASD1053.pdf",
+    "sha256": "d0c2656cc6ba9a8fb8cd08c6cefebf1db12b27f2ad792df3985247cf5d2136aa",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "04",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1054",
+    "title": "Automated Discovery of Physically Interpretable Subgrid Length Scales for Detached Eddy Simulation via Agentic AI",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Chen_2026_Automated_Discovery_of_Physically_Interpretable_Subgrid_Length_Scales_for_ASD1054.pdf",
+    "sha256": "5533b9427beecaa13b1016f68b4790b417248ec9b1595748c002565cdf8fad80",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "02",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1055",
+    "title": "Demonstration of a Structured Agentic Workflow for Applied Quantum Computing Research",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Dulal_2026_Demonstration_of_a_Structured_Agentic_Workflow_for_Applied_Quantum_ASD1055.pdf",
+    "sha256": "834da2c5edadd111e74314c473449557f7211e8d5bb155eae3169feac55f5c7f",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1056",
+    "title": "LaMET-Agent: An Agent Framework for Large-Momentum Effective Theory Analysis",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/He_2026_LaMET_Agent_An_Agent_Framework_for_Large_Momentum_Effective_ASD1056.pdf",
+    "sha256": "b23e609cf62c5aee90b30faa31826dcde1beb3931c8d4e77d9bd80d1255354a5",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1057",
+    "title": "SeisEvo: Evolution of Seismic Data Reconstruction Algorithms by Agents",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Xu_2026_SeisEvo_Evolution_of_Seismic_Data_Reconstruction_Algorithms_by_Agents_ASD1057.pdf",
+    "sha256": "06429456efbfd059a71223894a771094d613084c4416bcc3d9597c5149b3fd54",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1058",
+    "title": "CosmoAgent: AI Agent for Theoretical Cosmology",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Alexander_2026_CosmoAgent_AI_Agent_for_Theoretical_Cosmology_ASD1058.pdf",
+    "sha256": "ce24a21f8938caf4a0b1f4c00394a9d25ec36ef0b36226eff2670e93f6aed39a",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1059",
+    "title": "Automated Many-Body Simulations of Strongly Correlated Systems Using a Correlation-Aware Agentic Framework",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Li_2026_Automated_Many_Body_Simulations_of_Strongly_Correlated_Systems_Using_ASD1059.pdf",
+    "sha256": "b1b2d500ee830873abcd7c35d7a814985855f6fcb7e2b3274094db29906db7c7",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02",
+      "03"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1060",
+    "title": "AstroGenesis: A Domain-Specific Multi-Agent AI for Astrophysical Research",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Sahakyan_2026_AstroGenesis_A_Domain_Specific_Multi_Agent_AI_for_Astrophysical_ASD1060.pdf",
+    "sha256": "bd51246f8f47eb6bd77f52eb3f1fc333f1e418ebc20058b1adc6c0b6d8810f7f",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1061",
+    "title": "Agentic AI for operating scientific instruments for nanoscale characterization",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Ayar_2026_Agentic_AI_for_operating_scientific_instruments_for_nanoscale_characterization_ASD1061.pdf",
+    "sha256": "69d772701388ca85cc691b2634e0f2c72d28eef1af8658ce2a3213e4293275ff",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1062",
+    "title": "Vision-Language Agents for Active Perception in Optics Laboratories",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Ryan_2026_Vision_Language_Agents_for_Active_Perception_in_Optics_Laboratories_ASD1062.pdf",
+    "sha256": "f5b667fd0a58770fe8a9280f77ed326500252f60ba81aa27364dd1d77d3ce714",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1063",
+    "title": "OceanMind: A multi-agent AI system for ocean diagnosis",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Fan_2026_OceanMind_A_multi_agent_AI_system_for_ocean_diagnosis_ASD1063.pdf",
+    "sha256": "5600fcf72d2653913a8ff7c314659d1121f12ea19c324e7ef4a037db53bcdd78",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1064",
+    "title": "Agent-assisted experimental strategy transfer across quantum processors",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/ShiYao_2026_Agent_assisted_experimental_strategy_transfer_across_quantum_processors_ASD1064.pdf",
+    "sha256": "56c73a4e3149b43611ebe1df1923c0a3f40c314ae8391bc634597c765f30c6fa",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1065",
+    "title": "Agentic Active Learning Meets Visual Embeddings: Finding Anomalies among 370 000 Variable Stars from ASAS-SN",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Milan_2026_Agentic_Active_Learning_Meets_Visual_Embeddings_Finding_Anomalies_among_ASD1065.pdf",
+    "sha256": "67c8f5adc464ff7a212aeade2dc25313b5cd6fe48e7873e331029c381c840669",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1066",
+    "title": "Multi-agent discovery of practical quantum LDPC codes",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Dongheng_2026_Multi_agent_discovery_of_practical_quantum_LDPC_codes_ASD1066.pdf",
+    "sha256": "48966f8aa36fb15d0b47a18d2c8c50f8337dc9bdbb41cdd72c8770f3ef779f6f",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1067",
+    "title": "How AI Agents Discover Scientific Equations: From Hydrotope Rediscovery to New Water-Wave Amplitudes",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Zihan_2026_How_AI_Agents_Discover_Scientific_Equations_From_Hydrotope_Rediscovery_ASD1067.pdf",
+    "sha256": "377db2f959a196fb4057d86ac4d485f025195f5fedaee17a29fe9ed4df9aede0",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1068",
+    "title": "Brilliance: toward autonomous computational research in particle accelerator physics",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Jinyu_2026_Brilliance_toward_autonomous_computational_research_in_particle_accelerator_physics_ASD1068.pdf",
+    "sha256": "91d6f7cc3f6aa898f557065fb6522ef90559054c2a497928b190dfc07cda515a",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1069",
+    "title": "Jianmu-Q: Bridging Quantum Field Theory and Quantum Hardware with AI Agents",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Xiaolin_2026_Jianmu_Q_Bridging_Quantum_Field_Theory_and_Quantum_Hardware_ASD1069.pdf",
+    "sha256": "870f92b51e0c121011419fc66920e84d2dbcc7cd5031fdc6c5656557266b08e0",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1070",
+    "title": "FUSION: a skill-based research agent for publicly obtainable nuclear-physics codes",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Jin_2026_FUSION_a_skill_based_research_agent_for_publicly_obtainable_ASD1070.pdf",
+    "sha256": "c580d1fb2cd7c53aac04caf7e50bd074d167d0f171d027b5a4b2c0e707315994",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1071",
+    "title": "From Earth to Mars and Beyond: AI-Driven Cosmic-Ray Validation and Prediction with CorsikaAgent",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Zhuo_2026_From_Earth_to_Mars_and_Beyond_AI_Driven_Cosmic_ASD1071.pdf",
+    "sha256": "b4a6c180e8eab807adddcf33bb4e801a6742b528e18128ff0e11e92968b3e80e",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1072",
+    "title": "HEPLocalAgent 1.0: Running Collider Simulations from Plain-Language Requests on Your Own Computer",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Aadarsh_2026_HEPLocalAgent_1_0_Running_Collider_Simulations_from_Plain_Language_ASD1072.pdf",
+    "sha256": "37190c7e67c85d74f0d1edd4250c51d0864ed4146e9032112e23dfc03eea2a5f",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1073",
+    "title": "PTagent: An LLM-assisted tool for finite-temperature model construction in cosmological phase transitions",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Lei_2026_PTagent_An_LLM_assisted_tool_for_finite_temperature_model_ASD1073.pdf",
+    "sha256": "0193b3803c5a3906fa4970a10cab35be32064c16038f235aa6cf37cf15d2ea7c",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1074",
+    "title": "VALG: An Agentic System for ML Theory Research",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Dechen_2026_VALG_An_Agentic_System_for_ML_Theory_Research_ASD1074.pdf",
+    "sha256": "191ce67a95f77267c194c546d369a4bde389805acc2152693b1932fccd37b7b3",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1075",
+    "title": "ProofLoom: Proof-Obligation-Driven Theory Construction for Autoformalizing Research-Level Stochastic Optimization",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Feiming_2026_ProofLoom_Proof_Obligation_Driven_Theory_Construction_for_Autoformalizing_Research_ASD1075.pdf",
+    "sha256": "aa8f97ec9a20fa80eb247b47bec70ba3349153f1f2e0462ebe865beff358eed9",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1076",
+    "title": "FormaTheoria: Constructing Large-Scale Lean Theories from Mathematical Literature $-$ Toward the Formalization of the Classification of Finite Simple Groups",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Tianjiao_2026_FormaTheoria_Constructing_Large_Scale_Lean_Theories_from_Mathematical_Literature_ASD1076.pdf",
+    "sha256": "99140b349df27a01829c7cd506c5436a579df0356a2ba0925fe4ac10186ae014",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1078",
+    "title": "An AI-Assisted Formalization of the Poincaré Conjecture",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Zhang_2026_An_AI_Assisted_Formalization_of_the_Poincare_Conjecture_ASD1078.pdf",
+    "sha256": "8e369ae9480949349d8fb434af65bac4a3fb377abada6bde6a1a418cf049ace5",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1079",
+    "title": "AI Discovery in Combinatorics: From Problems to Solutions and Back to Bigger Problems",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Eugenio_2026_AI_Discovery_in_Combinatorics_From_Problems_to_Solutions_and_ASD1079.pdf",
+    "sha256": "2d36717b310ab96f53754efb9bfa51715bba3fdc83622e2c8afaa3160e423aff",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1080",
+    "title": "Euler: Towards Human-Centered Multi-Agent Mathematical Discovery",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Qiuyu_2026_Euler_Towards_Human_Centered_Multi_Agent_Mathematical_Discovery_ASD1080.pdf",
+    "sha256": "1badcc65fbd4aca6ad380d262b50327189cc12ddefcbe2b835e12bd3bb98ce58",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1081",
+    "title": "The AI Theorist reveals excitonic structure in $\\alpha$-RuCl$_3$",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Hongjian_2026_The_AI_Theorist_reveals_excitonic_structure_in_alpha_RuCl_ASD1081.pdf",
+    "sha256": "720e936172ab8dfebadcaf62c1771241ad22e11beffd9265cc6be0508c8f1771",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02",
+      "04"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1082",
+    "title": "Beyond Equation Search: Conjecture-Guided Discovery with SCOPE and ClosureBench",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Yuxiao_2026_Beyond_Equation_Search_Conjecture_Guided_Discovery_with_SCOPE_and_ASD1082.pdf",
+    "sha256": "94f8ca24570dba59f5e95c8f031fcfebe61b63fde4636ce414f008ac3c7d6cd9",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1083",
+    "title": "OptScientist: Automated Discovery of Optimization Laws",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Ma_2026_OptScientist_Automated_Discovery_of_Optimization_Laws_ASD1083.pdf",
+    "sha256": "7f3ee44ede89d7fcf36e3d3e4788591dba0fc7cd12483b1c32cef334d13ab440",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "02",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1084",
+    "title": "Towards autonomous urban drainage modelling: evaluating AI agent architectures for automated SWMM calibration",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Wang_2026_Towards_autonomous_urban_drainage_modelling_evaluating_AI_agent_architectures_ASD1084.pdf",
+    "sha256": "f6a4edf19f1469cccee2f7be2e9a28ea08b74acb6012f207da0d86c3e6388744",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1085",
+    "title": "Multi-agent AI for end-to-end air quality analysis and decision support",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Ma_2026_Multi_agent_AI_for_end_to_end_air_quality_ASD1085.pdf",
+    "sha256": "91760c12db5f0c24af39b21b0283a0ef823de508424d5fc0cc72a725484d2807",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1086",
+    "title": "An LLM-agent interface for end-to-end probabilistic seismic hazard and risk analysis",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Vemula_2026_An_LLM_agent_interface_for_end_to_end_probabilistic_ASD1086.pdf",
+    "sha256": "967556a6b0ec3b050bd163d2f11871026c6d41973f321ce869abf05ccb72cc0e",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1087",
+    "title": "LeakAgent: a multi-agent system for leak detection using multi-modal large language model coordination in water distribution network",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Mu_2026_LeakAgent_a_multi_agent_system_for_leak_detection_using_ASD1087.pdf",
+    "sha256": "645c4bca3ad6119216a53a0ff6b1e543aaf3f44b2539497a4d60bd967bf79e7d",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1088",
+    "title": "A RAG-enhanced multi-agent LLM/VLM framework for auditable and region-aware structural health monitoring of a historic masonry structure",
+    "pdf_path": "Reference_PDF/09_Engineering_and_Industrial_Technology_Sciences/Hacefendioglu_2026_A_RAG_enhanced_multi_agent_LLM_VLM_framework_for_ASD1088.pdf",
+    "sha256": "a8943fd9a627d2da427f268b73f90b447cd57d5ca351391add724a2b1f0d7f00",
+    "primary_module_for_filing": "09",
+    "scientific_object_modules": [
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1090",
+    "title": "RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Kaiyue_2026_RingMoClaw_An_Experience_Inspired_Multi_Agent_Framework_for_Self_ASD1090.pdf",
+    "sha256": "c53fbf978dd8c0fa4240edd739bd0b287f9187e77905ce2746b94b454917d0fb",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1091",
+    "title": "Autonomous Research Project Management as an Agent Skill: A Case Study in Exact Spectral Spatial Regression",
+    "pdf_path": "Reference_PDF/05_Earth_and_Environmental_Sciences/Alexander_2026_Autonomous_Research_Project_Management_as_an_Agent_Skill_A_ASD1091.pdf",
+    "sha256": "7cd1a61b8abb6b127ecc72ec5d5532482a23c6132fb0601ee53c5c701d50887e",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "01",
+      "05"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1092",
+    "title": "MBA: Multimodal Benchmark and Agents for Real-World Business Ideation",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Choi_2026_MBA_Multimodal_Benchmark_and_Agents_for_Real_World_Business_ASD1092.pdf",
+    "sha256": "09fc6cfda705f07dcbbcf58e79fe276589665d917fae718d43b3904f2f8c1c9b",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1093",
+    "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Ning_2026_WhatWorkedBench_Benchmarking_Experimental_Understanding_in_AI_Agents_ASD1093.pdf",
+    "sha256": "bfff5ce9507772f337e838d06d817323d19da854ab78b73e30c4dd8239fd4fc2",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "02",
+      "05",
+      "07",
+      "08",
+      "09"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1094",
+    "title": "IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Liu_2026_IdeaScientist_Orchestrating_Agents_for_Grounded_Scientific_Ideation_ASD1094.pdf",
+    "sha256": "f1e4954c2de02ba477ad3f18a1475fe1362aebe30a5e66feb0ccae4618fe3b37",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1095",
+    "title": "Benchmarking large language model agent societies against human behavioural distributions",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Tareaf_2026_Benchmarking_large_language_model_agent_societies_against_human_behavioural_ASD1095.pdf",
+    "sha256": "8ab85b97ae008c8aa8748013761600d580ecfeed847a9e58d73cb539e29d2271",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1096",
+    "title": "Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Han_2026_Science_Edge_Evaluation_SEE_the_Missing_Step_Toward_Real_ASD1096.pdf",
+    "sha256": "ad7c5852f1647dca0c0e78bb054407f0c172818739f4a554280707e7d0fe1923",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03",
+      "04",
+      "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1099",
+    "title": "Exploring Causal Mechanisms with Generative Agent-Based Models",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Liu_2026_Exploring_Causal_Mechanisms_with_Generative_Agent_Based_Models_ASD1099.pdf",
+    "sha256": "a7a027c93d13f840d19306a23adae62bd1f1ea0f65be8d2021075ea39dd3f5bc",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1100",
+    "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Asaria_2026_A_Society_of_Researchers_Designing_Institutions_for_Populations_of_ASD1100.pdf",
+    "sha256": "1e236c0667689f4fa158364d68a2d897f2460ab85edcfd0f27a336c15bc871fc",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "01",
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1104",
+    "title": "When cardinals strategize: An agent-based model of influence and ideology for the papal conclave",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Crokidakis_2026_When_cardinals_strategize_An_agent_based_model_of_influence_ASD1104.pdf",
+    "sha256": "d3408296a08563ace9280954d8b0e720e1000119c2f2f3aa4d85a5cb3d1aa352",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1105",
+    "title": "From Search to Research: Exploring Search Scaling in Autonomous Quantitative Factor Mining",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Kangcheng_2026_From_Search_to_Research_Exploring_Search_Scaling_in_Autonomous_ASD1105.pdf",
+    "sha256": "a91b80ec7a62da5cffb6bc6186647fbab5a97aafdc5017a5a0bb9084f677d3a0",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1106",
+    "title": "AutoResearch at Production Scale: Failure Modes and a Multi-Agent Framework",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Aparajith_2026_AutoResearch_at_Production_Scale_Failure_Modes_and_a_Multi_ASD1106.pdf",
+    "sha256": "7f36d3b05be21c839850ae0b8034bbfb55ccd6b7c292edc3ebcf947222b74d24",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1107",
+    "title": "Autonomous Research for Open-Ended Problems: A Case Study on Telecom Ticket Retrieval",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Junghyun_2026_Autonomous_Research_for_Open_Ended_Problems_A_Case_Study_ASD1107.pdf",
+    "sha256": "31d94773b0b40318addc06302a904803256ef3dbec4b30f830474fc665a2b327",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1108",
+    "title": "Auto-RecSys: Harnessing Autonomous Research Agents for Industry-Scale Recommender System",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Ming_2026_Auto_RecSys_Harnessing_Autonomous_Research_Agents_for_Industry_Scale_ASD1108.pdf",
+    "sha256": "f4a5656658f30151b8399cb7e06826cea95b8a62162527682a37a19697b6bbf9",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1109",
+    "title": "AutoLR: Automating the Path from Research to Launch Review in Industrial Recommender Systems",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Qi_2026_AutoLR_Automating_the_Path_from_Research_to_Launch_Review_ASD1109.pdf",
+    "sha256": "df95936d14ece323d82c91b6980c2e1fec522ed8d7b573144a5be74826ed326d",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1111",
+    "title": "Autonomous Floquet engineering of bosonic codes via reinforcement learning",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Wu_2026_Autonomous_Floquet_engineering_of_bosonic_codes_via_reinforcement_learning_ASD1111.pdf",
+    "sha256": "412e253d86dfa9cdc816b81fe97d15b45b2cdbe2e60f6f8a09e7a5a0623ea3ec",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1120",
+    "title": "MacroRisk-agent: a retrieval-augmented multi-agent framework with deterministic validation gates for auditable stress testing",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Liu_2026_MacroRisk_agent_a_retrieval_augmented_multi_agent_framework_with_ASD1120.pdf",
+    "sha256": "c3d55f1e0e6d1d236d7de462639614ee5bace629461f01af1e2608f6d94808b8",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1121",
+    "title": "Modeling network evolution by multi-agent reinforcement learning",
+    "pdf_path": "Reference_PDF/01_Formal_Information_and_Computational_Sciences/Li_2026_Modeling_network_evolution_by_multi_agent_reinforcement_learning_ASD1121.pdf",
+    "sha256": "0ddc55de56c3afd7249ecfc3f8095e20545e26f3632f7bf832c2c91fdc7154ea",
+    "primary_module_for_filing": "01",
+    "scientific_object_modules": [
+      "01"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1126",
+    "title": "A multimodal agent for ceramic management via LLM-driven knowledge and visual synergy",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Huang_2026_A_multimodal_agent_for_ceramic_management_via_LLM_driven_ASD1126.pdf",
+    "sha256": "9db2b55cbd210567997c8fac2e3402f6745636ff5ee88bc1575803456d93b3c4",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-1130",
+    "title": "A multi-agent game-theoretic adversarial training framework with latency-aware reward shaping for robust high-frequency trading strategy design",
+    "pdf_path": "Reference_PDF/11_Social_Behavioral_Economic_and_Knowledge_System_Sciences/Li_2026_A_multi_agent_game_theoretic_adversarial_training_framework_with_ASD1130.pdf",
+    "sha256": "a6ddddde3ce4e989bf978cf86ed28d4afbf83abb956432a118a7319cd7fdb49c",
+    "primary_module_for_filing": "11",
+    "scientific_object_modules": [
+      "11"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1132",
+    "title": "Agent-based modeling of low-emission fertilizer adoption for dairy farm decarbonisation using empirical farm data",
+    "pdf_path": "Reference_PDF/08_Agricultural_Food_Forestry_Animal_and_Fishery_Sciences/Jayakumar_2026_Agent_based_modeling_of_low_emission_fertilizer_adoption_for_ASD1132.pdf",
+    "sha256": "d05abea62ad383a76f505458707be361109e274bc054ba6fa18a865237c42c00",
+    "primary_module_for_filing": "05",
+    "scientific_object_modules": [
+      "05",
+      "08"
+    ],
+    "pdf_status": "",
+    "evidence_status": "",
+    "active_confirmed_core": false
+  },
+  {
+    "paper_id": "ASD-1133",
+    "title": "RAVA: a robust recurrent active vision agent for plant disease diagnosis under severe environmental noise",
+    "pdf_path": "Reference_PDF/08_Agricultural_Food_Forestry_Animal_and_Fishery_Sciences/Saeedi_2026_RAVA_a_robust_recurrent_active_vision_agent_for_plant_ASD1133.pdf",
+    "sha256": "05c243fd2d8e16bb3d9bcfa9f1b63422296df5cd4f2e09e509761d9ce8c3512c",
+    "primary_module_for_filing": "08",
+    "scientific_object_modules": [
+      "08"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
   }
 ]

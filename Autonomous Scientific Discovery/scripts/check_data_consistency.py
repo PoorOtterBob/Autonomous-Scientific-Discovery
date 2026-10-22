@@ -40,10 +40,11 @@ PROGRESS_PATH = (
     / "Coverage_Check"
     / "multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md"
 )
-# Authoritative snapshot after the October 50-paper note/classification review.
-EXPECTED_ACTIVE_CONFIRMED = 494
-EXPECTED_ACTIVE_LOCAL_PDF = 441
-EXPECTED_ACTIVE_NO_LOCAL_PDF = 53
+# Authoritative snapshot after the 176-candidate full-text admission review
+# (169 admitted, 6 awaiting role review, 1 excluded; 2026-10-22 batch).
+EXPECTED_ACTIVE_CONFIRMED = 663
+EXPECTED_ACTIVE_LOCAL_PDF = 595
+EXPECTED_ACTIVE_NO_LOCAL_PDF = 68
 EXPECTED_NO_LOCAL_IDS = {
     "ASD-0005",
     "ASD-0112",
@@ -98,6 +99,21 @@ EXPECTED_NO_LOCAL_IDS = {
     "ASD-0918",
     "ASD-0919",
     "ASD-0922",
+    "ASD-0987",
+    "ASD-1007",
+    "ASD-1012",
+    "ASD-1014",
+    "ASD-1015",
+    "ASD-1016",
+    "ASD-1031",
+    "ASD-1032",
+    "ASD-1041",
+    "ASD-1043",
+    "ASD-1045",
+    "ASD-1047",
+    "ASD-1049",
+    "ASD-1050",
+    "ASD-1097",
 }
 FORMAL_MODULES = {f"{idx:02d}" for idx in range(1, 12)}
 GENERAL_BUCKET_CANONICAL = (

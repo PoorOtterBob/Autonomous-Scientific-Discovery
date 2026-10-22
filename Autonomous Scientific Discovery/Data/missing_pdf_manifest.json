@@ -528,5 +528,155 @@
     "evidence_status": "first_hand_full_text",
     "source_limited": "no",
     "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=02.02.06;11.07.08;11.07.09; fulltext_followup_required=false; 02 由量子算法/稿件具体案例支撑；11.07 由科学审稿、主张和证据核验工作流支撑。暂标 02.02.06、11.07.08/09；主展示取 11。专利部分不单独扩至工程/法律模块。 scientific_object_modules=02;11; object_coverage_mode=multi_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.16900; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0987",
+    "title": "Diagnosing and narrowing the simulation-to-real gap in powder X-ray diffraction with a wet-dry agentic loop",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.22400",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=04; primary_module_for_filing=04; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=04.01;04.02; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2608.22400; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1007",
+    "title": "Agentic schema-guided extraction of materials process knowledge from scientific literature",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.06322",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=04; primary_module_for_filing=04; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=04.02;04.04; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2610.06322; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1012",
+    "title": "HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework",
+    "doi": "10.1038/s41746-026-03097-0",
+    "url": "https://doi.org/10.1038/s41746-026-03097-0",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=07; primary_module_for_filing=07; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=07.03.08; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.1038/s41746-026-03097-0; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1014",
+    "title": "An AI-powered self-driving microscope for low-cost acute leukemia detection",
+    "doi": "10.1038/s41467-026-77130-x",
+    "url": "https://doi.org/10.1038/s41467-026-77130-x",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=07; primary_module_for_filing=07; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=07.01.04; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.1038/s41467-026-77130-x; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1015",
+    "title": "MR-MAS: an end-to-end multi-agent system for autonomous Mendelian randomization analysis",
+    "doi": "10.1093/bioinformatics/btag722",
+    "url": "https://doi.org/10.1093/bioinformatics/btag722",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=07; primary_module_for_filing=07; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=07.03.01;07.03.08; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.1093/bioinformatics/btag722; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1016",
+    "title": "DDA: a traceable multi-agent framework for automated structure-based drug design",
+    "doi": "10.3389/fchem.2026.1914886",
+    "url": "https://doi.org/10.3389/fchem.2026.1914886",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=06;07; primary_module_for_filing=06; general_method_bucket=none; object_coverage_mode=multi_module; module_classification_codes=06.03.06;07.04.01; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.3389/fchem.2026.1914886; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1031",
+    "title": "OntoCodex: a multi-agent biomedical ontology enrichment framework",
+    "doi": "10.1038/s44401-026-00117-9",
+    "url": "https://doi.org/10.1038/s44401-026-00117-9",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=07; primary_module_for_filing=07; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=07.03.08; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.1038/s44401-026-00117-9; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1032",
+    "title": "RelAgent: a multi-agent solution for molecular relationship grounding",
+    "doi": "10.1093/bioinformatics/btag541",
+    "url": "https://doi.org/10.1093/bioinformatics/btag541",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=03; primary_module_for_filing=03; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=03.01; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://doi.org/10.1093/bioinformatics/btag541; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1041",
+    "title": "NeuroAct: Advancing EEG Analysis and Decoding via Dual-Loop Autonomous Research",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.25211",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=06;07; primary_module_for_filing=06; general_method_bucket=none; object_coverage_mode=multi_module; module_classification_codes=06.02.07;07.02.06; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2610.25211; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1043",
+    "title": "Solver Agent: an Agentic AI Framework for Theoretical Physics Computations Applied to F-theory Uplifts of O3-planes and S-folds",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.35958",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=02; primary_module_for_filing=02; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=02.02.01; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2609.35958; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1045",
+    "title": "CFD Forge: A Physics-Constrained Agentic Framework for Autonomous CFD",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.14104",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=09; primary_module_for_filing=09; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=09.01; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2610.14104; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1047",
+    "title": "OPERA: Operator-residual feedback for reliable autonomous optical experiments with language-model agents",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.05990",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=02;09; primary_module_for_filing=02; general_method_bucket=none; object_coverage_mode=multi_module; module_classification_codes=02.02.09;09.08.03; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2608.05990; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1049",
+    "title": "El Agente Potente: High-Throughput Agentic Atomistic Simulations",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2609.14840",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=03;04; primary_module_for_filing=03; general_method_bucket=none; object_coverage_mode=multi_module; module_classification_codes=03.03;04.01; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2609.14840; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1050",
+    "title": "HALO: A Physics-Aware LLM Agent Framework for Nanophotonic Design",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2608.28877",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=09; primary_module_for_filing=09; general_method_bucket=none; object_coverage_mode=single_module; module_classification_codes=09.08.03; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2608.28877; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
+  },
+  {
+    "paper_id": "ASD-1097",
+    "title": "SAIL: Scientific Agentic Intelligence via a Science-Aware Loop",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.11451",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "Core176Evidence2026-10-22: scientific_object_modules=01;11; primary_module_for_filing=01; general_method_bucket=none; object_coverage_mode=multi_module; module_classification_codes=01.02.12;11.07.08; object_classification_status=confirmed_full_text; classification_provisional=no; source_checked_at=2026-10-22; first_hand_sources_checked=https://arxiv.org/abs/2610.11451; evidence_pack=Coverage_Check/october176_core/reviewed_packs.json; 本轮核对原文四门、方法、验证与对象证据后纳入核心；一手全文支持明确科研目标、多步行动、至少一种Agent能力及科研流程角色；具体对象与验证证据已核对，正式笔记保留作者结果和局限。; 笔记为有来源的结构化阅读记录；作者报告结果不等于独立复现."
   }
 ]

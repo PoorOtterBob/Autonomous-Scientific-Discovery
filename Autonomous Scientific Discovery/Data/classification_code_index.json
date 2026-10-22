@@ -61,7 +61,8 @@
     "11.04": "Legacy secondary filing term 11.04",
     "11.06": "人类学与考古学",
     "11.07": "Legacy secondary filing term 11.07",
-    "10.01": "航空科学"
+    "10.01": "航空科学",
+    "11.05": "教育学与学习科学"
   },
   "label_to_primary_code": {
     "Formal, Information and Computational Sciences": "01",
@@ -122,7 +123,8 @@
     "Legacy secondary filing term 11.04": "11.04",
     "人类学与考古学": "11.06",
     "Legacy secondary filing term 11.07": "11.07",
-    "航空科学": "10.01"
+    "航空科学": "10.01",
+    "教育学与学习科学": "11.05"
   },
   "primary_terms": [
     {
@@ -1050,6 +1052,21 @@
       "status": "needs_review",
       "source": "legacy_secondary_class_seed_2026-07-05",
       "review_status": "unreviewed"
+    },
+    {
+      "secondary_code": "11.05",
+      "parent_primary_code": "11",
+      "label": "教育学与学习科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测教育学与学习科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed"
     }
   ],
   "tertiary_terms": [
@@ -2330,6 +2347,694 @@
       "status": "active",
       "source": "library_tree_adoption_decision_03_04_06_07_and_07_tertiary_2026-07-09",
       "review_status": "reviewed"
+    },
+    {
+      "tertiary_code": "01.01.04",
+      "parent_primary_code": "01",
+      "label": "几何学与拓扑学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测几何学与拓扑学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.01"
+    },
+    {
+      "tertiary_code": "01.01.06",
+      "parent_primary_code": "01",
+      "label": "微分方程",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测微分方程对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.01"
+    },
+    {
+      "tertiary_code": "01.01.09",
+      "parent_primary_code": "01",
+      "label": "统计学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测统计学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.01"
+    },
+    {
+      "tertiary_code": "01.01.11",
+      "parent_primary_code": "01",
+      "label": "计算数学与数值分析",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测计算数学与数值分析对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.01"
+    },
+    {
+      "tertiary_code": "01.01.12",
+      "parent_primary_code": "01",
+      "label": "离散数学与组合数学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测离散数学与组合数学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.01"
+    },
+    {
+      "tertiary_code": "01.02.04",
+      "parent_primary_code": "01",
+      "label": "软件工程",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测软件工程对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.02"
+    },
+    {
+      "tertiary_code": "01.02.12",
+      "parent_primary_code": "01",
+      "label": "人工智能",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测人工智能对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.02"
+    },
+    {
+      "tertiary_code": "01.02.13",
+      "parent_primary_code": "01",
+      "label": "机器学习",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测机器学习对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.02"
+    },
+    {
+      "tertiary_code": "01.02.15",
+      "parent_primary_code": "01",
+      "label": "自然语言处理",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测自然语言处理对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.02"
+    },
+    {
+      "tertiary_code": "01.02.17",
+      "parent_primary_code": "01",
+      "label": "科学计算与高性能计算",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测科学计算与高性能计算对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "01.02"
+    },
+    {
+      "tertiary_code": "02.01.02",
+      "parent_primary_code": "02",
+      "label": "太阳物理学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测太阳物理学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.01"
+    },
+    {
+      "tertiary_code": "02.01.03",
+      "parent_primary_code": "02",
+      "label": "恒星与恒星演化",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测恒星与恒星演化对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.01"
+    },
+    {
+      "tertiary_code": "02.01.04",
+      "parent_primary_code": "02",
+      "label": "星系与星系演化",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测星系与星系演化对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.01"
+    },
+    {
+      "tertiary_code": "02.01.05",
+      "parent_primary_code": "02",
+      "label": "宇宙学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测宇宙学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.01"
+    },
+    {
+      "tertiary_code": "02.02.01",
+      "parent_primary_code": "02",
+      "label": "理论物理学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测理论物理学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "02.02.03",
+      "parent_primary_code": "02",
+      "label": "经典力学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测经典力学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "02.02.07",
+      "parent_primary_code": "02",
+      "label": "相对论",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测相对论对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "02.02.08",
+      "parent_primary_code": "02",
+      "label": "凝聚态物理学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测凝聚态物理学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "02.02.09",
+      "parent_primary_code": "02",
+      "label": "光学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测光学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "02.02.14",
+      "parent_primary_code": "02",
+      "label": "粒子物理学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测粒子物理学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "02.02"
+    },
+    {
+      "tertiary_code": "05.01.03",
+      "parent_primary_code": "05",
+      "label": "地球物理学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测地球物理学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.01"
+    },
+    {
+      "tertiary_code": "05.01.04",
+      "parent_primary_code": "05",
+      "label": "矿物学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测矿物学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.01"
+    },
+    {
+      "tertiary_code": "05.02.02",
+      "parent_primary_code": "05",
+      "label": "气候科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测气候科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.02"
+    },
+    {
+      "tertiary_code": "05.02.07",
+      "parent_primary_code": "05",
+      "label": "水文学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测水文学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.02"
+    },
+    {
+      "tertiary_code": "05.03.03",
+      "parent_primary_code": "05",
+      "label": "水环境科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测水环境科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.03"
+    },
+    {
+      "tertiary_code": "05.03.04",
+      "parent_primary_code": "05",
+      "label": "大气环境科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测大气环境科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.03"
+    },
+    {
+      "tertiary_code": "05.04.04",
+      "parent_primary_code": "05",
+      "label": "遥感科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测遥感科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "05.04"
+    },
+    {
+      "tertiary_code": "08.01.01",
+      "parent_primary_code": "08",
+      "label": "作物学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测作物学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "08.01"
+    },
+    {
+      "tertiary_code": "08.01.06",
+      "parent_primary_code": "08",
+      "label": "植物保护",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测植物保护对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "08.01"
+    },
+    {
+      "tertiary_code": "09.03.08",
+      "parent_primary_code": "09",
+      "label": "传感器与仪器科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测传感器与仪器科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.03"
+    },
+    {
+      "tertiary_code": "09.05.01",
+      "parent_primary_code": "09",
+      "label": "土木工程",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测土木工程对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.05"
+    },
+    {
+      "tertiary_code": "09.05.02",
+      "parent_primary_code": "09",
+      "label": "结构工程",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测结构工程对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.05"
+    },
+    {
+      "tertiary_code": "09.05.05",
+      "parent_primary_code": "09",
+      "label": "建筑学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测建筑学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.05"
+    },
+    {
+      "tertiary_code": "09.05.07",
+      "parent_primary_code": "09",
+      "label": "水利工程",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测水利工程对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.05"
+    },
+    {
+      "tertiary_code": "09.08.02",
+      "parent_primary_code": "09",
+      "label": "半导体器件",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测半导体器件对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.08"
+    },
+    {
+      "tertiary_code": "09.08.03",
+      "parent_primary_code": "09",
+      "label": "光电器件",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测光电器件对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "09.08"
+    },
+    {
+      "tertiary_code": "11.01.04",
+      "parent_primary_code": "11",
+      "label": "金融学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测金融学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.01"
+    },
+    {
+      "tertiary_code": "11.06.03",
+      "parent_primary_code": "11",
+      "label": "考古科学",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测考古科学对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.06"
+    },
+    {
+      "tertiary_code": "11.07.04",
+      "parent_primary_code": "11",
+      "label": "科研共同体结构",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测科研共同体结构对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.07"
+    },
+    {
+      "tertiary_code": "11.07.05",
+      "parent_primary_code": "11",
+      "label": "科学政策与科研管理",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测科学政策与科研管理对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.07"
+    },
+    {
+      "tertiary_code": "11.07.08",
+      "parent_primary_code": "11",
+      "label": "科学方法论",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测科学方法论对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.07"
+    },
+    {
+      "tertiary_code": "11.07.09",
+      "parent_primary_code": "11",
+      "label": "科学解释与科学证据理论",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测科学解释与科学证据理论对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.07"
+    },
+    {
+      "tertiary_code": "11.07.10",
+      "parent_primary_code": "11",
+      "label": "学科演化与跨学科发现机制",
+      "definition": "按现有 science_domain_taxonomy.md 采用的稳定分类术语；须有一手实验、验证、基准任务、案例或结果对象证据。",
+      "include": [
+        "直接研究、验证或评测学科演化与跨学科发现机制对象的论文。"
+      ],
+      "exclude": [
+        "仅把该学科作为工具、数据来源或泛化背景的论文。"
+      ],
+      "status": "active",
+      "source": "existing_taxonomy_adoption_october176_2026-10-22",
+      "review_status": "reviewed",
+      "parent_secondary_code": "11.07"
     }
   ],
   "tertiary_code_to_label": {
@@ -2403,7 +3108,50 @@
     "07.04.03": "药物分析",
     "07.04.04": "临床药学",
     "07.04.05": "生物制药",
-    "07.04.06": "医疗器械科学"
+    "07.04.06": "医疗器械科学",
+    "01.01.04": "几何学与拓扑学",
+    "01.01.06": "微分方程",
+    "01.01.09": "统计学",
+    "01.01.11": "计算数学与数值分析",
+    "01.01.12": "离散数学与组合数学",
+    "01.02.04": "软件工程",
+    "01.02.12": "人工智能",
+    "01.02.13": "机器学习",
+    "01.02.15": "自然语言处理",
+    "01.02.17": "科学计算与高性能计算",
+    "02.01.02": "太阳物理学",
+    "02.01.03": "恒星与恒星演化",
+    "02.01.04": "星系与星系演化",
+    "02.01.05": "宇宙学",
+    "02.02.01": "理论物理学",
+    "02.02.03": "经典力学",
+    "02.02.07": "相对论",
+    "02.02.08": "凝聚态物理学",
+    "02.02.09": "光学",
+    "02.02.14": "粒子物理学",
+    "05.01.03": "地球物理学",
+    "05.01.04": "矿物学",
+    "05.02.02": "气候科学",
+    "05.02.07": "水文学",
+    "05.03.03": "水环境科学",
+    "05.03.04": "大气环境科学",
+    "05.04.04": "遥感科学",
+    "08.01.01": "作物学",
+    "08.01.06": "植物保护",
+    "09.03.08": "传感器与仪器科学",
+    "09.05.01": "土木工程",
+    "09.05.02": "结构工程",
+    "09.05.05": "建筑学",
+    "09.05.07": "水利工程",
+    "09.08.02": "半导体器件",
+    "09.08.03": "光电器件",
+    "11.01.04": "金融学",
+    "11.06.03": "考古科学",
+    "11.07.04": "科研共同体结构",
+    "11.07.05": "科学政策与科研管理",
+    "11.07.08": "科学方法论",
+    "11.07.09": "科学解释与科学证据理论",
+    "11.07.10": "学科演化与跨学科发现机制"
   },
   "label_to_tertiary_code": {
     "普通生物学": "06.01.01",
@@ -2476,6 +3224,49 @@
     "药物分析": "07.04.03",
     "临床药学": "07.04.04",
     "生物制药": "07.04.05",
-    "医疗器械科学": "07.04.06"
+    "医疗器械科学": "07.04.06",
+    "几何学与拓扑学": "01.01.04",
+    "微分方程": "01.01.06",
+    "统计学": "01.01.09",
+    "计算数学与数值分析": "01.01.11",
+    "离散数学与组合数学": "01.01.12",
+    "软件工程": "01.02.04",
+    "人工智能": "01.02.12",
+    "机器学习": "01.02.13",
+    "自然语言处理": "01.02.15",
+    "科学计算与高性能计算": "01.02.17",
+    "太阳物理学": "02.01.02",
+    "恒星与恒星演化": "02.01.03",
+    "星系与星系演化": "02.01.04",
+    "宇宙学": "02.01.05",
+    "理论物理学": "02.02.01",
+    "经典力学": "02.02.03",
+    "相对论": "02.02.07",
+    "凝聚态物理学": "02.02.08",
+    "光学": "02.02.09",
+    "粒子物理学": "02.02.14",
+    "地球物理学": "05.01.03",
+    "矿物学": "05.01.04",
+    "气候科学": "05.02.02",
+    "水文学": "05.02.07",
+    "水环境科学": "05.03.03",
+    "大气环境科学": "05.03.04",
+    "遥感科学": "05.04.04",
+    "作物学": "08.01.01",
+    "植物保护": "08.01.06",
+    "传感器与仪器科学": "09.03.08",
+    "土木工程": "09.05.01",
+    "结构工程": "09.05.02",
+    "建筑学": "09.05.05",
+    "水利工程": "09.05.07",
+    "半导体器件": "09.08.02",
+    "光电器件": "09.08.03",
+    "金融学": "11.01.04",
+    "考古科学": "11.06.03",
+    "科研共同体结构": "11.07.04",
+    "科学政策与科研管理": "11.07.05",
+    "科学方法论": "11.07.08",
+    "科学解释与科学证据理论": "11.07.09",
+    "学科演化与跨学科发现机制": "11.07.10"
   }
 }
