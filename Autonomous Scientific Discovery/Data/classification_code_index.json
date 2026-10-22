@@ -60,7 +60,8 @@
     "11.03": "Legacy secondary filing term 11.03",
     "11.04": "Legacy secondary filing term 11.04",
     "11.06": "人类学与考古学",
-    "11.07": "Legacy secondary filing term 11.07"
+    "11.07": "Legacy secondary filing term 11.07",
+    "10.01": "航空科学"
   },
   "label_to_primary_code": {
     "Formal, Information and Computational Sciences": "01",
@@ -120,7 +121,8 @@
     "Legacy secondary filing term 11.03": "11.03",
     "Legacy secondary filing term 11.04": "11.04",
     "人类学与考古学": "11.06",
-    "Legacy secondary filing term 11.07": "11.07"
+    "Legacy secondary filing term 11.07": "11.07",
+    "航空科学": "10.01"
   },
   "primary_terms": [
     {
@@ -890,6 +892,21 @@
       ],
       "status": "active",
       "source": "science_domain_taxonomy.md; october_round2_search_2026-10-22_existing_tree_sync",
+      "review_status": "reviewed"
+    },
+    {
+      "secondary_code": "10.01",
+      "parent_primary_code": "10",
+      "label": "航空科学",
+      "definition": "航空器及其空气动力学、结构、推进和飞行控制等科学与工程研究对象。",
+      "include": [
+        "航空平台、翼型风洞试验及空气动力学验证。"
+      ],
+      "exclude": [
+        "海洋船舶及海洋平台本身归10.03；允许实际航空与海洋验证并存时多码归入。"
+      ],
+      "status": "active",
+      "source": "science_domain_taxonomy.md; october198_object_classification_2026-10-22",
       "review_status": "reviewed"
     },
     {
