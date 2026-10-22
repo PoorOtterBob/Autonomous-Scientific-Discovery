@@ -5699,6 +5699,19 @@
     "active_confirmed_core": true
   },
   {
+    "paper_id": "ASD-0881",
+    "title": "Autonomous Chemical Mechanistic Discovery through Agentic Reasoning and Validation",
+    "pdf_path": "Reference_PDF/03_Chemical_Sciences/Li_2026_ARCHE_Chemical_Mechanistic_Discovery.pdf",
+    "sha256": "d270a702b694cac5942e358a052314d8a84ad02278739735e78aece41ce9f018",
+    "primary_module_for_filing": "03",
+    "scientific_object_modules": [
+      "03"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
     "paper_id": "ASD-0883",
     "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
     "pdf_path": "Reference_PDF/04_Materials_Science/Liu_2026_GBClaw_Grain_Boundary_Discovery.pdf",
@@ -5815,6 +5828,20 @@
     "primary_module_for_filing": "06",
     "scientific_object_modules": [
       "06"
+    ],
+    "pdf_status": "archived_pdf",
+    "evidence_status": "first_hand_full_text",
+    "active_confirmed_core": true
+  },
+  {
+    "paper_id": "ASD-0904",
+    "title": "Autonomous Quantum Transport Measurements of 2D Semiconductors by an AI Agent",
+    "pdf_path": "Reference_PDF/02_Physics_Astronomy_and_Cosmic_Sciences/Bauer_2026_Autonomous_Quantum_Transport.pdf",
+    "sha256": "52d4baf10d70322b0785936655d6ef7547885faf6c242be6b50298bd09e3199b",
+    "primary_module_for_filing": "02",
+    "scientific_object_modules": [
+      "02",
+      "04"
     ],
     "pdf_status": "archived_pdf",
     "evidence_status": "first_hand_full_text",

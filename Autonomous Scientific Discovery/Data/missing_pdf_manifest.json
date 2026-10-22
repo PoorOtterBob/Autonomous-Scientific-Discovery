@@ -390,6 +390,26 @@
     "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=06.03.04; fulltext_followup_required=false; 研究任务以空间转录组数据、组织切片坐标配准和组学分析工具为直接科学对象，采用06.03.04单细胞/空间组学相关研究及06.01.12生物信息学代码。它不是只提出通用Agent benchmark的01.04论文，也没有独立的病人诊断/治疗任务支持07。 scientific_object_modules=06; object_coverage_mode=single_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://www.biorxiv.org/content/10.64898/2026.07.05.736638v1.full; source_checked_at=2026-10-22;"
   },
   {
+    "paper_id": "ASD-0901",
+    "title": "scBaseCount: An AI agent-curated, standardized, auto-updated single-cell data repository",
+    "doi": "10.1016/j.cell.2026.08.025",
+    "url": "https://doi.org/10.1016/j.cell.2026.08.025",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberRecheck7_2026-10-22: 七篇专项复核；source_level=fulltext; module_taxonomy_codes=06.03.04; fulltext_followup_required=false; 固定代码06.03.04单细胞生物学。对象为单细胞转录组、SRA数据集与跨实验标准化，支持06；虽抽取disease元数据，但无疾病诊断或治疗任务，不分配07。邻近一般数据库/数据工程论文及01.04通用方法；本文有明确生物数据发现、注释与处理中的多步Agent行动，纳入依据充分。 scientific_object_modules=06; object_coverage_mode=single_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://www.biorxiv.org/content/early/2025/05/06/2025.02.27.640494.source.xml; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0902",
+    "title": "Perturb-ME: Scalable mechanism discovery from phenotype-enriched genome-wide screens",
+    "doi": "10.64898/2026.08.17.745330",
+    "url": "https://doi.org/10.64898/2026.08.17.745330",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberRecheck7_2026-10-22: 七篇专项复核；source_level=fulltext; module_taxonomy_codes=06.03.01;07.02.05; fulltext_followup_required=false; 三级代码为06.03.01基因组学（全基因组CRISPR扰动）及07.02.05肿瘤学（黑色素瘤及肿瘤MHC-I表型）。真实肿瘤功能基因组数据支持06与07；不属于01.04通用方法。主要风险是Agent结论强度，而非对象分类。 scientific_object_modules=06;07; object_coverage_mode=multi_module; primary_module_for_filing=06; general_method_bucket=none; first_hand_sources_checked=https://www.biorxiv.org/content/10.64898/2026.08.17.745330v1.full; source_checked_at=2026-10-22;"
+  },
+  {
     "paper_id": "ASD-0903",
     "title": "CLVisc Agent for autonomous relativistic hydrodynamics studies",
     "doi": "",
@@ -448,6 +468,16 @@
     "evidence_status": "first_hand_full_text",
     "source_limited": "no",
     "access_note": "OctoberNotes2026-10-22: 原文阅读与笔记整合；source_level=fulltext; module_taxonomy_codes=11.07; fulltext_followup_required=false; 研究对象直接是同行评议与学术答辩，归11.07；虽然使用通用文献检索工具，但科研制度角色明确，不归01.04。 scientific_object_modules=11; object_coverage_mode=single_module; primary_module_for_filing=11; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/abs/2608.28612; source_checked_at=2026-10-22;"
+  },
+  {
+    "paper_id": "ASD-0915",
+    "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.19159",
+    "pdf_status": "full_text_html_available_pdf_not_archived",
+    "evidence_status": "first_hand_full_text",
+    "source_limited": "no",
+    "access_note": "OctoberRecheck7_2026-10-22: 七篇专项复核；source_level=fulltext; module_taxonomy_codes=01.02.13;02.02;03.02;04.01;11.04; fulltext_followup_required=false; 主控独立核对全文Table 1：P3卷积字典学习算法、P4合成函数获取策略、P8参数化PDE模型、P12高斯过程支持01（正式模块落点01.02.13，其他数学/成像方向保留任务表）；P5/P6/P10/P13/P14有量子和等离子体对象，02.02；P1分子能量计算支持03.02；P2/P15材料原子间势建模支持04.01材料基础（材料计算与信息学属于该二级类），不强推未核清的材料族；P7颜色感知的锥细胞通道假说对应人的视觉感知与心理规律，支持11.04。P11究竟偏化学还是固体材料不影响已经分别由P1和P2/P15成立的03/04覆盖；P9数学量子算法的边界不影响由其他任务确立的01/02。主归档02仅为编目便利，不覆盖其余模块。 scientific_object_modules=01;02;03;04;11; object_coverage_mode=multi_module; primary_module_for_filing=02; general_method_bucket=none; first_hand_sources_checked=https://arxiv.org/src/2610.19159v1; source_checked_at=2026-10-22;"
   },
   {
     "paper_id": "ASD-0916",

@@ -7044,8 +7044,8 @@
     "title": "Autonomous Chemical Mechanistic Discovery through Agentic Reasoning and Validation",
     "note_path": "Notes/03_Chemical_Sciences/Li_2026_ARCHE_Chemical_Mechanistic_Discovery.md",
     "note_exists": true,
-    "active_confirmed_core": false,
-    "inclusion_status": "needs_review"
+    "active_confirmed_core": true,
+    "inclusion_status": "included"
   },
   {
     "paper_id": "ASD-0882",
@@ -7204,16 +7204,16 @@
     "title": "scBaseCount: An AI agent-curated, standardized, auto-updated single-cell data repository",
     "note_path": "Notes/06_Life_Sciences/Youngblut_2026_scBaseCount.md",
     "note_exists": true,
-    "active_confirmed_core": false,
-    "inclusion_status": "needs_review"
+    "active_confirmed_core": true,
+    "inclusion_status": "included"
   },
   {
     "paper_id": "ASD-0902",
     "title": "Perturb-ME: Scalable mechanism discovery from phenotype-enriched genome-wide screens",
     "note_path": "Notes/06_Life_Sciences/Wang_2026_Perturb_ME.md",
     "note_exists": true,
-    "active_confirmed_core": false,
-    "inclusion_status": "needs_review"
+    "active_confirmed_core": true,
+    "inclusion_status": "included"
   },
   {
     "paper_id": "ASD-0903",
@@ -7228,8 +7228,8 @@
     "title": "Autonomous Quantum Transport Measurements of 2D Semiconductors by an AI Agent",
     "note_path": "Notes/02_Physics_Astronomy_and_Cosmic_Sciences/Bauer_2026_Autonomous_Quantum_Transport.md",
     "note_exists": true,
-    "active_confirmed_core": false,
-    "inclusion_status": "needs_review"
+    "active_confirmed_core": true,
+    "inclusion_status": "included"
   },
   {
     "paper_id": "ASD-0905",
@@ -7316,8 +7316,8 @@
     "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
     "note_path": "Notes/02_Physics_Astronomy_and_Cosmic_Sciences/Kim_2026_Into_the_Unknown.md",
     "note_exists": true,
-    "active_confirmed_core": false,
-    "inclusion_status": "needs_review"
+    "active_confirmed_core": true,
+    "inclusion_status": "included"
   },
   {
     "paper_id": "ASD-0916",

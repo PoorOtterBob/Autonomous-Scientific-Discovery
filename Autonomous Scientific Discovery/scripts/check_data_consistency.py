@@ -41,9 +41,9 @@ PROGRESS_PATH = (
     / "multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md"
 )
 # Authoritative snapshot after the October 50-paper note/classification review.
-EXPECTED_ACTIVE_CONFIRMED = 489
-EXPECTED_ACTIVE_LOCAL_PDF = 439
-EXPECTED_ACTIVE_NO_LOCAL_PDF = 50
+EXPECTED_ACTIVE_CONFIRMED = 494
+EXPECTED_ACTIVE_LOCAL_PDF = 441
+EXPECTED_ACTIVE_NO_LOCAL_PDF = 53
 EXPECTED_NO_LOCAL_IDS = {
     "ASD-0005",
     "ASD-0112",
@@ -84,12 +84,15 @@ EXPECTED_NO_LOCAL_IDS = {
     "ASD-0889",
     "ASD-0892",
     "ASD-0899",
+    "ASD-0901",
+    "ASD-0902",
     "ASD-0903",
     "ASD-0905",
     "ASD-0906",
     "ASD-0907",
     "ASD-0908",
     "ASD-0910",
+    "ASD-0915",
     "ASD-0916",
     "ASD-0917",
     "ASD-0918",
