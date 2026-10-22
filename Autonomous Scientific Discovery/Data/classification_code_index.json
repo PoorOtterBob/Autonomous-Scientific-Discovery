@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-10-22",
   "updated_by": "codex",
   "primary_code_to_label": {
     "01": "Formal, Information and Computational Sciences",
@@ -43,6 +43,7 @@
     "07.03": "公共卫生与健康科学",
     "07.04": "药学与生物医药",
     "08.01": "Legacy secondary filing term 08.01",
+    "08.03": "动物科学",
     "08.05": "Legacy secondary filing term 08.05",
     "09.01": "Legacy secondary filing term 09.01",
     "09.02": "Legacy secondary filing term 09.02",
@@ -50,12 +51,15 @@
     "09.04": "Legacy secondary filing term 09.04",
     "09.05": "Legacy secondary filing term 09.05",
     "09.06": "Legacy secondary filing term 09.06",
+    "09.08": "材料与器件工程",
     "10.02": "Legacy secondary filing term 10.02",
+    "10.03": "海洋工程",
     "10.04": "Legacy secondary filing term 10.04",
     "11.01": "Legacy secondary filing term 11.01",
     "11.02": "Legacy secondary filing term 11.02",
     "11.03": "Legacy secondary filing term 11.03",
     "11.04": "Legacy secondary filing term 11.04",
+    "11.06": "人类学与考古学",
     "11.07": "Legacy secondary filing term 11.07"
   },
   "label_to_primary_code": {
@@ -99,6 +103,7 @@
     "公共卫生与健康科学": "07.03",
     "药学与生物医药": "07.04",
     "Legacy secondary filing term 08.01": "08.01",
+    "动物科学": "08.03",
     "Legacy secondary filing term 08.05": "08.05",
     "Legacy secondary filing term 09.01": "09.01",
     "Legacy secondary filing term 09.02": "09.02",
@@ -106,12 +111,15 @@
     "Legacy secondary filing term 09.04": "09.04",
     "Legacy secondary filing term 09.05": "09.05",
     "Legacy secondary filing term 09.06": "09.06",
+    "材料与器件工程": "09.08",
     "Legacy secondary filing term 10.02": "10.02",
+    "海洋工程": "10.03",
     "Legacy secondary filing term 10.04": "10.04",
     "Legacy secondary filing term 11.01": "11.01",
     "Legacy secondary filing term 11.02": "11.02",
     "Legacy secondary filing term 11.03": "11.03",
     "Legacy secondary filing term 11.04": "11.04",
+    "人类学与考古学": "11.06",
     "Legacy secondary filing term 11.07": "11.07"
   },
   "primary_terms": [
@@ -743,6 +751,21 @@
       "review_status": "unreviewed"
     },
     {
+      "secondary_code": "08.03",
+      "parent_primary_code": "08",
+      "label": "动物科学",
+      "definition": "面向畜牧、动物生产、兽医相关生产健康与动物营养等动物科学对象。",
+      "include": [
+        "畜牧生产系统中的疾病、营养、育种、健康与管理研究。"
+      ],
+      "exclude": [
+        "仅模拟一般社会行为而没有动物科学对象结果。"
+      ],
+      "status": "active",
+      "source": "science_domain_taxonomy.md; october_round2_search_2026-10-22_existing_tree_sync",
+      "review_status": "reviewed"
+    },
+    {
       "secondary_code": "08.05",
       "parent_primary_code": "08",
       "label": "Legacy secondary filing term 08.05",
@@ -855,6 +878,21 @@
       "review_status": "unreviewed"
     },
     {
+      "secondary_code": "09.08",
+      "parent_primary_code": "09",
+      "label": "材料与器件工程",
+      "definition": "面向功能材料工程、半导体与光电器件、电化学器件和微纳制造的器件工程研究。",
+      "include": [
+        "材料及器件的结构设计、工艺、工程性能与验证任务。"
+      ],
+      "exclude": [
+        "只研究材料基础性质而没有器件或工程设计对象时优先04。"
+      ],
+      "status": "active",
+      "source": "science_domain_taxonomy.md; october_round2_search_2026-10-22_existing_tree_sync",
+      "review_status": "reviewed"
+    },
+    {
       "secondary_code": "10.02",
       "parent_primary_code": "10",
       "label": "Legacy secondary filing term 10.02",
@@ -869,6 +907,21 @@
       "status": "needs_review",
       "source": "legacy_secondary_class_seed_2026-07-05",
       "review_status": "unreviewed"
+    },
+    {
+      "secondary_code": "10.03",
+      "parent_primary_code": "10",
+      "label": "海洋工程",
+      "definition": "面向船舶、海洋装备、水下系统、海洋观测平台和相关海洋工程对象。",
+      "include": [
+        "海洋工程装备的设计、试验、控制与科研观测平台验证。"
+      ],
+      "exclude": [
+        "研究海洋水文、气候或生态本身而非装备工程时按05或06。"
+      ],
+      "status": "active",
+      "source": "science_domain_taxonomy.md; october_round2_search_2026-10-22_existing_tree_sync",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "10.04",
@@ -949,6 +1002,21 @@
       "status": "needs_review",
       "source": "legacy_secondary_class_seed_2026-07-06",
       "review_status": "unreviewed"
+    },
+    {
+      "secondary_code": "11.06",
+      "parent_primary_code": "11",
+      "label": "人类学与考古学",
+      "definition": "面向人类学、文化遗产和考古科学对象的研究。",
+      "include": [
+        "古代器物、考古材料与历史文化证据的分析解释研究。"
+      ],
+      "exclude": [
+        "只使用陶瓷等材料的工业性质而没有考古对象时按04或09。"
+      ],
+      "status": "active",
+      "source": "science_domain_taxonomy.md; october_round2_search_2026-10-22_existing_tree_sync",
+      "review_status": "reviewed"
     },
     {
       "secondary_code": "11.07",

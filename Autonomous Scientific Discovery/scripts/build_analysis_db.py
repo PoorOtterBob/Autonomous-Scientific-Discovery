@@ -130,9 +130,9 @@ def build_expected_papers_sqlite_rows(
             (
                 paper['paper_id'], paper['title'], paper['authors'], paper['year'], paper['source'], paper['doi_or_url'], paper['doi'], paper['url'], paper['arxiv_id'],
                 paper['pdf_path'], bool_to_int(paper['pdf_exists']), paper['note_path'], bool_to_int(paper['note_exists']), paper['is_agent'], paper['inclusion_status'], paper['exclusion_reason'],
-                paper['legacy_main_class'], paper['legacy_secondary_class'], paper['legacy_tertiary_class'], paper['secondary_class_source'], paper['secondary_class_confidence'], paper['secondary_class_review_status'], paper['fourth_level_topic'], paper['new_fourth_level'],
+                paper['legacy_main_class'], paper['legacy_secondary_class'], paper['legacy_tertiary_class'], blank_to_none(paper['secondary_class_source']), blank_to_none(paper['secondary_class_confidence']), blank_to_none(paper['secondary_class_review_status']), paper['fourth_level_topic'], paper['new_fourth_level'],
                 json_list(paper['agent_type']), json_list(paper['research_workflow_role']), json_list(paper['validation_type']), json_list(paper['scientific_contribution_type']),
-                paper['evidence_strength'], paper['citation_priority'], paper['remarks'], json_list(paper['scientific_object_modules']), paper['general_method_bucket'], paper['object_coverage_mode'],
+                paper['evidence_strength'], paper['citation_priority'], paper['remarks'], json_list(paper['scientific_object_modules']), paper['general_method_bucket'], blank_to_none(paper['object_coverage_mode']),
                 blank_to_none(paper['primary_module_for_filing']), paper['primary_module_confidence'], paper['primary_module_assignment_rule'], paper['primary_module_override_reason'],
                 paper['classification_source_field'], paper['classification_source_confidence'], paper['classification_parser_rule'],
                 paper['first_hand_sources_checked'], paper['source_checked_at'], paper['progress_title'], paper['pdf_status'], paper['evidence_status'], paper['note_status'], paper['master_status'],
@@ -3166,9 +3166,9 @@ def build_sqlite(
             (
                 paper['paper_id'], paper['title'], paper['authors'], paper['year'], paper['source'], paper['doi_or_url'], paper['doi'], paper['url'], paper['arxiv_id'],
                 paper['pdf_path'], bool_to_int(paper['pdf_exists']), paper['note_path'], bool_to_int(paper['note_exists']), paper['is_agent'], paper['inclusion_status'], paper['exclusion_reason'],
-                paper['legacy_main_class'], paper['legacy_secondary_class'], paper['legacy_tertiary_class'], paper['secondary_class_source'], paper['secondary_class_confidence'], paper['secondary_class_review_status'], paper['fourth_level_topic'], paper['new_fourth_level'],
+                paper['legacy_main_class'], paper['legacy_secondary_class'], paper['legacy_tertiary_class'], blank_to_none(paper['secondary_class_source']), blank_to_none(paper['secondary_class_confidence']), blank_to_none(paper['secondary_class_review_status']), paper['fourth_level_topic'], paper['new_fourth_level'],
                 json_list(paper['agent_type']), json_list(paper['research_workflow_role']), json_list(paper['validation_type']), json_list(paper['scientific_contribution_type']),
-                paper['evidence_strength'], paper['citation_priority'], paper['remarks'], json_list(paper['scientific_object_modules']), paper['general_method_bucket'], paper['object_coverage_mode'],
+                paper['evidence_strength'], paper['citation_priority'], paper['remarks'], json_list(paper['scientific_object_modules']), paper['general_method_bucket'], blank_to_none(paper['object_coverage_mode']),
                 blank_to_none(paper['primary_module_for_filing']), paper['primary_module_confidence'], paper['primary_module_assignment_rule'], paper['primary_module_override_reason'],
                 paper['classification_source_field'], paper['classification_source_confidence'], paper['classification_parser_rule'],
                 paper['first_hand_sources_checked'], paper['source_checked_at'], paper['progress_title'], paper['pdf_status'], paper['evidence_status'], paper['note_status'], paper['master_status'],
