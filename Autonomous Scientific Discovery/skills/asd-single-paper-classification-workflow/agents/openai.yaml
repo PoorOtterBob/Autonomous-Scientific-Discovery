@@ -1,0 +1,4 @@
+interface:
+  display_name: "ASD Paper Classification"
+  short_description: "Classify one Agent for Science paper"
+  default_prompt: "Use $asd-single-paper-classification-workflow to classify this paper and write back the evidence-backed decision."

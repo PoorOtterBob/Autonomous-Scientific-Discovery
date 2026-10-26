@@ -85,3 +85,9 @@ LLM Agent、经典智能 Agent、规划或符号推理 Agent、多 Agent 系统�
 远程仓库仅保留可公开、可复核的结构化数据和必要脚本，便于检索、统计与后续更新。PDF、逐篇阅读笔记、审计材料和工作草稿保留在本地研究环境，不随仓库同步。
 
 核心数据和相关结构化文件位于 [`Autonomous Scientific Discovery/Data/`](Autonomous%20Scientific%20Discovery/Data/)。统计口径会随新增文献、证据补全和分类复核而更新。
+
+## 项目交接：单篇论文分类 Skill
+
+接手者可使用项目内的 [`asd-single-paper-classification-workflow`](Autonomous%20Scientific%20Discovery/skills/asd-single-paper-classification-workflow/) 对单篇论文完成证据收集、纳入判断、多模块科学对象分类、笔记归档和结构化数据写回。
+
+将该目录安装到个人 Codex skills 目录后，可使用 `$asd-single-paper-classification-workflow` 调用。Skill 明确规定了一手证据优先、`01.04` 边界、`03/04`、`05/10`、`06/07`、`01.04/11.07` 边界判断，以及主事实源与派生数据的写回顺序。
