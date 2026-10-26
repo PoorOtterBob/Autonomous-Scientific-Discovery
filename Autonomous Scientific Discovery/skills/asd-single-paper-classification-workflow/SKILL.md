@@ -20,8 +20,22 @@ Locate the project root named `Autonomous Scientific Discovery`. Do not assume t
 - `Data/field_ownership_matrix.md`
 - `Paper_Lists/agent_master_paper_list.md`
 - `paper_note_templates_and_prompts/ASD_annotation_schema.md`
+- `paper_note_templates_and_prompts/ASD_single_paper_note_template.md`
+- `Coverage_Check/multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md`
 
-For a paper that will enter or change the core library, also read the note template, the per-module mapping ledger, and the discipline-code policy listed in [project-layout-and-writeback.md](references/project-layout-and-writeback.md).
+For a paper that will enter or change the core library, also read the per-module mapping ledger and the discipline-code policy listed in [project-layout-and-writeback.md](references/project-layout-and-writeback.md).
+
+## Operating Modes
+
+### GitHub portable mode
+
+A standard clone contains all text-based classification owners, the master list, current notes, note templates, taxonomy mappings, and source/progress facts. Use online first-hand sources when a local PDF is unavailable. Complete the classification decision, update the owner files, and commit the changed text records.
+
+The repository intentionally excludes the `Reference_PDF/` asset library. Do not run the full local-asset pipeline in a clone without that library because it asserts PDF and note-asset availability. Instead, validate the changed owner records, preserve unverified PDF fields, and report that the derived-data refresh is pending an asset-enabled local checkout.
+
+### Full local archive mode
+
+When `Reference_PDF/` is available, use the same owner files and then run the canonical pipeline. This is the only mode in which `Data/papers.jsonl`, `Data/papers.sqlite`, manifests, and other asset-aware derived outputs should be refreshed.
 
 ## Non-Negotiable Rules
 
@@ -91,19 +105,19 @@ Follow the ownership and ordering rules in [project-layout-and-writeback.md](ref
 - Update the master record and module-specific taxonomy mappings for a confirmed classification.
 - Add or update a stable discipline-local code only when the filing position is clear; never re-rank or reuse existing codes.
 - Put a core note under the directory for `primary_module_for_filing`, using `FirstAuthor_Year_ShortTitle.md`. Note location is not classification evidence.
-- Store or link primary sources/PDFs only when the task authorizes that action; do not infer PDF status from a blank or nonblank path.
+- In GitHub portable mode, use official online sources and preserve existing PDF fields unless a source/PDF fact was actually verified. Do not infer PDF status from a blank or nonblank path.
 - Do not hand-edit derived exports such as `Data/papers.jsonl`, `Data/papers.sqlite`, manifests, registries, or CSV snapshots.
 
-After owner edits, run the canonical project pipeline:
+In full local archive mode, run the canonical project pipeline after owner edits:
 
 ```powershell
 python 'Autonomous Scientific Discovery/scripts/run_structured_data_pipeline.py'
 ```
 
-Resolve `ERROR` findings before considering the paper classification complete. Preserve `WARNING` findings in the record or review queue.
+Resolve `ERROR` findings before considering the paper classification complete. In GitHub portable mode, run `git diff --check`, verify the master/progress/module-mapping identifiers manually, and preserve the asset-aware pipeline check as a handoff item. Preserve `WARNING` findings in the record or review queue.
 
 ## Handoff Standard
 
-Report the changed paper ID, status, modules/bucket, filing module, evidence sources checked, files changed, pipeline result, and any unresolved question. For classification-sensitive changes, state why nearby classes were not selected.
+Report the changed paper ID, status, modules/bucket, filing module, evidence sources checked, files changed, operating mode, pipeline result or deferred asset check, and any unresolved question. For classification-sensitive changes, state why nearby classes were not selected.
 
 Use the project's controlled English status values and codes, while writing explanatory prose in Chinese unless the task requires otherwise.

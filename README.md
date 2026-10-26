@@ -91,3 +91,7 @@ LLM Agent、经典智能 Agent、规划或符号推理 Agent、多 Agent 系统�
 接手者可使用项目内的 [`asd-single-paper-classification-workflow`](Autonomous%20Scientific%20Discovery/skills/asd-single-paper-classification-workflow/) 对单篇论文完成证据收集、纳入判断、多模块科学对象分类、笔记归档和结构化数据写回。
 
 将该目录安装到个人 Codex skills 目录后，可使用 `$asd-single-paper-classification-workflow` 调用。Skill 明确规定了一手证据优先、`01.04` 边界、`03/04`、`05/10`、`06/07`、`01.04/11.07` 边界判断，以及主事实源与派生数据的写回顺序。
+
+GitHub 已同步可交接的文本型分类资产：[`主论文列表`](Autonomous%20Scientific%20Discovery/Paper_Lists/agent_master_paper_list.md)、[`逐篇笔记`](Autonomous%20Scientific%20Discovery/Notes/)、[`标注字段规范`](Autonomous%20Scientific%20Discovery/paper_note_templates_and_prompts/ASD_annotation_schema.md)、[`笔记模板`](Autonomous%20Scientific%20Discovery/paper_note_templates_and_prompts/ASD_single_paper_note_template.md) 和 [`来源/证据进度主表`](Autonomous%20Scientific%20Discovery/Coverage_Check/multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md)。
+
+本地 `Reference_PDF/` 库不上传 GitHub；接手者可使用官方论文页、arXiv、DOI、补充材料和项目页进行分类。只有需要重建含本地PDF状态的派生数据时，才需要完整本地资产库。

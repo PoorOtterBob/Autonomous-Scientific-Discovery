@@ -2,14 +2,20 @@
 
 Use this reference after the evidence decision is ready and before editing project records.
 
+## GitHub Portable Checkout
+
+The repository includes the text files required to classify and write back a paper: the master list, current notes, note templates, taxonomy/policy files, mapping ledgers, and the source/progress owner file. It deliberately excludes `Reference_PDF/`; retrieve first-hand evidence from official online pages, preprints, supplements, or project sites when needed.
+
+Without the PDF asset library, do not regenerate asset-aware derived files or run the full pipeline. Make owner-file edits only, validate identifiers and Markdown, then hand off the pending local-asset refresh. With `Reference_PDF/` restored, use the full local archive workflow and run the pipeline.
+
 ## Directory Roles
 
 | Location | Role | Editing rule |
 |---|---|---|
 | `Paper_Lists/agent_master_paper_list.md` | Canonical paper identity, inclusion decision, core classification overlay, legacy fields, and filing module | Main owner for paper and classification facts. |
-| `Notes/XX_.../` | One structured note per core paper | File by `primary_module_for_filing`; this is a convenience, not the authoritative classification. |
-| `Reference_PDF/XX_.../` | Locally archived primary PDFs | Optional and separate from classification; use only authorized sources. |
-| `Coverage_Check/` | Audit reports, queues, source/PDF progress, and unresolved cases | Record source-limited or boundary uncertainty here when needed. |
+| `Notes/XX_.../` | One structured note per core paper | Versioned in GitHub. File by `primary_module_for_filing`; this is a convenience, not the authoritative classification. |
+| `Reference_PDF/XX_.../` | Locally archived primary PDFs | Intentionally excluded from GitHub; optional for portable classification but required by the full asset-aware pipeline. |
+| `Coverage_Check/multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md` | Source/PDF/evidence owner facts | Versioned in GitHub; update only facts actually checked. |
 | `Data/classification_code_index.json` | Taxonomy vocabulary, labels, definitions, and boundaries | Update only when the taxonomy vocabulary itself changes. |
 | `Data/paper_module_taxonomy_assignments.jsonl` | Per-paper, per-module secondary/tertiary taxonomy mapping | Use for every supported module that has a resolved internal taxonomy position. |
 | `Data/discipline_code_assignments.jsonl` | Stable filing/management code ledger | One active filing code at most per paper; not a substitute for multi-module facts. |
@@ -36,7 +42,7 @@ Use this reference after the evidence decision is ready and before editing proje
 4. Update `discipline_code_assignments.jsonl` only if the single filing position is new or changes. Append new codes; never reorder existing codes. A pure `01.04` record uses `non_discipline_general_method`, not a normal `MM-SS-NNN` code.
 5. Write/update the note for a confirmed core record. Add a note-revision queue item if classification changes but the note cannot be safely revised in the same task.
 6. Update source/PDF progress facts only when those facts were actually checked or changed.
-7. Regenerate the derived data and inspect `Data/integrity_check_report.md`.
+7. In a full local archive, regenerate derived data and inspect `Data/integrity_check_report.md`. In a GitHub portable checkout, record this as deferred rather than regenerating asset-aware data without PDFs.
 
 ## Evidence and Review States
 

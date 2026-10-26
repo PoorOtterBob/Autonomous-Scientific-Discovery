@@ -14,10 +14,15 @@ desktop.ini
 /LLM Survey/
 /Scientific Discovery by Agents/
 /codex_agents_sdk_demo/
-/Autonomous Scientific Discovery/Notes/
-/Autonomous Scientific Discovery/Paper_Lists/
+/Autonomous Scientific Discovery/Notes/**
+!/Autonomous Scientific Discovery/Notes/
+!/Autonomous Scientific Discovery/Notes/**/*.md
+/Autonomous Scientific Discovery/Paper_Lists/**
+!/Autonomous Scientific Discovery/Paper_Lists/
+!/Autonomous Scientific Discovery/Paper_Lists/agent_master_paper_list.md
 /Autonomous Scientific Discovery/Coverage_Check/**
 !/Autonomous Scientific Discovery/Coverage_Check/
+!/Autonomous Scientific Discovery/Coverage_Check/multi_module_note_pdf_full_reaudit_progress_451_2026-06-21.md
 /Autonomous Scientific Discovery/Data/**
 !/Autonomous Scientific Discovery/Data/
 !/Autonomous Scientific Discovery/Data/schema/
@@ -46,7 +51,10 @@ desktop.ini
 !/Autonomous Scientific Discovery/scripts/query_analysis_db.py
 !/Autonomous Scientific Discovery/scripts/run_structured_data_pipeline.py
 /Autonomous Scientific Discovery/Section_Scratch/
-/Autonomous Scientific Discovery/paper_note_templates_and_prompts/
+/Autonomous Scientific Discovery/paper_note_templates_and_prompts/**
+!/Autonomous Scientific Discovery/paper_note_templates_and_prompts/
+!/Autonomous Scientific Discovery/paper_note_templates_and_prompts/ASD_annotation_schema.md
+!/Autonomous Scientific Discovery/paper_note_templates_and_prompts/ASD_single_paper_note_template.md
 /Autonomous Scientific Discovery/domain_classification_rules.md
 /Autonomous Scientific Discovery/review_scope_and_classification_policy.md
 /Autonomous Scientific Discovery/science_domain_taxonomy.md
