@@ -33,12 +33,13 @@ Without the PDF asset library, do not regenerate asset-aware derived files or ru
 | `primary_module_assignment_rule` | `main_scientific_object`, `main_validation_object`, `direct_contribution_target`, `substantive_application_object`, or `manual_override`. |
 | `module_assignment_evidence` | First-hand object evidence for every assigned module; do not write a bare code. |
 | `multi_module_object_coverage_note` | Explain why each additional module has independent evidence. |
+| `tertiary_taxonomy_code` | Deepest active controlled code for that module. Mandatory for every confirmed `06` and `07` assignment; for another module, blank only when its active taxonomy has no complete applicable tertiary tree, with the gap recorded in the decision record. |
 
 ## Writeback Order
 
 1. Confirm deduplication and preserve or allocate the permanent `ASD-xxxx` paper ID.
 2. Update `agent_master_paper_list.md` with canonical metadata, status, structured classification fields, source trail, evidence summary, and filing choice.
-3. Add or revise `paper_module_taxonomy_assignments.jsonl` for each supported module. Use secondary and tertiary codes only when evidence supports them.
+3. Add or revise `paper_module_taxonomy_assignments.jsonl` for each supported module. Resolve the deepest active controlled code supported by evidence. `06` and `07` always require a tertiary code for confirmed core assignments; do not substitute a bare secondary code for an unresolved tertiary decision. For other modules, leave the tertiary field blank only for a documented taxonomy gap, never because classification work stopped early.
 4. Update `discipline_code_assignments.jsonl` only if the single filing position is new or changes. Append new codes; never reorder existing codes. A pure `01.04` record uses `non_discipline_general_method`, not a normal `MM-SS-NNN` code.
 5. Write/update the note for a confirmed core record. Add a note-revision queue item if classification changes but the note cannot be safely revised in the same task.
 6. Update source/PDF progress facts only when those facts were actually checked or changed.
@@ -54,7 +55,8 @@ Without the PDF asset library, do not regenerate asset-aware derived files or ru
 ## Completion Checks
 
 - Each confirmed core paper has a supported module or an explicit `01.04` bucket decision.
-- Module codes, coverage mode, general bucket, and filing module are mutually consistent.
+- Module codes, coverage mode, general bucket, and filing module are mutually consistent; every confirmed `06` or `07` mapping has a valid tertiary code under its secondary code.
+- For other modules, every missing tertiary code is either outside the active controlled tree or has an explicit review/taxonomy-gap rationale.
 - Multi-module papers have evidence for each assigned module.
 - The note name is English and its folder matches `primary_module_for_filing`.
 - The pipeline has no `ERROR` findings caused by the edit.
